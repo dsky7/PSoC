@@ -1,0 +1,4672 @@
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cymetadata.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	cy_meta_configecc
+  19              		.section	.cyconfigecc,"a",%progbits
+  20              		.align	2
+  21              		.type	cy_meta_configecc, %object
+  22              		.size	cy_meta_configecc, 3952
+  23              	cy_meta_configecc:
+  24 0000 07       		.byte	7
+  25 0001 52       		.byte	82
+  26 0002 00       		.byte	0
+  27 0003 40       		.byte	64
+  28 0004 0A       		.byte	10
+  29 0005 64       		.byte	100
+  30 0006 00       		.byte	0
+  31 0007 40       		.byte	64
+  32 0008 4D       		.byte	77
+  33 0009 00       		.byte	0
+  34 000a 01       		.byte	1
+  35 000b 40       		.byte	64
+  36 000c 37       		.byte	55
+  37 000d 01       		.byte	1
+  38 000e 01       		.byte	1
+  39 000f 40       		.byte	64
+  40 0010 23       		.byte	35
+  41 0011 02       		.byte	2
+  42 0012 01       		.byte	1
+  43 0013 40       		.byte	64
+  44 0014 52       		.byte	82
+  45 0015 03       		.byte	3
+  46 0016 01       		.byte	1
+  47 0017 40       		.byte	64
+  48 0018 58       		.byte	88
+  49 0019 04       		.byte	4
+  50 001a 01       		.byte	1
+  51 001b 40       		.byte	64
+  52 001c 58       		.byte	88
+  53 001d 05       		.byte	5
+  54 001e 01       		.byte	1
+  55 001f 40       		.byte	64
+  56 0020 5A       		.byte	90
+  57 0021 06       		.byte	6
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 2
+
+
+  58 0022 01       		.byte	1
+  59 0023 40       		.byte	64
+  60 0024 5A       		.byte	90
+  61 0025 07       		.byte	7
+  62 0026 01       		.byte	1
+  63 0027 40       		.byte	64
+  64 0028 69       		.byte	105
+  65 0029 08       		.byte	8
+  66 002a 01       		.byte	1
+  67 002b 40       		.byte	64
+  68 002c 5E       		.byte	94
+  69 002d 09       		.byte	9
+  70 002e 01       		.byte	1
+  71 002f 40       		.byte	64
+  72 0030 57       		.byte	87
+  73 0031 0A       		.byte	10
+  74 0032 01       		.byte	1
+  75 0033 40       		.byte	64
+  76 0034 63       		.byte	99
+  77 0035 0B       		.byte	11
+  78 0036 01       		.byte	1
+  79 0037 40       		.byte	64
+  80 0038 51       		.byte	81
+  81 0039 0C       		.byte	12
+  82 003a 01       		.byte	1
+  83 003b 40       		.byte	64
+  84 003c 56       		.byte	86
+  85 003d 0D       		.byte	13
+  86 003e 01       		.byte	1
+  87 003f 40       		.byte	64
+  88 0040 62       		.byte	98
+  89 0041 0E       		.byte	14
+  90 0042 01       		.byte	1
+  91 0043 40       		.byte	64
+  92 0044 48       		.byte	72
+  93 0045 0F       		.byte	15
+  94 0046 01       		.byte	1
+  95 0047 40       		.byte	64
+  96 0048 0D       		.byte	13
+  97 0049 15       		.byte	21
+  98 004a 01       		.byte	1
+  99 004b 40       		.byte	64
+ 100 004c 15       		.byte	21
+ 101 004d 17       		.byte	23
+ 102 004e 01       		.byte	1
+ 103 004f 40       		.byte	64
+ 104 0050 53       		.byte	83
+ 105 0051 18       		.byte	24
+ 106 0052 01       		.byte	1
+ 107 0053 40       		.byte	64
+ 108 0054 56       		.byte	86
+ 109 0055 19       		.byte	25
+ 110 0056 01       		.byte	1
+ 111 0057 40       		.byte	64
+ 112 0058 56       		.byte	86
+ 113 0059 1A       		.byte	26
+ 114 005a 01       		.byte	1
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 3
+
+
+ 115 005b 40       		.byte	64
+ 116 005c 48       		.byte	72
+ 117 005d 1B       		.byte	27
+ 118 005e 01       		.byte	1
+ 119 005f 40       		.byte	64
+ 120 0060 06       		.byte	6
+ 121 0061 40       		.byte	64
+ 122 0062 01       		.byte	1
+ 123 0063 40       		.byte	64
+ 124 0064 05       		.byte	5
+ 125 0065 41       		.byte	65
+ 126 0066 01       		.byte	1
+ 127 0067 40       		.byte	64
+ 128 0068 06       		.byte	6
+ 129 0069 42       		.byte	66
+ 130 006a 01       		.byte	1
+ 131 006b 40       		.byte	64
+ 132 006c 05       		.byte	5
+ 133 006d 43       		.byte	67
+ 134 006e 01       		.byte	1
+ 135 006f 40       		.byte	64
+ 136 0070 11       		.byte	17
+ 137 0071 44       		.byte	68
+ 138 0072 01       		.byte	1
+ 139 0073 40       		.byte	64
+ 140 0074 09       		.byte	9
+ 141 0075 45       		.byte	69
+ 142 0076 01       		.byte	1
+ 143 0077 40       		.byte	64
+ 144 0078 09       		.byte	9
+ 145 0079 46       		.byte	70
+ 146 007a 01       		.byte	1
+ 147 007b 40       		.byte	64
+ 148 007c 03       		.byte	3
+ 149 007d 47       		.byte	71
+ 150 007e 01       		.byte	1
+ 151 007f 40       		.byte	64
+ 152 0080 02       		.byte	2
+ 153 0081 48       		.byte	72
+ 154 0082 01       		.byte	1
+ 155 0083 40       		.byte	64
+ 156 0084 05       		.byte	5
+ 157 0085 49       		.byte	73
+ 158 0086 01       		.byte	1
+ 159 0087 40       		.byte	64
+ 160 0088 0C       		.byte	12
+ 161 0089 4C       		.byte	76
+ 162 008a 01       		.byte	1
+ 163 008b 40       		.byte	64
+ 164 008c 14       		.byte	20
+ 165 008d 4D       		.byte	77
+ 166 008e 01       		.byte	1
+ 167 008f 40       		.byte	64
+ 168 0090 07       		.byte	7
+ 169 0091 50       		.byte	80
+ 170 0092 01       		.byte	1
+ 171 0093 40       		.byte	64
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 4
+
+
+ 172 0094 02       		.byte	2
+ 173 0095 51       		.byte	81
+ 174 0096 01       		.byte	1
+ 175 0097 40       		.byte	64
+ 176 0098 20       		.byte	32
+ 177 0099 01       		.byte	1
+ 178 009a 28       		.byte	40
+ 179 009b 20       		.byte	32
+ 180 009c 29       		.byte	41
+ 181 009d 20       		.byte	32
+ 182 009e 2C       		.byte	44
+ 183 009f 30       		.byte	48
+ 184 00a0 30       		.byte	48
+ 185 00a1 41       		.byte	65
+ 186 00a2 31       		.byte	49
+ 187 00a3 03       		.byte	3
+ 188 00a4 34       		.byte	52
+ 189 00a5 33       		.byte	51
+ 190 00a6 23       		.byte	35
+ 191 00a7 04       		.byte	4
+ 192 00a8 27       		.byte	39
+ 193 00a9 0F       		.byte	15
+ 194 00aa 28       		.byte	40
+ 195 00ab 04       		.byte	4
+ 196 00ac 29       		.byte	41
+ 197 00ad 0F       		.byte	15
+ 198 00ae 37       		.byte	55
+ 199 00af 08       		.byte	8
+ 200 00b0 39       		.byte	57
+ 201 00b1 08       		.byte	8
+ 202 00b2 83       		.byte	-125
+ 203 00b3 38       		.byte	56
+ 204 00b4 8B       		.byte	-117
+ 205 00b5 0F       		.byte	15
+ 206 00b6 8E       		.byte	-114
+ 207 00b7 72       		.byte	114
+ 208 00b8 8F       		.byte	-113
+ 209 00b9 2D       		.byte	45
+ 210 00ba 01       		.byte	1
+ 211 00bb A5       		.byte	-91
+ 212 00bc 03       		.byte	3
+ 213 00bd 4A       		.byte	74
+ 214 00be 07       		.byte	7
+ 215 00bf 02       		.byte	2
+ 216 00c0 08       		.byte	8
+ 217 00c1 01       		.byte	1
+ 218 00c2 0B       		.byte	11
+ 219 00c3 B5       		.byte	-75
+ 220 00c4 0F       		.byte	15
+ 221 00c5 04       		.byte	4
+ 222 00c6 11       		.byte	17
+ 223 00c7 FF       		.byte	-1
+ 224 00c8 15       		.byte	21
+ 225 00c9 4D       		.byte	77
+ 226 00ca 16       		.byte	22
+ 227 00cb 02       		.byte	2
+ 228 00cc 17       		.byte	23
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 5
+
+
+ 229 00cd 92       		.byte	-110
+ 230 00ce 19       		.byte	25
+ 231 00cf 1A       		.byte	26
+ 232 00d0 1B       		.byte	27
+ 233 00d1 60       		.byte	96
+ 234 00d2 1D       		.byte	29
+ 235 00d3 02       		.byte	2
+ 236 00d4 23       		.byte	35
+ 237 00d5 01       		.byte	1
+ 238 00d6 25       		.byte	37
+ 239 00d7 04       		.byte	4
+ 240 00d8 29       		.byte	41
+ 241 00d9 CC       		.byte	-52
+ 242 00da 2B       		.byte	43
+ 243 00db 13       		.byte	19
+ 244 00dc 2D       		.byte	45
+ 245 00dd A9       		.byte	-87
+ 246 00de 2E       		.byte	46
+ 247 00df 02       		.byte	2
+ 248 00e0 2F       		.byte	47
+ 249 00e1 54       		.byte	84
+ 250 00e2 30       		.byte	48
+ 251 00e3 01       		.byte	1
+ 252 00e4 33       		.byte	51
+ 253 00e5 FF       		.byte	-1
+ 254 00e6 34       		.byte	52
+ 255 00e7 02       		.byte	2
+ 256 00e8 36       		.byte	54
+ 257 00e9 01       		.byte	1
+ 258 00ea 3E       		.byte	62
+ 259 00eb 50       		.byte	80
+ 260 00ec 3F       		.byte	63
+ 261 00ed 04       		.byte	4
+ 262 00ee 52       		.byte	82
+ 263 00ef F6       		.byte	-10
+ 264 00f0 58       		.byte	88
+ 265 00f1 04       		.byte	4
+ 266 00f2 59       		.byte	89
+ 267 00f3 04       		.byte	4
+ 268 00f4 5B       		.byte	91
+ 269 00f5 04       		.byte	4
+ 270 00f6 5C       		.byte	92
+ 271 00f7 03       		.byte	3
+ 272 00f8 5D       		.byte	93
+ 273 00f9 10       		.byte	16
+ 274 00fa 5F       		.byte	95
+ 275 00fb 01       		.byte	1
+ 276 00fc 80       		.byte	-128
+ 277 00fd 40       		.byte	64
+ 278 00fe 81       		.byte	-127
+ 279 00ff 01       		.byte	1
+ 280 0100 82       		.byte	-126
+ 281 0101 1D       		.byte	29
+ 282 0102 84       		.byte	-124
+ 283 0103 3D       		.byte	61
+ 284 0104 86       		.byte	-122
+ 285 0105 C2       		.byte	-62
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 6
+
+
+ 286 0106 87       		.byte	-121
+ 287 0107 01       		.byte	1
+ 288 0108 88       		.byte	-120
+ 289 0109 01       		.byte	1
+ 290 010a 89       		.byte	-119
+ 291 010b 01       		.byte	1
+ 292 010c 8D       		.byte	-115
+ 293 010d 02       		.byte	2
+ 294 010e 8E       		.byte	-114
+ 295 010f 08       		.byte	8
+ 296 0110 90       		.byte	-112
+ 297 0111 E2       		.byte	-30
+ 298 0112 91       		.byte	-111
+ 299 0113 04       		.byte	4
+ 300 0114 93       		.byte	-109
+ 301 0115 10       		.byte	16
+ 302 0116 94       		.byte	-108
+ 303 0117 01       		.byte	1
+ 304 0118 95       		.byte	-107
+ 305 0119 01       		.byte	1
+ 306 011a 97       		.byte	-105
+ 307 011b 18       		.byte	24
+ 308 011c 98       		.byte	-104
+ 309 011d 0D       		.byte	13
+ 310 011e 9D       		.byte	-99
+ 311 011f 01       		.byte	1
+ 312 0120 9E       		.byte	-98
+ 313 0121 02       		.byte	2
+ 314 0122 9F       		.byte	-97
+ 315 0123 08       		.byte	8
+ 316 0124 A0       		.byte	-96
+ 317 0125 04       		.byte	4
+ 318 0126 A2       		.byte	-94
+ 319 0127 E0       		.byte	-32
+ 320 0128 A3       		.byte	-93
+ 321 0129 20       		.byte	32
+ 322 012a A5       		.byte	-91
+ 323 012b 01       		.byte	1
+ 324 012c A6       		.byte	-90
+ 325 012d FF       		.byte	-1
+ 326 012e A7       		.byte	-89
+ 327 012f 08       		.byte	8
+ 328 0130 A8       		.byte	-88
+ 329 0131 92       		.byte	-110
+ 330 0132 A9       		.byte	-87
+ 331 0133 04       		.byte	4
+ 332 0134 AA       		.byte	-86
+ 333 0135 60       		.byte	96
+ 334 0136 AB       		.byte	-85
+ 335 0137 08       		.byte	8
+ 336 0138 AC       		.byte	-84
+ 337 0139 5D       		.byte	93
+ 338 013a AE       		.byte	-82
+ 339 013b A2       		.byte	-94
+ 340 013c B1       		.byte	-79
+ 341 013d 04       		.byte	4
+ 342 013e B3       		.byte	-77
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 7
+
+
+ 343 013f 38       		.byte	56
+ 344 0140 B5       		.byte	-75
+ 345 0141 03       		.byte	3
+ 346 0142 B6       		.byte	-74
+ 347 0143 FF       		.byte	-1
+ 348 0144 B9       		.byte	-71
+ 349 0145 22       		.byte	34
+ 350 0146 BB       		.byte	-69
+ 351 0147 08       		.byte	8
+ 352 0148 BE       		.byte	-66
+ 353 0149 40       		.byte	64
+ 354 014a BF       		.byte	-65
+ 355 014b 10       		.byte	16
+ 356 014c D8       		.byte	-40
+ 357 014d 04       		.byte	4
+ 358 014e D9       		.byte	-39
+ 359 014f 04       		.byte	4
+ 360 0150 DC       		.byte	-36
+ 361 0151 10       		.byte	16
+ 362 0152 DF       		.byte	-33
+ 363 0153 01       		.byte	1
+ 364 0154 03       		.byte	3
+ 365 0155 08       		.byte	8
+ 366 0156 05       		.byte	5
+ 367 0157 40       		.byte	64
+ 368 0158 06       		.byte	6
+ 369 0159 08       		.byte	8
+ 370 015a 07       		.byte	7
+ 371 015b 90       		.byte	-112
+ 372 015c 0B       		.byte	11
+ 373 015d 20       		.byte	32
+ 374 015e 0C       		.byte	12
+ 375 015f 02       		.byte	2
+ 376 0160 0E       		.byte	14
+ 377 0161 10       		.byte	16
+ 378 0162 0F       		.byte	15
+ 379 0163 09       		.byte	9
+ 380 0164 12       		.byte	18
+ 381 0165 01       		.byte	1
+ 382 0166 14       		.byte	20
+ 383 0167 06       		.byte	6
+ 384 0168 15       		.byte	21
+ 385 0169 01       		.byte	1
+ 386 016a 16       		.byte	22
+ 387 016b 10       		.byte	16
+ 388 016c 18       		.byte	24
+ 389 016d 06       		.byte	6
+ 390 016e 1A       		.byte	26
+ 391 016f 80       		.byte	-128
+ 392 0170 1F       		.byte	31
+ 393 0171 80       		.byte	-128
+ 394 0172 21       		.byte	33
+ 395 0173 04       		.byte	4
+ 396 0174 25       		.byte	37
+ 397 0175 08       		.byte	8
+ 398 0176 26       		.byte	38
+ 399 0177 09       		.byte	9
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 8
+
+
+ 400 0178 27       		.byte	39
+ 401 0179 08       		.byte	8
+ 402 017a 28       		.byte	40
+ 403 017b 06       		.byte	6
+ 404 017c 29       		.byte	41
+ 405 017d 01       		.byte	1
+ 406 017e 2A       		.byte	42
+ 407 017f 28       		.byte	40
+ 408 0180 2D       		.byte	45
+ 409 0181 14       		.byte	20
+ 410 0182 2F       		.byte	47
+ 411 0183 80       		.byte	-128
+ 412 0184 30       		.byte	48
+ 413 0185 02       		.byte	2
+ 414 0186 31       		.byte	49
+ 415 0187 58       		.byte	88
+ 416 0188 33       		.byte	51
+ 417 0189 11       		.byte	17
+ 418 018a 36       		.byte	54
+ 419 018b 88       		.byte	-120
+ 420 018c 37       		.byte	55
+ 421 018d 01       		.byte	1
+ 422 018e 38       		.byte	56
+ 423 018f 88       		.byte	-120
+ 424 0190 39       		.byte	57
+ 425 0191 11       		.byte	17
+ 426 0192 3A       		.byte	58
+ 427 0193 10       		.byte	16
+ 428 0194 3C       		.byte	60
+ 429 0195 20       		.byte	32
+ 430 0196 3D       		.byte	61
+ 431 0197 01       		.byte	1
+ 432 0198 3E       		.byte	62
+ 433 0199 A1       		.byte	-95
+ 434 019a 3F       		.byte	63
+ 435 019b 08       		.byte	8
+ 436 019c 68       		.byte	104
+ 437 019d 28       		.byte	40
+ 438 019e 70       		.byte	112
+ 439 019f 44       		.byte	68
+ 440 01a0 71       		.byte	113
+ 441 01a1 01       		.byte	1
+ 442 01a2 72       		.byte	114
+ 443 01a3 18       		.byte	24
+ 444 01a4 73       		.byte	115
+ 445 01a5 01       		.byte	1
+ 446 01a6 81       		.byte	-127
+ 447 01a7 10       		.byte	16
+ 448 01a8 82       		.byte	-126
+ 449 01a9 C0       		.byte	-64
+ 450 01aa 84       		.byte	-124
+ 451 01ab 0A       		.byte	10
+ 452 01ac 85       		.byte	-123
+ 453 01ad 04       		.byte	4
+ 454 01ae 8C       		.byte	-116
+ 455 01af 08       		.byte	8
+ 456 01b0 8E       		.byte	-114
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 9
+
+
+ 457 01b1 41       		.byte	65
+ 458 01b2 C0       		.byte	-64
+ 459 01b3 F2       		.byte	-14
+ 460 01b4 C2       		.byte	-62
+ 461 01b5 F4       		.byte	-12
+ 462 01b6 C4       		.byte	-60
+ 463 01b7 F1       		.byte	-15
+ 464 01b8 CA       		.byte	-54
+ 465 01b9 EF       		.byte	-17
+ 466 01ba CC       		.byte	-52
+ 467 01bb DF       		.byte	-33
+ 468 01bc CE       		.byte	-50
+ 469 01bd FF       		.byte	-1
+ 470 01be E0       		.byte	-32
+ 471 01bf 04       		.byte	4
+ 472 01c0 E6       		.byte	-26
+ 473 01c1 08       		.byte	8
+ 474 01c2 08       		.byte	8
+ 475 01c3 01       		.byte	1
+ 476 01c4 0F       		.byte	15
+ 477 01c5 08       		.byte	8
+ 478 01c6 19       		.byte	25
+ 479 01c7 01       		.byte	1
+ 480 01c8 1B       		.byte	27
+ 481 01c9 02       		.byte	2
+ 482 01ca 1E       		.byte	30
+ 483 01cb 02       		.byte	2
+ 484 01cc 1F       		.byte	31
+ 485 01cd 04       		.byte	4
+ 486 01ce 21       		.byte	33
+ 487 01cf 01       		.byte	1
+ 488 01d0 23       		.byte	35
+ 489 01d1 02       		.byte	2
+ 490 01d2 30       		.byte	48
+ 491 01d3 01       		.byte	1
+ 492 01d4 31       		.byte	49
+ 493 01d5 04       		.byte	4
+ 494 01d6 35       		.byte	53
+ 495 01d7 08       		.byte	8
+ 496 01d8 36       		.byte	54
+ 497 01d9 02       		.byte	2
+ 498 01da 37       		.byte	55
+ 499 01db 03       		.byte	3
+ 500 01dc 3E       		.byte	62
+ 501 01dd 01       		.byte	1
+ 502 01de 40       		.byte	64
+ 503 01df 06       		.byte	6
+ 504 01e0 46       		.byte	70
+ 505 01e1 50       		.byte	80
+ 506 01e2 47       		.byte	71
+ 507 01e3 01       		.byte	1
+ 508 01e4 48       		.byte	72
+ 509 01e5 18       		.byte	24
+ 510 01e6 49       		.byte	73
+ 511 01e7 FF       		.byte	-1
+ 512 01e8 4A       		.byte	74
+ 513 01e9 07       		.byte	7
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 10
+
+
+ 514 01ea 4B       		.byte	75
+ 515 01eb FF       		.byte	-1
+ 516 01ec 4C       		.byte	76
+ 517 01ed 40       		.byte	64
+ 518 01ee 4D       		.byte	77
+ 519 01ef 20       		.byte	32
+ 520 01f0 4E       		.byte	78
+ 521 01f1 F0       		.byte	-16
+ 522 01f2 4F       		.byte	79
+ 523 01f3 05       		.byte	5
+ 524 01f4 50       		.byte	80
+ 525 01f5 08       		.byte	8
+ 526 01f6 58       		.byte	88
+ 527 01f7 04       		.byte	4
+ 528 01f8 59       		.byte	89
+ 529 01f9 04       		.byte	4
+ 530 01fa 5A       		.byte	90
+ 531 01fb 04       		.byte	4
+ 532 01fc 5D       		.byte	93
+ 533 01fd 03       		.byte	3
+ 534 01fe 5F       		.byte	95
+ 535 01ff 01       		.byte	1
+ 536 0200 60       		.byte	96
+ 537 0201 40       		.byte	64
+ 538 0202 61       		.byte	97
+ 539 0203 A8       		.byte	-88
+ 540 0204 62       		.byte	98
+ 541 0205 40       		.byte	64
+ 542 0206 63       		.byte	99
+ 543 0207 20       		.byte	32
+ 544 0208 02       		.byte	2
+ 545 0209 09       		.byte	9
+ 546 020a 03       		.byte	3
+ 547 020b A0       		.byte	-96
+ 548 020c 04       		.byte	4
+ 549 020d 20       		.byte	32
+ 550 020e 08       		.byte	8
+ 551 020f 81       		.byte	-127
+ 552 0210 09       		.byte	9
+ 553 0211 20       		.byte	32
+ 554 0212 0A       		.byte	10
+ 555 0213 20       		.byte	32
+ 556 0214 0C       		.byte	12
+ 557 0215 80       		.byte	-128
+ 558 0216 10       		.byte	16
+ 559 0217 18       		.byte	24
+ 560 0218 11       		.byte	17
+ 561 0219 81       		.byte	-127
+ 562 021a 18       		.byte	24
+ 563 021b 20       		.byte	32
+ 564 021c 19       		.byte	25
+ 565 021d 01       		.byte	1
+ 566 021e 1E       		.byte	30
+ 567 021f 40       		.byte	64
+ 568 0220 1F       		.byte	31
+ 569 0221 40       		.byte	64
+ 570 0222 20       		.byte	32
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 11
+
+
+ 571 0223 08       		.byte	8
+ 572 0224 21       		.byte	33
+ 573 0225 02       		.byte	2
+ 574 0226 23       		.byte	35
+ 575 0227 14       		.byte	20
+ 576 0228 24       		.byte	36
+ 577 0229 40       		.byte	64
+ 578 022a 26       		.byte	38
+ 579 022b 10       		.byte	16
+ 580 022c 27       		.byte	39
+ 581 022d 01       		.byte	1
+ 582 022e 28       		.byte	40
+ 583 022f 09       		.byte	9
+ 584 0230 2A       		.byte	42
+ 585 0231 01       		.byte	1
+ 586 0232 2B       		.byte	43
+ 587 0233 12       		.byte	18
+ 588 0234 2C       		.byte	44
+ 589 0235 80       		.byte	-128
+ 590 0236 32       		.byte	50
+ 591 0237 5C       		.byte	92
+ 592 0238 33       		.byte	51
+ 593 0239 01       		.byte	1
+ 594 023a 34       		.byte	52
+ 595 023b 40       		.byte	64
+ 596 023c 37       		.byte	55
+ 597 023d 20       		.byte	32
+ 598 023e 38       		.byte	56
+ 599 023f 80       		.byte	-128
+ 600 0240 39       		.byte	57
+ 601 0241 01       		.byte	1
+ 602 0242 3A       		.byte	58
+ 603 0243 10       		.byte	16
+ 604 0244 3B       		.byte	59
+ 605 0245 04       		.byte	4
+ 606 0246 3C       		.byte	60
+ 607 0247 40       		.byte	64
+ 608 0248 3E       		.byte	62
+ 609 0249 01       		.byte	1
+ 610 024a 3F       		.byte	63
+ 611 024b 02       		.byte	2
+ 612 024c 40       		.byte	64
+ 613 024d 40       		.byte	64
+ 614 024e 42       		.byte	66
+ 615 024f 20       		.byte	32
+ 616 0250 49       		.byte	73
+ 617 0251 10       		.byte	16
+ 618 0252 4A       		.byte	74
+ 619 0253 20       		.byte	32
+ 620 0254 4F       		.byte	79
+ 621 0255 10       		.byte	16
+ 622 0256 50       		.byte	80
+ 623 0257 48       		.byte	72
+ 624 0258 56       		.byte	86
+ 625 0259 10       		.byte	16
+ 626 025a 57       		.byte	87
+ 627 025b 08       		.byte	8
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 12
+
+
+ 628 025c 5A       		.byte	90
+ 629 025d 02       		.byte	2
+ 630 025e 60       		.byte	96
+ 631 025f 04       		.byte	4
+ 632 0260 62       		.byte	98
+ 633 0261 42       		.byte	66
+ 634 0262 87       		.byte	-121
+ 635 0263 10       		.byte	16
+ 636 0264 88       		.byte	-120
+ 637 0265 10       		.byte	16
+ 638 0266 8A       		.byte	-118
+ 639 0267 C0       		.byte	-64
+ 640 0268 8E       		.byte	-114
+ 641 0269 02       		.byte	2
+ 642 026a 90       		.byte	-112
+ 643 026b 06       		.byte	6
+ 644 026c 92       		.byte	-110
+ 645 026d 90       		.byte	-112
+ 646 026e 93       		.byte	-109
+ 647 026f 01       		.byte	1
+ 648 0270 95       		.byte	-107
+ 649 0271 14       		.byte	20
+ 650 0272 96       		.byte	-106
+ 651 0273 41       		.byte	65
+ 652 0274 97       		.byte	-105
+ 653 0275 20       		.byte	32
+ 654 0276 98       		.byte	-104
+ 655 0277 08       		.byte	8
+ 656 0278 9A       		.byte	-102
+ 657 0279 08       		.byte	8
+ 658 027a 9B       		.byte	-101
+ 659 027b 08       		.byte	8
+ 660 027c 9D       		.byte	-99
+ 661 027d 40       		.byte	64
+ 662 027e A0       		.byte	-96
+ 663 027f 22       		.byte	34
+ 664 0280 A2       		.byte	-94
+ 665 0281 01       		.byte	1
+ 666 0282 A4       		.byte	-92
+ 667 0283 10       		.byte	16
+ 668 0284 A6       		.byte	-90
+ 669 0285 80       		.byte	-128
+ 670 0286 A7       		.byte	-89
+ 671 0287 0C       		.byte	12
+ 672 0288 A8       		.byte	-88
+ 673 0289 02       		.byte	2
+ 674 028a AA       		.byte	-86
+ 675 028b 80       		.byte	-128
+ 676 028c AD       		.byte	-83
+ 677 028d 04       		.byte	4
+ 678 028e B1       		.byte	-79
+ 679 028f 08       		.byte	8
+ 680 0290 B3       		.byte	-77
+ 681 0291 80       		.byte	-128
+ 682 0292 C0       		.byte	-64
+ 683 0293 4F       		.byte	79
+ 684 0294 C2       		.byte	-62
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 13
+
+
+ 685 0295 8F       		.byte	-113
+ 686 0296 C4       		.byte	-60
+ 687 0297 0F       		.byte	15
+ 688 0298 CA       		.byte	-54
+ 689 0299 8F       		.byte	-113
+ 690 029a CC       		.byte	-52
+ 691 029b 3F       		.byte	63
+ 692 029c CE       		.byte	-50
+ 693 029d 1F       		.byte	31
+ 694 029e D0       		.byte	-48
+ 695 029f 03       		.byte	3
+ 696 02a0 D2       		.byte	-46
+ 697 02a1 24       		.byte	36
+ 698 02a2 D6       		.byte	-42
+ 699 02a3 01       		.byte	1
+ 700 02a4 D8       		.byte	-40
+ 701 02a5 0D       		.byte	13
+ 702 02a6 E6       		.byte	-26
+ 703 02a7 12       		.byte	18
+ 704 02a8 E8       		.byte	-24
+ 705 02a9 08       		.byte	8
+ 706 02aa EA       		.byte	-22
+ 707 02ab 05       		.byte	5
+ 708 02ac 01       		.byte	1
+ 709 02ad 01       		.byte	1
+ 710 02ae 03       		.byte	3
+ 711 02af 1E       		.byte	30
+ 712 02b0 04       		.byte	4
+ 713 02b1 10       		.byte	16
+ 714 02b2 05       		.byte	5
+ 715 02b3 01       		.byte	1
+ 716 02b4 06       		.byte	6
+ 717 02b5 80       		.byte	-128
+ 718 02b6 08       		.byte	8
+ 719 02b7 10       		.byte	16
+ 720 02b8 09       		.byte	9
+ 721 02b9 1C       		.byte	28
+ 722 02ba 0A       		.byte	10
+ 723 02bb E0       		.byte	-32
+ 724 02bc 0B       		.byte	11
+ 725 02bd 22       		.byte	34
+ 726 02be 0C       		.byte	12
+ 727 02bf 60       		.byte	96
+ 728 02c0 0D       		.byte	13
+ 729 02c1 22       		.byte	34
+ 730 02c2 0E       		.byte	14
+ 731 02c3 18       		.byte	24
+ 732 02c4 0F       		.byte	15
+ 733 02c5 18       		.byte	24
+ 734 02c6 10       		.byte	16
+ 735 02c7 0F       		.byte	15
+ 736 02c8 13       		.byte	19
+ 737 02c9 40       		.byte	64
+ 738 02ca 14       		.byte	20
+ 739 02cb 70       		.byte	112
+ 740 02cc 15       		.byte	21
+ 741 02cd 22       		.byte	34
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 14
+
+
+ 742 02ce 16       		.byte	22
+ 743 02cf 01       		.byte	1
+ 744 02d0 18       		.byte	24
+ 745 02d1 30       		.byte	48
+ 746 02d2 19       		.byte	25
+ 747 02d3 04       		.byte	4
+ 748 02d4 1A       		.byte	26
+ 749 02d5 44       		.byte	68
+ 750 02d6 1D       		.byte	29
+ 751 02d7 06       		.byte	6
+ 752 02d8 1E       		.byte	30
+ 753 02d9 0F       		.byte	15
+ 754 02da 20       		.byte	32
+ 755 02db 20       		.byte	32
+ 756 02dc 21       		.byte	33
+ 757 02dd 18       		.byte	24
+ 758 02de 22       		.byte	34
+ 759 02df 58       		.byte	88
+ 760 02e0 23       		.byte	35
+ 761 02e1 06       		.byte	6
+ 762 02e2 24       		.byte	36
+ 763 02e3 70       		.byte	112
+ 764 02e4 25       		.byte	37
+ 765 02e5 3F       		.byte	63
+ 766 02e6 26       		.byte	38
+ 767 02e7 02       		.byte	2
+ 768 02e8 29       		.byte	41
+ 769 02e9 2A       		.byte	42
+ 770 02ea 2A       		.byte	42
+ 771 02eb 0F       		.byte	15
+ 772 02ec 2B       		.byte	43
+ 773 02ed 10       		.byte	16
+ 774 02ee 2C       		.byte	44
+ 775 02ef 0F       		.byte	15
+ 776 02f0 2D       		.byte	45
+ 777 02f1 32       		.byte	50
+ 778 02f2 2F       		.byte	47
+ 779 02f3 08       		.byte	8
+ 780 02f4 30       		.byte	48
+ 781 02f5 0F       		.byte	15
+ 782 02f6 32       		.byte	50
+ 783 02f7 F0       		.byte	-16
+ 784 02f8 33       		.byte	51
+ 785 02f9 1F       		.byte	31
+ 786 02fa 35       		.byte	53
+ 787 02fb 60       		.byte	96
+ 788 02fc 39       		.byte	57
+ 789 02fd 08       		.byte	8
+ 790 02fe 3A       		.byte	58
+ 791 02ff 08       		.byte	8
+ 792 0300 3E       		.byte	62
+ 793 0301 01       		.byte	1
+ 794 0302 58       		.byte	88
+ 795 0303 04       		.byte	4
+ 796 0304 59       		.byte	89
+ 797 0305 04       		.byte	4
+ 798 0306 5F       		.byte	95
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 15
+
+
+ 799 0307 01       		.byte	1
+ 800 0308 80       		.byte	-128
+ 801 0309 01       		.byte	1
+ 802 030a 81       		.byte	-127
+ 803 030b 22       		.byte	34
+ 804 030c 82       		.byte	-126
+ 805 030d 04       		.byte	4
+ 806 030e 85       		.byte	-123
+ 807 030f 18       		.byte	24
+ 808 0310 87       		.byte	-121
+ 809 0311 06       		.byte	6
+ 810 0312 88       		.byte	-120
+ 811 0313 12       		.byte	18
+ 812 0314 89       		.byte	-119
+ 813 0315 32       		.byte	50
+ 814 0316 8A       		.byte	-118
+ 815 0317 01       		.byte	1
+ 816 0318 8B       		.byte	-117
+ 817 0319 08       		.byte	8
+ 818 031a 8C       		.byte	-116
+ 819 031b 01       		.byte	1
+ 820 031c 8D       		.byte	-115
+ 821 031d 1C       		.byte	28
+ 822 031e 8E       		.byte	-114
+ 823 031f 06       		.byte	6
+ 824 0320 8F       		.byte	-113
+ 825 0321 22       		.byte	34
+ 826 0322 91       		.byte	-111
+ 827 0323 01       		.byte	1
+ 828 0324 93       		.byte	-109
+ 829 0325 1E       		.byte	30
+ 830 0326 94       		.byte	-108
+ 831 0327 01       		.byte	1
+ 832 0328 95       		.byte	-107
+ 833 0329 22       		.byte	34
+ 834 032a 96       		.byte	-106
+ 835 032b 1A       		.byte	26
+ 836 032c 97       		.byte	-105
+ 837 032d 18       		.byte	24
+ 838 032e 9A       		.byte	-102
+ 839 032f 13       		.byte	19
+ 840 0330 9B       		.byte	-101
+ 841 0331 40       		.byte	64
+ 842 0332 9D       		.byte	-99
+ 843 0333 01       		.byte	1
+ 844 0334 9E       		.byte	-98
+ 845 0335 13       		.byte	19
+ 846 0336 A1       		.byte	-95
+ 847 0337 06       		.byte	6
+ 848 0338 A5       		.byte	-91
+ 849 0339 2A       		.byte	42
+ 850 033a A7       		.byte	-89
+ 851 033b 10       		.byte	16
+ 852 033c A9       		.byte	-87
+ 853 033d 04       		.byte	4
+ 854 033e AD       		.byte	-83
+ 855 033f 3F       		.byte	63
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 16
+
+
+ 856 0340 AE       		.byte	-82
+ 857 0341 33       		.byte	51
+ 858 0342 B0       		.byte	-80
+ 859 0343 07       		.byte	7
+ 860 0344 B1       		.byte	-79
+ 861 0345 1F       		.byte	31
+ 862 0346 B2       		.byte	-78
+ 863 0347 08       		.byte	8
+ 864 0348 B4       		.byte	-76
+ 865 0349 10       		.byte	16
+ 866 034a B6       		.byte	-74
+ 867 034b 20       		.byte	32
+ 868 034c B7       		.byte	-73
+ 869 034d 60       		.byte	96
+ 870 034e B9       		.byte	-71
+ 871 034f 02       		.byte	2
+ 872 0350 BA       		.byte	-70
+ 873 0351 02       		.byte	2
+ 874 0352 BE       		.byte	-66
+ 875 0353 10       		.byte	16
+ 876 0354 D8       		.byte	-40
+ 877 0355 04       		.byte	4
+ 878 0356 D9       		.byte	-39
+ 879 0357 04       		.byte	4
+ 880 0358 DC       		.byte	-36
+ 881 0359 10       		.byte	16
+ 882 035a DF       		.byte	-33
+ 883 035b 01       		.byte	1
+ 884 035c 03       		.byte	3
+ 885 035d 2A       		.byte	42
+ 886 035e 04       		.byte	4
+ 887 035f 50       		.byte	80
+ 888 0360 05       		.byte	5
+ 889 0361 02       		.byte	2
+ 890 0362 08       		.byte	8
+ 891 0363 01       		.byte	1
+ 892 0364 0A       		.byte	10
+ 893 0365 29       		.byte	41
+ 894 0366 0B       		.byte	11
+ 895 0367 80       		.byte	-128
+ 896 0368 0E       		.byte	14
+ 897 0369 29       		.byte	41
+ 898 036a 11       		.byte	17
+ 899 036b 0B       		.byte	11
+ 900 036c 12       		.byte	18
+ 901 036d 40       		.byte	64
+ 902 036e 13       		.byte	19
+ 903 036f B0       		.byte	-80
+ 904 0370 14       		.byte	20
+ 905 0371 01       		.byte	1
+ 906 0372 19       		.byte	25
+ 907 0373 08       		.byte	8
+ 908 0374 1A       		.byte	26
+ 909 0375 40       		.byte	64
+ 910 0376 1B       		.byte	27
+ 911 0377 08       		.byte	8
+ 912 0378 1C       		.byte	28
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 17
+
+
+ 913 0379 54       		.byte	84
+ 914 037a 1E       		.byte	30
+ 915 037b 01       		.byte	1
+ 916 037c 20       		.byte	32
+ 917 037d 08       		.byte	8
+ 918 037e 21       		.byte	33
+ 919 037f 14       		.byte	20
+ 920 0380 22       		.byte	34
+ 921 0381 10       		.byte	16
+ 922 0382 25       		.byte	37
+ 923 0383 40       		.byte	64
+ 924 0384 26       		.byte	38
+ 925 0385 80       		.byte	-128
+ 926 0386 27       		.byte	39
+ 927 0387 41       		.byte	65
+ 928 0388 28       		.byte	40
+ 929 0389 04       		.byte	4
+ 930 038a 2A       		.byte	42
+ 931 038b 01       		.byte	1
+ 932 038c 2B       		.byte	43
+ 933 038d 22       		.byte	34
+ 934 038e 2C       		.byte	44
+ 935 038f 0A       		.byte	10
+ 936 0390 2E       		.byte	46
+ 937 0391 06       		.byte	6
+ 938 0392 31       		.byte	49
+ 939 0393 09       		.byte	9
+ 940 0394 32       		.byte	50
+ 941 0395 20       		.byte	32
+ 942 0396 33       		.byte	51
+ 943 0397 80       		.byte	-128
+ 944 0398 34       		.byte	52
+ 945 0399 08       		.byte	8
+ 946 039a 36       		.byte	54
+ 947 039b 01       		.byte	1
+ 948 039c 37       		.byte	55
+ 949 039d 50       		.byte	80
+ 950 039e 39       		.byte	57
+ 951 039f 2A       		.byte	42
+ 952 03a0 3A       		.byte	58
+ 953 03a1 40       		.byte	64
+ 954 03a2 3C       		.byte	60
+ 955 03a3 20       		.byte	32
+ 956 03a4 3D       		.byte	61
+ 957 03a5 84       		.byte	-124
+ 958 03a6 3F       		.byte	63
+ 959 03a7 01       		.byte	1
+ 960 03a8 58       		.byte	88
+ 961 03a9 04       		.byte	4
+ 962 03aa 5A       		.byte	90
+ 963 03ab 08       		.byte	8
+ 964 03ac 5C       		.byte	92
+ 965 03ad 80       		.byte	-128
+ 966 03ae 5F       		.byte	95
+ 967 03af 80       		.byte	-128
+ 968 03b0 82       		.byte	-126
+ 969 03b1 04       		.byte	4
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 18
+
+
+ 970 03b2 83       		.byte	-125
+ 971 03b3 40       		.byte	64
+ 972 03b4 84       		.byte	-124
+ 973 03b5 08       		.byte	8
+ 974 03b6 85       		.byte	-123
+ 975 03b7 08       		.byte	8
+ 976 03b8 87       		.byte	-121
+ 977 03b9 01       		.byte	1
+ 978 03ba 88       		.byte	-120
+ 979 03bb 08       		.byte	8
+ 980 03bc 89       		.byte	-119
+ 981 03bd 40       		.byte	64
+ 982 03be 8A       		.byte	-118
+ 983 03bf 03       		.byte	3
+ 984 03c0 8C       		.byte	-116
+ 985 03c1 40       		.byte	64
+ 986 03c2 8E       		.byte	-114
+ 987 03c3 10       		.byte	16
+ 988 03c4 8F       		.byte	-113
+ 989 03c5 10       		.byte	16
+ 990 03c6 90       		.byte	-112
+ 991 03c7 80       		.byte	-128
+ 992 03c8 92       		.byte	-110
+ 993 03c9 10       		.byte	16
+ 994 03ca 93       		.byte	-109
+ 995 03cb 81       		.byte	-127
+ 996 03cc 95       		.byte	-107
+ 997 03cd 15       		.byte	21
+ 998 03ce 96       		.byte	-106
+ 999 03cf 28       		.byte	40
+ 1000 03d0 99       		.byte	-103
+ 1001 03d1 01       		.byte	1
+ 1002 03d2 9A       		.byte	-102
+ 1003 03d3 18       		.byte	24
+ 1004 03d4 9C       		.byte	-100
+ 1005 03d5 C0       		.byte	-64
+ 1006 03d6 9D       		.byte	-99
+ 1007 03d7 50       		.byte	80
+ 1008 03d8 9E       		.byte	-98
+ 1009 03d9 21       		.byte	33
+ 1010 03da 9F       		.byte	-97
+ 1011 03db 20       		.byte	32
+ 1012 03dc A0       		.byte	-96
+ 1013 03dd 22       		.byte	34
+ 1014 03de A1       		.byte	-95
+ 1015 03df 02       		.byte	2
+ 1016 03e0 A2       		.byte	-94
+ 1017 03e1 31       		.byte	49
+ 1018 03e2 A3       		.byte	-93
+ 1019 03e3 01       		.byte	1
+ 1020 03e4 A4       		.byte	-92
+ 1021 03e5 90       		.byte	-112
+ 1022 03e6 A6       		.byte	-90
+ 1023 03e7 80       		.byte	-128
+ 1024 03e8 A7       		.byte	-89
+ 1025 03e9 B6       		.byte	-74
+ 1026 03ea AD       		.byte	-83
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 19
+
+
+ 1027 03eb 60       		.byte	96
+ 1028 03ec AE       		.byte	-82
+ 1029 03ed 01       		.byte	1
+ 1030 03ee B0       		.byte	-80
+ 1031 03ef 04       		.byte	4
+ 1032 03f0 B2       		.byte	-78
+ 1033 03f1 01       		.byte	1
+ 1034 03f2 B4       		.byte	-76
+ 1035 03f3 01       		.byte	1
+ 1036 03f4 B7       		.byte	-73
+ 1037 03f5 08       		.byte	8
+ 1038 03f6 C0       		.byte	-64
+ 1039 03f7 D7       		.byte	-41
+ 1040 03f8 C2       		.byte	-62
+ 1041 03f9 EF       		.byte	-17
+ 1042 03fa C4       		.byte	-60
+ 1043 03fb 8F       		.byte	-113
+ 1044 03fc CA       		.byte	-54
+ 1045 03fd FF       		.byte	-1
+ 1046 03fe CC       		.byte	-52
+ 1047 03ff FF       		.byte	-1
+ 1048 0400 CE       		.byte	-50
+ 1049 0401 FF       		.byte	-1
+ 1050 0402 E2       		.byte	-30
+ 1051 0403 02       		.byte	2
+ 1052 0404 E4       		.byte	-28
+ 1053 0405 01       		.byte	1
+ 1054 0406 E6       		.byte	-26
+ 1055 0407 04       		.byte	4
+ 1056 0408 EA       		.byte	-22
+ 1057 0409 0E       		.byte	14
+ 1058 040a EE       		.byte	-18
+ 1059 040b 02       		.byte	2
+ 1060 040c 01       		.byte	1
+ 1061 040d 22       		.byte	34
+ 1062 040e 03       		.byte	3
+ 1063 040f 05       		.byte	5
+ 1064 0410 05       		.byte	5
+ 1065 0411 3A       		.byte	58
+ 1066 0412 07       		.byte	7
+ 1067 0413 04       		.byte	4
+ 1068 0414 09       		.byte	9
+ 1069 0415 10       		.byte	16
+ 1070 0416 0B       		.byte	11
+ 1071 0417 07       		.byte	7
+ 1072 0418 0D       		.byte	13
+ 1073 0419 08       		.byte	8
+ 1074 041a 0E       		.byte	14
+ 1075 041b 01       		.byte	1
+ 1076 041c 0F       		.byte	15
+ 1077 041d 07       		.byte	7
+ 1078 041e 10       		.byte	16
+ 1079 041f 01       		.byte	1
+ 1080 0420 11       		.byte	17
+ 1081 0421 03       		.byte	3
+ 1082 0422 14       		.byte	20
+ 1083 0423 01       		.byte	1
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 20
+
+
+ 1084 0424 15       		.byte	21
+ 1085 0425 01       		.byte	1
+ 1086 0426 19       		.byte	25
+ 1087 0427 05       		.byte	5
+ 1088 0428 1B       		.byte	27
+ 1089 0429 78       		.byte	120
+ 1090 042a 1D       		.byte	29
+ 1091 042b 40       		.byte	64
+ 1092 042c 1F       		.byte	31
+ 1093 042d 07       		.byte	7
+ 1094 042e 21       		.byte	33
+ 1095 042f 03       		.byte	3
+ 1096 0430 25       		.byte	37
+ 1097 0431 01       		.byte	1
+ 1098 0432 29       		.byte	41
+ 1099 0433 01       		.byte	1
+ 1100 0434 2D       		.byte	45
+ 1101 0435 7F       		.byte	127
+ 1102 0436 33       		.byte	51
+ 1103 0437 7F       		.byte	127
+ 1104 0438 36       		.byte	54
+ 1105 0439 01       		.byte	1
+ 1106 043a 3F       		.byte	63
+ 1107 043b 04       		.byte	4
+ 1108 043c 58       		.byte	88
+ 1109 043d 04       		.byte	4
+ 1110 043e 59       		.byte	89
+ 1111 043f 04       		.byte	4
+ 1112 0440 5C       		.byte	92
+ 1113 0441 01       		.byte	1
+ 1114 0442 5F       		.byte	95
+ 1115 0443 01       		.byte	1
+ 1116 0444 81       		.byte	-127
+ 1117 0445 7F       		.byte	127
+ 1118 0446 84       		.byte	-124
+ 1119 0447 0A       		.byte	10
+ 1120 0448 86       		.byte	-122
+ 1121 0449 10       		.byte	16
+ 1122 044a 89       		.byte	-119
+ 1123 044b 0F       		.byte	15
+ 1124 044c 8A       		.byte	-118
+ 1125 044d 01       		.byte	1
+ 1126 044e 8E       		.byte	-114
+ 1127 044f 02       		.byte	2
+ 1128 0450 8F       		.byte	-113
+ 1129 0451 20       		.byte	32
+ 1130 0452 90       		.byte	-112
+ 1131 0453 24       		.byte	36
+ 1132 0454 91       		.byte	-111
+ 1133 0455 44       		.byte	68
+ 1134 0456 93       		.byte	-109
+ 1135 0457 08       		.byte	8
+ 1136 0458 94       		.byte	-108
+ 1137 0459 0A       		.byte	10
+ 1138 045a 95       		.byte	-107
+ 1139 045b 80       		.byte	-128
+ 1140 045c 96       		.byte	-106
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 21
+
+
+ 1141 045d 10       		.byte	16
+ 1142 045e 97       		.byte	-105
+ 1143 045f 14       		.byte	20
+ 1144 0460 99       		.byte	-103
+ 1145 0461 90       		.byte	-112
+ 1146 0462 9A       		.byte	-102
+ 1147 0463 02       		.byte	2
+ 1148 0464 9B       		.byte	-101
+ 1149 0465 01       		.byte	1
+ 1150 0466 9C       		.byte	-100
+ 1151 0467 24       		.byte	36
+ 1152 0468 A0       		.byte	-96
+ 1153 0469 23       		.byte	35
+ 1154 046a A1       		.byte	-95
+ 1155 046b 90       		.byte	-112
+ 1156 046c A3       		.byte	-93
+ 1157 046d 02       		.byte	2
+ 1158 046e A4       		.byte	-92
+ 1159 046f 03       		.byte	3
+ 1160 0470 A9       		.byte	-87
+ 1161 0471 80       		.byte	-128
+ 1162 0472 AB       		.byte	-85
+ 1163 0473 08       		.byte	8
+ 1164 0474 AD       		.byte	-83
+ 1165 0475 80       		.byte	-128
+ 1166 0476 AF       		.byte	-81
+ 1167 0477 18       		.byte	24
+ 1168 0478 B0       		.byte	-80
+ 1169 0479 20       		.byte	32
+ 1170 047a B1       		.byte	-79
+ 1171 047b 40       		.byte	64
+ 1172 047c B2       		.byte	-78
+ 1173 047d 03       		.byte	3
+ 1174 047e B3       		.byte	-77
+ 1175 047f 3F       		.byte	63
+ 1176 0480 B4       		.byte	-76
+ 1177 0481 1C       		.byte	28
+ 1178 0482 B6       		.byte	-74
+ 1179 0483 04       		.byte	4
+ 1180 0484 B7       		.byte	-73
+ 1181 0485 80       		.byte	-128
+ 1182 0486 B8       		.byte	-72
+ 1183 0487 A2       		.byte	-94
+ 1184 0488 B9       		.byte	-71
+ 1185 0489 8A       		.byte	-118
+ 1186 048a BE       		.byte	-66
+ 1187 048b 50       		.byte	80
+ 1188 048c BF       		.byte	-65
+ 1189 048d 40       		.byte	64
+ 1190 048e C0       		.byte	-64
+ 1191 048f 14       		.byte	20
+ 1192 0490 C6       		.byte	-58
+ 1193 0491 52       		.byte	82
+ 1194 0492 C8       		.byte	-56
+ 1195 0493 0C       		.byte	12
+ 1196 0494 C9       		.byte	-55
+ 1197 0495 FF       		.byte	-1
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 22
+
+
+ 1198 0496 CA       		.byte	-54
+ 1199 0497 FF       		.byte	-1
+ 1200 0498 CB       		.byte	-53
+ 1201 0499 FF       		.byte	-1
+ 1202 049a CC       		.byte	-52
+ 1203 049b 42       		.byte	66
+ 1204 049c CD       		.byte	-51
+ 1205 049d A0       		.byte	-96
+ 1206 049e CE       		.byte	-50
+ 1207 049f 70       		.byte	112
+ 1208 04a0 D0       		.byte	-48
+ 1209 04a1 08       		.byte	8
+ 1210 04a2 D1       		.byte	-47
+ 1211 04a3 10       		.byte	16
+ 1212 04a4 D4       		.byte	-44
+ 1213 04a5 20       		.byte	32
+ 1214 04a6 D6       		.byte	-42
+ 1215 04a7 04       		.byte	4
+ 1216 04a8 D8       		.byte	-40
+ 1217 04a9 04       		.byte	4
+ 1218 04aa D9       		.byte	-39
+ 1219 04ab 04       		.byte	4
+ 1220 04ac DA       		.byte	-38
+ 1221 04ad 04       		.byte	4
+ 1222 04ae DB       		.byte	-37
+ 1223 04af 04       		.byte	4
+ 1224 04b0 DF       		.byte	-33
+ 1225 04b1 01       		.byte	1
+ 1226 04b2 E1       		.byte	-31
+ 1227 04b3 48       		.byte	72
+ 1228 04b4 E2       		.byte	-30
+ 1229 04b5 40       		.byte	64
+ 1230 04b6 E3       		.byte	-29
+ 1231 04b7 48       		.byte	72
+ 1232 04b8 E4       		.byte	-28
+ 1233 04b9 80       		.byte	-128
+ 1234 04ba E5       		.byte	-27
+ 1235 04bb 48       		.byte	72
+ 1236 04bc E6       		.byte	-26
+ 1237 04bd 80       		.byte	-128
+ 1238 04be E7       		.byte	-25
+ 1239 04bf 48       		.byte	72
+ 1240 04c0 00       		.byte	0
+ 1241 04c1 18       		.byte	24
+ 1242 04c2 03       		.byte	3
+ 1243 04c3 02       		.byte	2
+ 1244 04c4 05       		.byte	5
+ 1245 04c5 42       		.byte	66
+ 1246 04c6 07       		.byte	7
+ 1247 04c7 80       		.byte	-128
+ 1248 04c8 09       		.byte	9
+ 1249 04c9 84       		.byte	-124
+ 1250 04ca 0A       		.byte	10
+ 1251 04cb 48       		.byte	72
+ 1252 04cc 0B       		.byte	11
+ 1253 04cd 40       		.byte	64
+ 1254 04ce 0C       		.byte	12
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 23
+
+
+ 1255 04cf 22       		.byte	34
+ 1256 04d0 0E       		.byte	14
+ 1257 04d1 08       		.byte	8
+ 1258 04d2 0F       		.byte	15
+ 1259 04d3 20       		.byte	32
+ 1260 04d4 11       		.byte	17
+ 1261 04d5 01       		.byte	1
+ 1262 04d6 13       		.byte	19
+ 1263 04d7 08       		.byte	8
+ 1264 04d8 18       		.byte	24
+ 1265 04d9 10       		.byte	16
+ 1266 04da 19       		.byte	25
+ 1267 04db 13       		.byte	19
+ 1268 04dc 1A       		.byte	26
+ 1269 04dd 01       		.byte	1
+ 1270 04de 1D       		.byte	29
+ 1271 04df 40       		.byte	64
+ 1272 04e0 1F       		.byte	31
+ 1273 04e1 40       		.byte	64
+ 1274 04e2 21       		.byte	33
+ 1275 04e3 01       		.byte	1
+ 1276 04e4 23       		.byte	35
+ 1277 04e5 11       		.byte	17
+ 1278 04e6 27       		.byte	39
+ 1279 04e7 10       		.byte	16
+ 1280 04e8 29       		.byte	41
+ 1281 04e9 20       		.byte	32
+ 1282 04ea 2A       		.byte	42
+ 1283 04eb 01       		.byte	1
+ 1284 04ec 2B       		.byte	43
+ 1285 04ed 02       		.byte	2
+ 1286 04ee 2C       		.byte	44
+ 1287 04ef 02       		.byte	2
+ 1288 04f0 2E       		.byte	46
+ 1289 04f1 18       		.byte	24
+ 1290 04f2 2F       		.byte	47
+ 1291 04f3 44       		.byte	68
+ 1292 04f4 31       		.byte	49
+ 1293 04f5 01       		.byte	1
+ 1294 04f6 32       		.byte	50
+ 1295 04f7 14       		.byte	20
+ 1296 04f8 36       		.byte	54
+ 1297 04f9 85       		.byte	-123
+ 1298 04fa 37       		.byte	55
+ 1299 04fb 20       		.byte	32
+ 1300 04fc 39       		.byte	57
+ 1301 04fd 01       		.byte	1
+ 1302 04fe 3B       		.byte	59
+ 1303 04ff 60       		.byte	96
+ 1304 0500 3C       		.byte	60
+ 1305 0501 20       		.byte	32
+ 1306 0502 3D       		.byte	61
+ 1307 0503 84       		.byte	-124
+ 1308 0504 3F       		.byte	63
+ 1309 0505 02       		.byte	2
+ 1310 0506 41       		.byte	65
+ 1311 0507 02       		.byte	2
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 24
+
+
+ 1312 0508 42       		.byte	66
+ 1313 0509 01       		.byte	1
+ 1314 050a 51       		.byte	81
+ 1315 050b 80       		.byte	-128
+ 1316 050c 53       		.byte	83
+ 1317 050d 10       		.byte	16
+ 1318 050e 58       		.byte	88
+ 1319 050f 22       		.byte	34
+ 1320 0510 59       		.byte	89
+ 1321 0511 08       		.byte	8
+ 1322 0512 5B       		.byte	91
+ 1323 0513 40       		.byte	64
+ 1324 0514 5E       		.byte	94
+ 1325 0515 04       		.byte	4
+ 1326 0516 5F       		.byte	95
+ 1327 0517 04       		.byte	4
+ 1328 0518 60       		.byte	96
+ 1329 0519 04       		.byte	4
+ 1330 051a 63       		.byte	99
+ 1331 051b 81       		.byte	-127
+ 1332 051c 83       		.byte	-125
+ 1333 051d 44       		.byte	68
+ 1334 051e 85       		.byte	-123
+ 1335 051f 04       		.byte	4
+ 1336 0520 87       		.byte	-121
+ 1337 0521 04       		.byte	4
+ 1338 0522 89       		.byte	-119
+ 1339 0523 15       		.byte	21
+ 1340 0524 8A       		.byte	-118
+ 1341 0525 80       		.byte	-128
+ 1342 0526 8E       		.byte	-114
+ 1343 0527 01       		.byte	1
+ 1344 0528 90       		.byte	-112
+ 1345 0529 04       		.byte	4
+ 1346 052a 91       		.byte	-111
+ 1347 052b 08       		.byte	8
+ 1348 052c 92       		.byte	-110
+ 1349 052d 70       		.byte	112
+ 1350 052e 95       		.byte	-107
+ 1351 052f 16       		.byte	22
+ 1352 0530 96       		.byte	-106
+ 1353 0531 0C       		.byte	12
+ 1354 0532 97       		.byte	-105
+ 1355 0533 10       		.byte	16
+ 1356 0534 99       		.byte	-103
+ 1357 0535 08       		.byte	8
+ 1358 0536 9A       		.byte	-102
+ 1359 0537 09       		.byte	9
+ 1360 0538 9B       		.byte	-101
+ 1361 0539 09       		.byte	9
+ 1362 053a 9C       		.byte	-100
+ 1363 053b 40       		.byte	64
+ 1364 053c 9D       		.byte	-99
+ 1365 053d 50       		.byte	80
+ 1366 053e 9F       		.byte	-97
+ 1367 053f 90       		.byte	-112
+ 1368 0540 A0       		.byte	-96
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 25
+
+
+ 1369 0541 26       		.byte	38
+ 1370 0542 A1       		.byte	-95
+ 1371 0543 06       		.byte	6
+ 1372 0544 A3       		.byte	-93
+ 1373 0545 01       		.byte	1
+ 1374 0546 A4       		.byte	-92
+ 1375 0547 90       		.byte	-112
+ 1376 0548 A5       		.byte	-91
+ 1377 0549 01       		.byte	1
+ 1378 054a A7       		.byte	-89
+ 1379 054b 86       		.byte	-122
+ 1380 054c A9       		.byte	-87
+ 1381 054d 04       		.byte	4
+ 1382 054e AA       		.byte	-86
+ 1383 054f 01       		.byte	1
+ 1384 0550 AE       		.byte	-82
+ 1385 0551 20       		.byte	32
+ 1386 0552 AF       		.byte	-81
+ 1387 0553 08       		.byte	8
+ 1388 0554 B1       		.byte	-79
+ 1389 0555 02       		.byte	2
+ 1390 0556 B2       		.byte	-78
+ 1391 0557 10       		.byte	16
+ 1392 0558 B3       		.byte	-77
+ 1393 0559 20       		.byte	32
+ 1394 055a C0       		.byte	-64
+ 1395 055b 87       		.byte	-121
+ 1396 055c C2       		.byte	-62
+ 1397 055d 3F       		.byte	63
+ 1398 055e C4       		.byte	-60
+ 1399 055f 0C       		.byte	12
+ 1400 0560 CA       		.byte	-54
+ 1401 0561 FD       		.byte	-3
+ 1402 0562 CC       		.byte	-52
+ 1403 0563 F7       		.byte	-9
+ 1404 0564 CE       		.byte	-50
+ 1405 0565 FD       		.byte	-3
+ 1406 0566 D0       		.byte	-48
+ 1407 0567 09       		.byte	9
+ 1408 0568 D6       		.byte	-42
+ 1409 0569 0F       		.byte	15
+ 1410 056a D8       		.byte	-40
+ 1411 056b 0D       		.byte	13
+ 1412 056c E0       		.byte	-32
+ 1413 056d 08       		.byte	8
+ 1414 056e E4       		.byte	-28
+ 1415 056f 08       		.byte	8
+ 1416 0570 E6       		.byte	-26
+ 1417 0571 04       		.byte	4
+ 1418 0572 EA       		.byte	-22
+ 1419 0573 0C       		.byte	12
+ 1420 0574 00       		.byte	0
+ 1421 0575 42       		.byte	66
+ 1422 0576 02       		.byte	2
+ 1423 0577 09       		.byte	9
+ 1424 0578 04       		.byte	4
+ 1425 0579 90       		.byte	-112
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 26
+
+
+ 1426 057a 06       		.byte	6
+ 1427 057b 0B       		.byte	11
+ 1428 057c 08       		.byte	8
+ 1429 057d 1F       		.byte	31
+ 1430 057e 09       		.byte	9
+ 1431 057f 01       		.byte	1
+ 1432 0580 0C       		.byte	12
+ 1433 0581 48       		.byte	72
+ 1434 0582 0E       		.byte	14
+ 1435 0583 02       		.byte	2
+ 1436 0584 10       		.byte	16
+ 1437 0585 01       		.byte	1
+ 1438 0586 11       		.byte	17
+ 1439 0587 02       		.byte	2
+ 1440 0588 14       		.byte	20
+ 1441 0589 03       		.byte	3
+ 1442 058a 16       		.byte	22
+ 1443 058b 20       		.byte	32
+ 1444 058c 18       		.byte	24
+ 1445 058d 4F       		.byte	79
+ 1446 058e 1C       		.byte	28
+ 1447 058f 01       		.byte	1
+ 1448 0590 20       		.byte	32
+ 1449 0591 40       		.byte	64
+ 1450 0592 22       		.byte	34
+ 1451 0593 14       		.byte	20
+ 1452 0594 24       		.byte	36
+ 1453 0595 40       		.byte	64
+ 1454 0596 26       		.byte	38
+ 1455 0597 0B       		.byte	11
+ 1456 0598 28       		.byte	40
+ 1457 0599 03       		.byte	3
+ 1458 059a 2E       		.byte	46
+ 1459 059b 01       		.byte	1
+ 1460 059c 32       		.byte	50
+ 1461 059d E0       		.byte	-32
+ 1462 059e 33       		.byte	51
+ 1463 059f 02       		.byte	2
+ 1464 05a0 34       		.byte	52
+ 1465 05a1 1F       		.byte	31
+ 1466 05a2 35       		.byte	53
+ 1467 05a3 01       		.byte	1
+ 1468 05a4 36       		.byte	54
+ 1469 05a5 40       		.byte	64
+ 1470 05a6 37       		.byte	55
+ 1471 05a7 01       		.byte	1
+ 1472 05a8 38       		.byte	56
+ 1473 05a9 88       		.byte	-120
+ 1474 05aa 3E       		.byte	62
+ 1475 05ab 44       		.byte	68
+ 1476 05ac 3F       		.byte	63
+ 1477 05ad 04       		.byte	4
+ 1478 05ae 40       		.byte	64
+ 1479 05af 36       		.byte	54
+ 1480 05b0 44       		.byte	68
+ 1481 05b1 01       		.byte	1
+ 1482 05b2 45       		.byte	69
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 27
+
+
+ 1483 05b3 0B       		.byte	11
+ 1484 05b4 46       		.byte	70
+ 1485 05b5 D0       		.byte	-48
+ 1486 05b6 48       		.byte	72
+ 1487 05b7 09       		.byte	9
+ 1488 05b8 49       		.byte	73
+ 1489 05b9 FF       		.byte	-1
+ 1490 05ba 4A       		.byte	74
+ 1491 05bb 7F       		.byte	127
+ 1492 05bc 4B       		.byte	75
+ 1493 05bd FF       		.byte	-1
+ 1494 05be 4C       		.byte	76
+ 1495 05bf 42       		.byte	66
+ 1496 05c0 4D       		.byte	77
+ 1497 05c1 A0       		.byte	-96
+ 1498 05c2 4E       		.byte	78
+ 1499 05c3 70       		.byte	112
+ 1500 05c4 50       		.byte	80
+ 1501 05c5 0C       		.byte	12
+ 1502 05c6 58       		.byte	88
+ 1503 05c7 04       		.byte	4
+ 1504 05c8 59       		.byte	89
+ 1505 05c9 04       		.byte	4
+ 1506 05ca 5A       		.byte	90
+ 1507 05cb 04       		.byte	4
+ 1508 05cc 5C       		.byte	92
+ 1509 05cd 01       		.byte	1
+ 1510 05ce 5D       		.byte	93
+ 1511 05cf 01       		.byte	1
+ 1512 05d0 5F       		.byte	95
+ 1513 05d1 01       		.byte	1
+ 1514 05d2 61       		.byte	97
+ 1515 05d3 09       		.byte	9
+ 1516 05d4 62       		.byte	98
+ 1517 05d5 40       		.byte	64
+ 1518 05d6 63       		.byte	99
+ 1519 05d7 09       		.byte	9
+ 1520 05d8 64       		.byte	100
+ 1521 05d9 30       		.byte	48
+ 1522 05da 65       		.byte	101
+ 1523 05db 09       		.byte	9
+ 1524 05dc 82       		.byte	-126
+ 1525 05dd 0F       		.byte	15
+ 1526 05de 84       		.byte	-124
+ 1527 05df 0F       		.byte	15
+ 1528 05e0 88       		.byte	-120
+ 1529 05e1 90       		.byte	-112
+ 1530 05e2 8B       		.byte	-117
+ 1531 05e3 02       		.byte	2
+ 1532 05e4 8E       		.byte	-114
+ 1533 05e5 04       		.byte	4
+ 1534 05e6 8F       		.byte	-113
+ 1535 05e7 02       		.byte	2
+ 1536 05e8 90       		.byte	-112
+ 1537 05e9 90       		.byte	-112
+ 1538 05ea 93       		.byte	-109
+ 1539 05eb 01       		.byte	1
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 28
+
+
+ 1540 05ec 96       		.byte	-106
+ 1541 05ed 08       		.byte	8
+ 1542 05ee 9A       		.byte	-102
+ 1543 05ef 0F       		.byte	15
+ 1544 05f0 9C       		.byte	-100
+ 1545 05f1 20       		.byte	32
+ 1546 05f2 9E       		.byte	-98
+ 1547 05f3 42       		.byte	66
+ 1548 05f4 A2       		.byte	-94
+ 1549 05f5 08       		.byte	8
+ 1550 05f6 A4       		.byte	-92
+ 1551 05f7 20       		.byte	32
+ 1552 05f8 A6       		.byte	-90
+ 1553 05f9 41       		.byte	65
+ 1554 05fa A8       		.byte	-88
+ 1555 05fb 80       		.byte	-128
+ 1556 05fc AB       		.byte	-85
+ 1557 05fd 04       		.byte	4
+ 1558 05fe AC       		.byte	-84
+ 1559 05ff 0F       		.byte	15
+ 1560 0600 B0       		.byte	-80
+ 1561 0601 0F       		.byte	15
+ 1562 0602 B1       		.byte	-79
+ 1563 0603 01       		.byte	1
+ 1564 0604 B2       		.byte	-78
+ 1565 0605 80       		.byte	-128
+ 1566 0606 B3       		.byte	-77
+ 1567 0607 02       		.byte	2
+ 1568 0608 B4       		.byte	-76
+ 1569 0609 70       		.byte	112
+ 1570 060a B6       		.byte	-74
+ 1571 060b 10       		.byte	16
+ 1572 060c B7       		.byte	-73
+ 1573 060d 04       		.byte	4
+ 1574 060e B8       		.byte	-72
+ 1575 060f A8       		.byte	-88
+ 1576 0610 BE       		.byte	-66
+ 1577 0611 51       		.byte	81
+ 1578 0612 BF       		.byte	-65
+ 1579 0613 04       		.byte	4
+ 1580 0614 C0       		.byte	-64
+ 1581 0615 12       		.byte	18
+ 1582 0616 C5       		.byte	-59
+ 1583 0617 50       		.byte	80
+ 1584 0618 C7       		.byte	-57
+ 1585 0619 02       		.byte	2
+ 1586 061a C8       		.byte	-56
+ 1587 061b 12       		.byte	18
+ 1588 061c C9       		.byte	-55
+ 1589 061d FF       		.byte	-1
+ 1590 061e CA       		.byte	-54
+ 1591 061f FF       		.byte	-1
+ 1592 0620 CB       		.byte	-53
+ 1593 0621 FF       		.byte	-1
+ 1594 0622 CC       		.byte	-52
+ 1595 0623 42       		.byte	66
+ 1596 0624 CD       		.byte	-51
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 29
+
+
+ 1597 0625 A0       		.byte	-96
+ 1598 0626 CE       		.byte	-50
+ 1599 0627 70       		.byte	112
+ 1600 0628 D0       		.byte	-48
+ 1601 0629 08       		.byte	8
+ 1602 062a D1       		.byte	-47
+ 1603 062b 10       		.byte	16
+ 1604 062c D8       		.byte	-40
+ 1605 062d 04       		.byte	4
+ 1606 062e D9       		.byte	-39
+ 1607 062f 04       		.byte	4
+ 1608 0630 DA       		.byte	-38
+ 1609 0631 04       		.byte	4
+ 1610 0632 DC       		.byte	-36
+ 1611 0633 11       		.byte	17
+ 1612 0634 DD       		.byte	-35
+ 1613 0635 01       		.byte	1
+ 1614 0636 DF       		.byte	-33
+ 1615 0637 01       		.byte	1
+ 1616 0638 E1       		.byte	-31
+ 1617 0639 48       		.byte	72
+ 1618 063a E2       		.byte	-30
+ 1619 063b 40       		.byte	64
+ 1620 063c E3       		.byte	-29
+ 1621 063d 48       		.byte	72
+ 1622 063e E4       		.byte	-28
+ 1623 063f 80       		.byte	-128
+ 1624 0640 E5       		.byte	-27
+ 1625 0641 48       		.byte	72
+ 1626 0642 E6       		.byte	-26
+ 1627 0643 80       		.byte	-128
+ 1628 0644 E7       		.byte	-25
+ 1629 0645 48       		.byte	72
+ 1630 0646 00       		.byte	0
+ 1631 0647 82       		.byte	-126
+ 1632 0648 01       		.byte	1
+ 1633 0649 0C       		.byte	12
+ 1634 064a 02       		.byte	2
+ 1635 064b 01       		.byte	1
+ 1636 064c 03       		.byte	3
+ 1637 064d 08       		.byte	8
+ 1638 064e 05       		.byte	5
+ 1639 064f 18       		.byte	24
+ 1640 0650 06       		.byte	6
+ 1641 0651 41       		.byte	65
+ 1642 0652 08       		.byte	8
+ 1643 0653 80       		.byte	-128
+ 1644 0654 0A       		.byte	10
+ 1645 0655 84       		.byte	-124
+ 1646 0656 0B       		.byte	11
+ 1647 0657 10       		.byte	16
+ 1648 0658 0C       		.byte	12
+ 1649 0659 20       		.byte	32
+ 1650 065a 0F       		.byte	15
+ 1651 065b 62       		.byte	98
+ 1652 065c 10       		.byte	16
+ 1653 065d 28       		.byte	40
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 30
+
+
+ 1654 065e 11       		.byte	17
+ 1655 065f 80       		.byte	-128
+ 1656 0660 12       		.byte	18
+ 1657 0661 40       		.byte	64
+ 1658 0662 14       		.byte	20
+ 1659 0663 A0       		.byte	-96
+ 1660 0664 15       		.byte	21
+ 1661 0665 51       		.byte	81
+ 1662 0666 19       		.byte	25
+ 1663 0667 08       		.byte	8
+ 1664 0668 1A       		.byte	26
+ 1665 0669 A9       		.byte	-87
+ 1666 066a 1D       		.byte	29
+ 1667 066b 4C       		.byte	76
+ 1668 066c 1F       		.byte	31
+ 1669 066d 14       		.byte	20
+ 1670 066e 20       		.byte	32
+ 1671 066f 02       		.byte	2
+ 1672 0670 21       		.byte	33
+ 1673 0671 04       		.byte	4
+ 1674 0672 22       		.byte	34
+ 1675 0673 02       		.byte	2
+ 1676 0674 24       		.byte	36
+ 1677 0675 02       		.byte	2
+ 1678 0676 26       		.byte	38
+ 1679 0677 14       		.byte	20
+ 1680 0678 27       		.byte	39
+ 1681 0679 08       		.byte	8
+ 1682 067a 28       		.byte	40
+ 1683 067b 40       		.byte	64
+ 1684 067c 2A       		.byte	42
+ 1685 067d 12       		.byte	18
+ 1686 067e 30       		.byte	48
+ 1687 067f 01       		.byte	1
+ 1688 0680 35       		.byte	53
+ 1689 0681 02       		.byte	2
+ 1690 0682 38       		.byte	56
+ 1691 0683 80       		.byte	-128
+ 1692 0684 39       		.byte	57
+ 1693 0685 20       		.byte	32
+ 1694 0686 3E       		.byte	62
+ 1695 0687 10       		.byte	16
+ 1696 0688 40       		.byte	64
+ 1697 0689 04       		.byte	4
+ 1698 068a 42       		.byte	66
+ 1699 068b 01       		.byte	1
+ 1700 068c 44       		.byte	68
+ 1701 068d 01       		.byte	1
+ 1702 068e 45       		.byte	69
+ 1703 068f 08       		.byte	8
+ 1704 0690 48       		.byte	72
+ 1705 0691 08       		.byte	8
+ 1706 0692 49       		.byte	73
+ 1707 0693 10       		.byte	16
+ 1708 0694 4A       		.byte	74
+ 1709 0695 80       		.byte	-128
+ 1710 0696 4E       		.byte	78
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 31
+
+
+ 1711 0697 04       		.byte	4
+ 1712 0698 4F       		.byte	79
+ 1713 0699 04       		.byte	4
+ 1714 069a 53       		.byte	83
+ 1715 069b 08       		.byte	8
+ 1716 069c 57       		.byte	87
+ 1717 069d 30       		.byte	48
+ 1718 069e 5C       		.byte	92
+ 1719 069f 20       		.byte	32
+ 1720 06a0 5F       		.byte	95
+ 1721 06a1 10       		.byte	16
+ 1722 06a2 83       		.byte	-125
+ 1723 06a3 20       		.byte	32
+ 1724 06a4 87       		.byte	-121
+ 1725 06a5 01       		.byte	1
+ 1726 06a6 88       		.byte	-120
+ 1727 06a7 80       		.byte	-128
+ 1728 06a8 89       		.byte	-119
+ 1729 06a9 08       		.byte	8
+ 1730 06aa 8A       		.byte	-118
+ 1731 06ab 84       		.byte	-124
+ 1732 06ac 8B       		.byte	-117
+ 1733 06ad 18       		.byte	24
+ 1734 06ae 8D       		.byte	-115
+ 1735 06af 01       		.byte	1
+ 1736 06b0 8F       		.byte	-113
+ 1737 06b1 10       		.byte	16
+ 1738 06b2 90       		.byte	-112
+ 1739 06b3 84       		.byte	-124
+ 1740 06b4 91       		.byte	-111
+ 1741 06b5 A0       		.byte	-96
+ 1742 06b6 92       		.byte	-110
+ 1743 06b7 10       		.byte	16
+ 1744 06b8 95       		.byte	-107
+ 1745 06b9 09       		.byte	9
+ 1746 06ba 96       		.byte	-106
+ 1747 06bb 20       		.byte	32
+ 1748 06bc 97       		.byte	-105
+ 1749 06bd 04       		.byte	4
+ 1750 06be 98       		.byte	-104
+ 1751 06bf 01       		.byte	1
+ 1752 06c0 99       		.byte	-103
+ 1753 06c1 32       		.byte	50
+ 1754 06c2 9A       		.byte	-102
+ 1755 06c3 4C       		.byte	76
+ 1756 06c4 9B       		.byte	-101
+ 1757 06c5 01       		.byte	1
+ 1758 06c6 9C       		.byte	-100
+ 1759 06c7 20       		.byte	32
+ 1760 06c8 9D       		.byte	-99
+ 1761 06c9 01       		.byte	1
+ 1762 06ca 9E       		.byte	-98
+ 1763 06cb 82       		.byte	-126
+ 1764 06cc 9F       		.byte	-97
+ 1765 06cd 54       		.byte	84
+ 1766 06ce A0       		.byte	-96
+ 1767 06cf C0       		.byte	-64
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 32
+
+
+ 1768 06d0 A1       		.byte	-95
+ 1769 06d1 40       		.byte	64
+ 1770 06d2 A2       		.byte	-94
+ 1771 06d3 01       		.byte	1
+ 1772 06d4 A3       		.byte	-93
+ 1773 06d5 42       		.byte	66
+ 1774 06d6 A5       		.byte	-91
+ 1775 06d7 11       		.byte	17
+ 1776 06d8 A6       		.byte	-90
+ 1777 06d9 14       		.byte	20
+ 1778 06da A8       		.byte	-88
+ 1779 06db 80       		.byte	-128
+ 1780 06dc A9       		.byte	-87
+ 1781 06dd 20       		.byte	32
+ 1782 06de AE       		.byte	-82
+ 1783 06df 08       		.byte	8
+ 1784 06e0 AF       		.byte	-81
+ 1785 06e1 02       		.byte	2
+ 1786 06e2 B0       		.byte	-80
+ 1787 06e3 08       		.byte	8
+ 1788 06e4 B2       		.byte	-78
+ 1789 06e5 10       		.byte	16
+ 1790 06e6 B3       		.byte	-77
+ 1791 06e7 04       		.byte	4
+ 1792 06e8 C0       		.byte	-64
+ 1793 06e9 FF       		.byte	-1
+ 1794 06ea C2       		.byte	-62
+ 1795 06eb FF       		.byte	-1
+ 1796 06ec C4       		.byte	-60
+ 1797 06ed FF       		.byte	-1
+ 1798 06ee CA       		.byte	-54
+ 1799 06ef 04       		.byte	4
+ 1800 06f0 CC       		.byte	-52
+ 1801 06f1 81       		.byte	-127
+ 1802 06f2 CE       		.byte	-50
+ 1803 06f3 2C       		.byte	44
+ 1804 06f4 D0       		.byte	-48
+ 1805 06f5 5C       		.byte	92
+ 1806 06f6 D2       		.byte	-46
+ 1807 06f7 20       		.byte	32
+ 1808 06f8 E0       		.byte	-32
+ 1809 06f9 08       		.byte	8
+ 1810 06fa E2       		.byte	-30
+ 1811 06fb B0       		.byte	-80
+ 1812 06fc E6       		.byte	-26
+ 1813 06fd 80       		.byte	-128
+ 1814 06fe EA       		.byte	-22
+ 1815 06ff 80       		.byte	-128
+ 1816 0700 EC       		.byte	-20
+ 1817 0701 20       		.byte	32
+ 1818 0702 05       		.byte	5
+ 1819 0703 18       		.byte	24
+ 1820 0704 09       		.byte	9
+ 1821 0705 08       		.byte	8
+ 1822 0706 11       		.byte	17
+ 1823 0707 04       		.byte	4
+ 1824 0708 15       		.byte	21
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 33
+
+
+ 1825 0709 1C       		.byte	28
+ 1826 070a 16       		.byte	22
+ 1827 070b 02       		.byte	2
+ 1828 070c 17       		.byte	23
+ 1829 070d E1       		.byte	-31
+ 1830 070e 1B       		.byte	27
+ 1831 070f 04       		.byte	4
+ 1832 0710 1C       		.byte	28
+ 1833 0711 01       		.byte	1
+ 1834 0712 1D       		.byte	29
+ 1835 0713 9C       		.byte	-100
+ 1836 0714 1F       		.byte	31
+ 1837 0715 62       		.byte	98
+ 1838 0716 21       		.byte	33
+ 1839 0717 FF       		.byte	-1
+ 1840 0718 25       		.byte	37
+ 1841 0719 E7       		.byte	-25
+ 1842 071a 27       		.byte	39
+ 1843 071b 18       		.byte	24
+ 1844 071c 2B       		.byte	43
+ 1845 071d A3       		.byte	-93
+ 1846 071e 2D       		.byte	45
+ 1847 071f 10       		.byte	16
+ 1848 0720 30       		.byte	48
+ 1849 0721 01       		.byte	1
+ 1850 0722 31       		.byte	49
+ 1851 0723 40       		.byte	64
+ 1852 0724 33       		.byte	51
+ 1853 0725 38       		.byte	56
+ 1854 0726 35       		.byte	53
+ 1855 0727 98       		.byte	-104
+ 1856 0728 36       		.byte	54
+ 1857 0729 02       		.byte	2
+ 1858 072a 37       		.byte	55
+ 1859 072b 1F       		.byte	31
+ 1860 072c 39       		.byte	57
+ 1861 072d 02       		.byte	2
+ 1862 072e 3B       		.byte	59
+ 1863 072f 88       		.byte	-120
+ 1864 0730 3E       		.byte	62
+ 1865 0731 01       		.byte	1
+ 1866 0732 58       		.byte	88
+ 1867 0733 04       		.byte	4
+ 1868 0734 59       		.byte	89
+ 1869 0735 04       		.byte	4
+ 1870 0736 5C       		.byte	92
+ 1871 0737 30       		.byte	48
+ 1872 0738 5F       		.byte	95
+ 1873 0739 01       		.byte	1
+ 1874 073a 81       		.byte	-127
+ 1875 073b 90       		.byte	-112
+ 1876 073c 83       		.byte	-125
+ 1877 073d 0B       		.byte	11
+ 1878 073e 84       		.byte	-124
+ 1879 073f 9C       		.byte	-100
+ 1880 0740 86       		.byte	-122
+ 1881 0741 22       		.byte	34
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 34
+
+
+ 1882 0742 87       		.byte	-121
+ 1883 0743 01       		.byte	1
+ 1884 0744 88       		.byte	-120
+ 1885 0745 30       		.byte	48
+ 1886 0746 89       		.byte	-119
+ 1887 0747 48       		.byte	72
+ 1888 0748 8A       		.byte	-118
+ 1889 0749 4C       		.byte	76
+ 1890 074a 8B       		.byte	-117
+ 1891 074b 02       		.byte	2
+ 1892 074c 8C       		.byte	-116
+ 1893 074d 2C       		.byte	44
+ 1894 074e 8D       		.byte	-115
+ 1895 074f 4F       		.byte	79
+ 1896 0750 8E       		.byte	-114
+ 1897 0751 D1       		.byte	-47
+ 1898 0752 91       		.byte	-111
+ 1899 0753 03       		.byte	3
+ 1900 0754 93       		.byte	-109
+ 1901 0755 20       		.byte	32
+ 1902 0756 94       		.byte	-108
+ 1903 0757 80       		.byte	-128
+ 1904 0758 95       		.byte	-107
+ 1905 0759 40       		.byte	64
+ 1906 075a 96       		.byte	-106
+ 1907 075b 10       		.byte	16
+ 1908 075c 97       		.byte	-105
+ 1909 075d 0B       		.byte	11
+ 1910 075e 98       		.byte	-104
+ 1911 075f 14       		.byte	20
+ 1912 0760 99       		.byte	-103
+ 1913 0761 03       		.byte	3
+ 1914 0762 9D       		.byte	-99
+ 1915 0763 42       		.byte	66
+ 1916 0764 9E       		.byte	-98
+ 1917 0765 03       		.byte	3
+ 1918 0766 9F       		.byte	-97
+ 1919 0767 09       		.byte	9
+ 1920 0768 A0       		.byte	-96
+ 1921 0769 09       		.byte	9
+ 1922 076a A1       		.byte	-95
+ 1923 076b 40       		.byte	64
+ 1924 076c A2       		.byte	-94
+ 1925 076d F0       		.byte	-16
+ 1926 076e A3       		.byte	-93
+ 1927 076f 14       		.byte	20
+ 1928 0770 A5       		.byte	-91
+ 1929 0771 01       		.byte	1
+ 1930 0772 A9       		.byte	-87
+ 1931 0773 1F       		.byte	31
+ 1932 0774 AD       		.byte	-83
+ 1933 0775 01       		.byte	1
+ 1934 0776 B2       		.byte	-78
+ 1935 0777 E0       		.byte	-32
+ 1936 0778 B3       		.byte	-77
+ 1937 0779 E0       		.byte	-32
+ 1938 077a B5       		.byte	-75
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 35
+
+
+ 1939 077b 1F       		.byte	31
+ 1940 077c B6       		.byte	-74
+ 1941 077d 1F       		.byte	31
+ 1942 077e B9       		.byte	-71
+ 1943 077f 08       		.byte	8
+ 1944 0780 BA       		.byte	-70
+ 1945 0781 08       		.byte	8
+ 1946 0782 BF       		.byte	-65
+ 1947 0783 04       		.byte	4
+ 1948 0784 C0       		.byte	-64
+ 1949 0785 62       		.byte	98
+ 1950 0786 C1       		.byte	-63
+ 1951 0787 01       		.byte	1
+ 1952 0788 C5       		.byte	-59
+ 1953 0789 EB       		.byte	-21
+ 1954 078a C7       		.byte	-57
+ 1955 078b C0       		.byte	-64
+ 1956 078c C8       		.byte	-56
+ 1957 078d 23       		.byte	35
+ 1958 078e C9       		.byte	-55
+ 1959 078f FF       		.byte	-1
+ 1960 0790 CA       		.byte	-54
+ 1961 0791 FF       		.byte	-1
+ 1962 0792 CB       		.byte	-53
+ 1963 0793 FF       		.byte	-1
+ 1964 0794 CE       		.byte	-50
+ 1965 0795 F0       		.byte	-16
+ 1966 0796 CF       		.byte	-49
+ 1967 0797 44       		.byte	68
+ 1968 0798 D0       		.byte	-48
+ 1969 0799 0C       		.byte	12
+ 1970 079a D4       		.byte	-44
+ 1971 079b 01       		.byte	1
+ 1972 079c D8       		.byte	-40
+ 1973 079d 04       		.byte	4
+ 1974 079e D9       		.byte	-39
+ 1975 079f 04       		.byte	4
+ 1976 07a0 DA       		.byte	-38
+ 1977 07a1 04       		.byte	4
+ 1978 07a2 DB       		.byte	-37
+ 1979 07a3 04       		.byte	4
+ 1980 07a4 DC       		.byte	-36
+ 1981 07a5 03       		.byte	3
+ 1982 07a6 DD       		.byte	-35
+ 1983 07a7 33       		.byte	51
+ 1984 07a8 DF       		.byte	-33
+ 1985 07a9 01       		.byte	1
+ 1986 07aa E6       		.byte	-26
+ 1987 07ab C0       		.byte	-64
+ 1988 07ac EA       		.byte	-22
+ 1989 07ad 40       		.byte	64
+ 1990 07ae EB       		.byte	-21
+ 1991 07af 02       		.byte	2
+ 1992 07b0 04       		.byte	4
+ 1993 07b1 10       		.byte	16
+ 1994 07b2 05       		.byte	5
+ 1995 07b3 04       		.byte	4
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 36
+
+
+ 1996 07b4 06       		.byte	6
+ 1997 07b5 01       		.byte	1
+ 1998 07b6 08       		.byte	8
+ 1999 07b7 04       		.byte	4
+ 2000 07b8 09       		.byte	9
+ 2001 07b9 80       		.byte	-128
+ 2002 07ba 0C       		.byte	12
+ 2003 07bb 08       		.byte	8
+ 2004 07bc 0D       		.byte	13
+ 2005 07bd 80       		.byte	-128
+ 2006 07be 0F       		.byte	15
+ 2007 07bf 08       		.byte	8
+ 2008 07c0 14       		.byte	20
+ 2009 07c1 60       		.byte	96
+ 2010 07c2 15       		.byte	21
+ 2011 07c3 04       		.byte	4
+ 2012 07c4 1A       		.byte	26
+ 2013 07c5 40       		.byte	64
+ 2014 07c6 1B       		.byte	27
+ 2015 07c7 80       		.byte	-128
+ 2016 07c8 1D       		.byte	29
+ 2017 07c9 84       		.byte	-124
+ 2018 07ca 21       		.byte	33
+ 2019 07cb 18       		.byte	24
+ 2020 07cc 22       		.byte	34
+ 2021 07cd 41       		.byte	65
+ 2022 07ce 25       		.byte	37
+ 2023 07cf 20       		.byte	32
+ 2024 07d0 26       		.byte	38
+ 2025 07d1 08       		.byte	8
+ 2026 07d2 29       		.byte	41
+ 2027 07d3 49       		.byte	73
+ 2028 07d4 2B       		.byte	43
+ 2029 07d5 08       		.byte	8
+ 2030 07d6 2C       		.byte	44
+ 2031 07d7 80       		.byte	-128
+ 2032 07d8 2D       		.byte	45
+ 2033 07d9 80       		.byte	-128
+ 2034 07da 2E       		.byte	46
+ 2035 07db 08       		.byte	8
+ 2036 07dc 2F       		.byte	47
+ 2037 07dd 04       		.byte	4
+ 2038 07de 30       		.byte	48
+ 2039 07df 22       		.byte	34
+ 2040 07e0 31       		.byte	49
+ 2041 07e1 08       		.byte	8
+ 2042 07e2 32       		.byte	50
+ 2043 07e3 40       		.byte	64
+ 2044 07e4 36       		.byte	54
+ 2045 07e5 02       		.byte	2
+ 2046 07e6 37       		.byte	55
+ 2047 07e7 54       		.byte	84
+ 2048 07e8 38       		.byte	56
+ 2049 07e9 28       		.byte	40
+ 2050 07ea 3C       		.byte	60
+ 2051 07eb 40       		.byte	64
+ 2052 07ec 3D       		.byte	61
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 37
+
+
+ 2053 07ed 20       		.byte	32
+ 2054 07ee 3E       		.byte	62
+ 2055 07ef 06       		.byte	6
+ 2056 07f0 3F       		.byte	63
+ 2057 07f1 90       		.byte	-112
+ 2058 07f2 44       		.byte	68
+ 2059 07f3 0A       		.byte	10
+ 2060 07f4 46       		.byte	70
+ 2061 07f5 01       		.byte	1
+ 2062 07f6 4D       		.byte	77
+ 2063 07f7 02       		.byte	2
+ 2064 07f8 4E       		.byte	78
+ 2065 07f9 04       		.byte	4
+ 2066 07fa 4F       		.byte	79
+ 2067 07fb 08       		.byte	8
+ 2068 07fc 57       		.byte	87
+ 2069 07fd 01       		.byte	1
+ 2070 07fe 5D       		.byte	93
+ 2071 07ff 12       		.byte	18
+ 2072 0800 5E       		.byte	94
+ 2073 0801 08       		.byte	8
+ 2074 0802 5F       		.byte	95
+ 2075 0803 40       		.byte	64
+ 2076 0804 7C       		.byte	124
+ 2077 0805 10       		.byte	16
+ 2078 0806 7E       		.byte	126
+ 2079 0807 04       		.byte	4
+ 2080 0808 83       		.byte	-125
+ 2081 0809 80       		.byte	-128
+ 2082 080a 87       		.byte	-121
+ 2083 080b 01       		.byte	1
+ 2084 080c 88       		.byte	-120
+ 2085 080d 04       		.byte	4
+ 2086 080e 89       		.byte	-119
+ 2087 080f 10       		.byte	16
+ 2088 0810 8B       		.byte	-117
+ 2089 0811 05       		.byte	5
+ 2090 0812 8C       		.byte	-116
+ 2091 0813 40       		.byte	64
+ 2092 0814 8D       		.byte	-115
+ 2093 0815 44       		.byte	68
+ 2094 0816 8E       		.byte	-114
+ 2095 0817 42       		.byte	66
+ 2096 0818 90       		.byte	-112
+ 2097 0819 AC       		.byte	-84
+ 2098 081a 92       		.byte	-110
+ 2099 081b 1C       		.byte	28
+ 2100 081c 93       		.byte	-109
+ 2101 081d 40       		.byte	64
+ 2102 081e 95       		.byte	-107
+ 2103 081f 2D       		.byte	45
+ 2104 0820 96       		.byte	-106
+ 2105 0821 A2       		.byte	-94
+ 2106 0822 97       		.byte	-105
+ 2107 0823 10       		.byte	16
+ 2108 0824 98       		.byte	-104
+ 2109 0825 4B       		.byte	75
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 38
+
+
+ 2110 0826 99       		.byte	-103
+ 2111 0827 F8       		.byte	-8
+ 2112 0828 9A       		.byte	-102
+ 2113 0829 4C       		.byte	76
+ 2114 082a 9B       		.byte	-101
+ 2115 082b 01       		.byte	1
+ 2116 082c 9D       		.byte	-99
+ 2117 082d 05       		.byte	5
+ 2118 082e 9E       		.byte	-98
+ 2119 082f 82       		.byte	-126
+ 2120 0830 9F       		.byte	-97
+ 2121 0831 54       		.byte	84
+ 2122 0832 A0       		.byte	-96
+ 2123 0833 62       		.byte	98
+ 2124 0834 A1       		.byte	-95
+ 2125 0835 40       		.byte	64
+ 2126 0836 A2       		.byte	-94
+ 2127 0837 01       		.byte	1
+ 2128 0838 A3       		.byte	-93
+ 2129 0839 08       		.byte	8
+ 2130 083a A4       		.byte	-92
+ 2131 083b 80       		.byte	-128
+ 2132 083c A5       		.byte	-91
+ 2133 083d 09       		.byte	9
+ 2134 083e A6       		.byte	-90
+ 2135 083f 10       		.byte	16
+ 2136 0840 A7       		.byte	-89
+ 2137 0841 41       		.byte	65
+ 2138 0842 AB       		.byte	-85
+ 2139 0843 08       		.byte	8
+ 2140 0844 AC       		.byte	-84
+ 2141 0845 10       		.byte	16
+ 2142 0846 AD       		.byte	-83
+ 2143 0847 81       		.byte	-127
+ 2144 0848 AE       		.byte	-82
+ 2145 0849 04       		.byte	4
+ 2146 084a B0       		.byte	-80
+ 2147 084b 02       		.byte	2
+ 2148 084c B1       		.byte	-79
+ 2149 084d 10       		.byte	16
+ 2150 084e B2       		.byte	-78
+ 2151 084f 60       		.byte	96
+ 2152 0850 B3       		.byte	-77
+ 2153 0851 02       		.byte	2
+ 2154 0852 B4       		.byte	-76
+ 2155 0853 2C       		.byte	44
+ 2156 0854 B5       		.byte	-75
+ 2157 0855 40       		.byte	64
+ 2158 0856 C0       		.byte	-64
+ 2159 0857 E0       		.byte	-32
+ 2160 0858 C2       		.byte	-62
+ 2161 0859 E5       		.byte	-27
+ 2162 085a C4       		.byte	-60
+ 2163 085b 10       		.byte	16
+ 2164 085c CA       		.byte	-54
+ 2165 085d FF       		.byte	-1
+ 2166 085e CC       		.byte	-52
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 39
+
+
+ 2167 085f FF       		.byte	-1
+ 2168 0860 CE       		.byte	-50
+ 2169 0861 F6       		.byte	-10
+ 2170 0862 D0       		.byte	-48
+ 2171 0863 30       		.byte	48
+ 2172 0864 D2       		.byte	-46
+ 2173 0865 20       		.byte	32
+ 2174 0866 D6       		.byte	-42
+ 2175 0867 F0       		.byte	-16
+ 2176 0868 E0       		.byte	-32
+ 2177 0869 40       		.byte	64
+ 2178 086a E2       		.byte	-30
+ 2179 086b 10       		.byte	16
+ 2180 086c E4       		.byte	-28
+ 2181 086d 91       		.byte	-111
+ 2182 086e E6       		.byte	-26
+ 2183 086f 20       		.byte	32
+ 2184 0870 E8       		.byte	-24
+ 2185 0871 60       		.byte	96
+ 2186 0872 EC       		.byte	-20
+ 2187 0873 40       		.byte	64
+ 2188 0874 EE       		.byte	-18
+ 2189 0875 80       		.byte	-128
+ 2190 0876 02       		.byte	2
+ 2191 0877 01       		.byte	1
+ 2192 0878 03       		.byte	3
+ 2193 0879 0C       		.byte	12
+ 2194 087a 04       		.byte	4
+ 2195 087b 02       		.byte	2
+ 2196 087c 07       		.byte	7
+ 2197 087d 07       		.byte	7
+ 2198 087e 08       		.byte	8
+ 2199 087f CC       		.byte	-52
+ 2200 0880 0A       		.byte	10
+ 2201 0881 13       		.byte	19
+ 2202 0882 0E       		.byte	14
+ 2203 0883 B5       		.byte	-75
+ 2204 0884 10       		.byte	16
+ 2205 0885 1A       		.byte	26
+ 2206 0886 12       		.byte	18
+ 2207 0887 60       		.byte	96
+ 2208 0888 14       		.byte	20
+ 2209 0889 4D       		.byte	77
+ 2210 088a 16       		.byte	22
+ 2211 088b 92       		.byte	-110
+ 2212 088c 18       		.byte	24
+ 2213 088d FF       		.byte	-1
+ 2214 088e 1C       		.byte	28
+ 2215 088f A9       		.byte	-87
+ 2216 0890 1D       		.byte	29
+ 2217 0891 01       		.byte	1
+ 2218 0892 1E       		.byte	30
+ 2219 0893 54       		.byte	84
+ 2220 0894 22       		.byte	34
+ 2221 0895 04       		.byte	4
+ 2222 0896 26       		.byte	38
+ 2223 0897 02       		.byte	2
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 40
+
+
+ 2224 0898 28       		.byte	40
+ 2225 0899 04       		.byte	4
+ 2226 089a 2C       		.byte	44
+ 2227 089b A5       		.byte	-91
+ 2228 089c 2E       		.byte	46
+ 2229 089d 4A       		.byte	74
+ 2230 089e 31       		.byte	49
+ 2231 089f 01       		.byte	1
+ 2232 08a0 33       		.byte	51
+ 2233 08a1 08       		.byte	8
+ 2234 08a2 35       		.byte	53
+ 2235 08a3 04       		.byte	4
+ 2236 08a4 36       		.byte	54
+ 2237 08a5 FF       		.byte	-1
+ 2238 08a6 37       		.byte	55
+ 2239 08a7 02       		.byte	2
+ 2240 08a8 3E       		.byte	62
+ 2241 08a9 40       		.byte	64
+ 2242 08aa 52       		.byte	82
+ 2243 08ab F6       		.byte	-10
+ 2244 08ac 58       		.byte	88
+ 2245 08ad 04       		.byte	4
+ 2246 08ae 59       		.byte	89
+ 2247 08af 04       		.byte	4
+ 2248 08b0 5B       		.byte	91
+ 2249 08b1 04       		.byte	4
+ 2250 08b2 5C       		.byte	92
+ 2251 08b3 20       		.byte	32
+ 2252 08b4 5F       		.byte	95
+ 2253 08b5 01       		.byte	1
+ 2254 08b6 80       		.byte	-128
+ 2255 08b7 05       		.byte	5
+ 2256 08b8 82       		.byte	-126
+ 2257 08b9 6A       		.byte	106
+ 2258 08ba 84       		.byte	-124
+ 2259 08bb 20       		.byte	32
+ 2260 08bc 85       		.byte	-123
+ 2261 08bd 0C       		.byte	12
+ 2262 08be 86       		.byte	-122
+ 2263 08bf C0       		.byte	-64
+ 2264 08c0 88       		.byte	-120
+ 2265 08c1 40       		.byte	64
+ 2266 08c2 89       		.byte	-119
+ 2267 08c3 04       		.byte	4
+ 2268 08c4 8A       		.byte	-118
+ 2269 08c5 20       		.byte	32
+ 2270 08c6 8C       		.byte	-116
+ 2271 08c7 60       		.byte	96
+ 2272 08c8 8D       		.byte	-115
+ 2273 08c9 C3       		.byte	-61
+ 2274 08ca 8E       		.byte	-114
+ 2275 08cb 02       		.byte	2
+ 2276 08cc 90       		.byte	-112
+ 2277 08cd 01       		.byte	1
+ 2278 08ce 91       		.byte	-111
+ 2279 08cf 41       		.byte	65
+ 2280 08d0 92       		.byte	-110
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 41
+
+
+ 2281 08d1 02       		.byte	2
+ 2282 08d2 93       		.byte	-109
+ 2283 08d3 10       		.byte	16
+ 2284 08d4 94       		.byte	-108
+ 2285 08d5 08       		.byte	8
+ 2286 08d6 95       		.byte	-107
+ 2287 08d7 2F       		.byte	47
+ 2288 08d8 96       		.byte	-106
+ 2289 08d9 65       		.byte	101
+ 2290 08da 97       		.byte	-105
+ 2291 08db C0       		.byte	-64
+ 2292 08dc 98       		.byte	-104
+ 2293 08dd 06       		.byte	6
+ 2294 08de 99       		.byte	-103
+ 2295 08df 82       		.byte	-126
+ 2296 08e0 9A       		.byte	-102
+ 2297 08e1 60       		.byte	96
+ 2298 08e2 9C       		.byte	-100
+ 2299 08e3 2F       		.byte	47
+ 2300 08e4 9D       		.byte	-99
+ 2301 08e5 2C       		.byte	44
+ 2302 08e6 9E       		.byte	-98
+ 2303 08e7 80       		.byte	-128
+ 2304 08e8 9F       		.byte	-97
+ 2305 08e9 C3       		.byte	-61
+ 2306 08ea A0       		.byte	-96
+ 2307 08eb 01       		.byte	1
+ 2308 08ec A1       		.byte	-95
+ 2309 08ed EF       		.byte	-17
+ 2310 08ee A2       		.byte	-94
+ 2311 08ef 64       		.byte	100
+ 2312 08f0 A4       		.byte	-92
+ 2313 08f1 61       		.byte	97
+ 2314 08f2 A5       		.byte	-91
+ 2315 08f3 E3       		.byte	-29
+ 2316 08f4 A6       		.byte	-90
+ 2317 08f5 02       		.byte	2
+ 2318 08f6 A7       		.byte	-89
+ 2319 08f7 0C       		.byte	12
+ 2320 08f8 AA       		.byte	-86
+ 2321 08f9 10       		.byte	16
+ 2322 08fa AB       		.byte	-85
+ 2323 08fb C3       		.byte	-61
+ 2324 08fc AD       		.byte	-83
+ 2325 08fd 08       		.byte	8
+ 2326 08fe B0       		.byte	-80
+ 2327 08ff 1F       		.byte	31
+ 2328 0900 B1       		.byte	-79
+ 2329 0901 C0       		.byte	-64
+ 2330 0902 B3       		.byte	-77
+ 2331 0903 20       		.byte	32
+ 2332 0904 B4       		.byte	-76
+ 2333 0905 E0       		.byte	-32
+ 2334 0906 B5       		.byte	-75
+ 2335 0907 0F       		.byte	15
+ 2336 0908 B7       		.byte	-73
+ 2337 0909 10       		.byte	16
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 42
+
+
+ 2338 090a BA       		.byte	-70
+ 2339 090b 20       		.byte	32
+ 2340 090c BB       		.byte	-69
+ 2341 090d 20       		.byte	32
+ 2342 090e BF       		.byte	-65
+ 2343 090f 04       		.byte	4
+ 2344 0910 D8       		.byte	-40
+ 2345 0911 04       		.byte	4
+ 2346 0912 D9       		.byte	-39
+ 2347 0913 04       		.byte	4
+ 2348 0914 DC       		.byte	-36
+ 2349 0915 31       		.byte	49
+ 2350 0916 DF       		.byte	-33
+ 2351 0917 01       		.byte	1
+ 2352 0918 00       		.byte	0
+ 2353 0919 80       		.byte	-128
+ 2354 091a 01       		.byte	1
+ 2355 091b 10       		.byte	16
+ 2356 091c 02       		.byte	2
+ 2357 091d 40       		.byte	64
+ 2358 091e 03       		.byte	3
+ 2359 091f 20       		.byte	32
+ 2360 0920 05       		.byte	5
+ 2361 0921 02       		.byte	2
+ 2362 0922 06       		.byte	6
+ 2363 0923 02       		.byte	2
+ 2364 0924 07       		.byte	7
+ 2365 0925 14       		.byte	20
+ 2366 0926 08       		.byte	8
+ 2367 0927 20       		.byte	32
+ 2368 0928 09       		.byte	9
+ 2369 0929 01       		.byte	1
+ 2370 092a 0A       		.byte	10
+ 2371 092b 20       		.byte	32
+ 2372 092c 0B       		.byte	11
+ 2373 092d 02       		.byte	2
+ 2374 092e 0C       		.byte	12
+ 2375 092f 90       		.byte	-112
+ 2376 0930 0F       		.byte	15
+ 2377 0931 90       		.byte	-112
+ 2378 0932 10       		.byte	16
+ 2379 0933 04       		.byte	4
+ 2380 0934 11       		.byte	17
+ 2381 0935 05       		.byte	5
+ 2382 0936 16       		.byte	22
+ 2383 0937 14       		.byte	20
+ 2384 0938 17       		.byte	23
+ 2385 0939 41       		.byte	65
+ 2386 093a 19       		.byte	25
+ 2387 093b 20       		.byte	32
+ 2388 093c 1B       		.byte	27
+ 2389 093d 22       		.byte	34
+ 2390 093e 1E       		.byte	30
+ 2391 093f 02       		.byte	2
+ 2392 0940 21       		.byte	33
+ 2393 0941 41       		.byte	65
+ 2394 0942 23       		.byte	35
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 43
+
+
+ 2395 0943 24       		.byte	36
+ 2396 0944 24       		.byte	36
+ 2397 0945 40       		.byte	64
+ 2398 0946 25       		.byte	37
+ 2399 0947 04       		.byte	4
+ 2400 0948 26       		.byte	38
+ 2401 0949 80       		.byte	-128
+ 2402 094a 27       		.byte	39
+ 2403 094b 08       		.byte	8
+ 2404 094c 29       		.byte	41
+ 2405 094d 49       		.byte	73
+ 2406 094e 2B       		.byte	43
+ 2407 094f 08       		.byte	8
+ 2408 0950 30       		.byte	48
+ 2409 0951 02       		.byte	2
+ 2410 0952 31       		.byte	49
+ 2411 0953 28       		.byte	40
+ 2412 0954 32       		.byte	50
+ 2413 0955 40       		.byte	64
+ 2414 0956 34       		.byte	52
+ 2415 0957 10       		.byte	16
+ 2416 0958 36       		.byte	54
+ 2417 0959 90       		.byte	-112
+ 2418 095a 38       		.byte	56
+ 2419 095b 28       		.byte	40
+ 2420 095c 39       		.byte	57
+ 2421 095d 40       		.byte	64
+ 2422 095e 3C       		.byte	60
+ 2423 095f 02       		.byte	2
+ 2424 0960 3F       		.byte	63
+ 2425 0961 08       		.byte	8
+ 2426 0962 5D       		.byte	93
+ 2427 0963 08       		.byte	8
+ 2428 0964 5E       		.byte	94
+ 2429 0965 08       		.byte	8
+ 2430 0966 5F       		.byte	95
+ 2431 0967 04       		.byte	4
+ 2432 0968 65       		.byte	101
+ 2433 0969 01       		.byte	1
+ 2434 096a 67       		.byte	103
+ 2435 096b 80       		.byte	-128
+ 2436 096c 6E       		.byte	110
+ 2437 096d 14       		.byte	20
+ 2438 096e 74       		.byte	116
+ 2439 096f 14       		.byte	20
+ 2440 0970 75       		.byte	117
+ 2441 0971 02       		.byte	2
+ 2442 0972 76       		.byte	118
+ 2443 0973 14       		.byte	20
+ 2444 0974 77       		.byte	119
+ 2445 0975 01       		.byte	1
+ 2446 0976 7D       		.byte	125
+ 2447 0977 20       		.byte	32
+ 2448 0978 7E       		.byte	126
+ 2449 0979 04       		.byte	4
+ 2450 097a 86       		.byte	-122
+ 2451 097b 01       		.byte	1
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 44
+
+
+ 2452 097c 88       		.byte	-120
+ 2453 097d 24       		.byte	36
+ 2454 097e 89       		.byte	-119
+ 2455 097f 04       		.byte	4
+ 2456 0980 8A       		.byte	-118
+ 2457 0981 08       		.byte	8
+ 2458 0982 90       		.byte	-112
+ 2459 0983 A8       		.byte	-88
+ 2460 0984 91       		.byte	-111
+ 2461 0985 40       		.byte	64
+ 2462 0986 93       		.byte	-109
+ 2463 0987 42       		.byte	66
+ 2464 0988 94       		.byte	-108
+ 2465 0989 40       		.byte	64
+ 2466 098a 95       		.byte	-107
+ 2467 098b 20       		.byte	32
+ 2468 098c 97       		.byte	-105
+ 2469 098d 80       		.byte	-128
+ 2470 098e 98       		.byte	-104
+ 2471 098f 45       		.byte	69
+ 2472 0990 99       		.byte	-103
+ 2473 0991 50       		.byte	80
+ 2474 0992 9D       		.byte	-99
+ 2475 0993 04       		.byte	4
+ 2476 0994 9E       		.byte	-98
+ 2477 0995 80       		.byte	-128
+ 2478 0996 9F       		.byte	-97
+ 2479 0997 20       		.byte	32
+ 2480 0998 A0       		.byte	-96
+ 2481 0999 43       		.byte	67
+ 2482 099a A1       		.byte	-95
+ 2483 099b 70       		.byte	112
+ 2484 099c A3       		.byte	-93
+ 2485 099d 0C       		.byte	12
+ 2486 099e A5       		.byte	-91
+ 2487 099f 04       		.byte	4
+ 2488 09a0 A6       		.byte	-90
+ 2489 09a1 24       		.byte	36
+ 2490 09a2 A7       		.byte	-89
+ 2491 09a3 01       		.byte	1
+ 2492 09a4 AA       		.byte	-86
+ 2493 09a5 42       		.byte	66
+ 2494 09a6 AC       		.byte	-84
+ 2495 09a7 05       		.byte	5
+ 2496 09a8 AD       		.byte	-83
+ 2497 09a9 0A       		.byte	10
+ 2498 09aa B0       		.byte	-80
+ 2499 09ab 52       		.byte	82
+ 2500 09ac B3       		.byte	-77
+ 2501 09ad 04       		.byte	4
+ 2502 09ae C0       		.byte	-64
+ 2503 09af FF       		.byte	-1
+ 2504 09b0 C2       		.byte	-62
+ 2505 09b1 FF       		.byte	-1
+ 2506 09b2 C4       		.byte	-60
+ 2507 09b3 FE       		.byte	-2
+ 2508 09b4 CA       		.byte	-54
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 45
+
+
+ 2509 09b5 0F       		.byte	15
+ 2510 09b6 CC       		.byte	-52
+ 2511 09b7 1F       		.byte	31
+ 2512 09b8 CE       		.byte	-50
+ 2513 09b9 CE       		.byte	-50
+ 2514 09ba E0       		.byte	-32
+ 2515 09bb 80       		.byte	-128
+ 2516 09bc E2       		.byte	-30
+ 2517 09bd 20       		.byte	32
+ 2518 09be E6       		.byte	-26
+ 2519 09bf 80       		.byte	-128
+ 2520 09c0 EC       		.byte	-20
+ 2521 09c1 20       		.byte	32
+ 2522 09c2 EE       		.byte	-18
+ 2523 09c3 08       		.byte	8
+ 2524 09c4 08       		.byte	8
+ 2525 09c5 0A       		.byte	10
+ 2526 09c6 0A       		.byte	10
+ 2527 09c7 51       		.byte	81
+ 2528 09c8 0C       		.byte	12
+ 2529 09c9 01       		.byte	1
+ 2530 09ca 0E       		.byte	14
+ 2531 09cb 26       		.byte	38
+ 2532 09cc 10       		.byte	16
+ 2533 09cd 80       		.byte	-128
+ 2534 09ce 15       		.byte	21
+ 2535 09cf 01       		.byte	1
+ 2536 09d0 17       		.byte	23
+ 2537 09d1 0A       		.byte	10
+ 2538 09d2 18       		.byte	24
+ 2539 09d3 14       		.byte	20
+ 2540 09d4 1A       		.byte	26
+ 2541 09d5 49       		.byte	73
+ 2542 09d6 23       		.byte	35
+ 2543 09d7 04       		.byte	4
+ 2544 09d8 24       		.byte	36
+ 2545 09d9 9F       		.byte	-97
+ 2546 09da 28       		.byte	40
+ 2547 09db 9F       		.byte	-97
+ 2548 09dc 2D       		.byte	45
+ 2549 09dd 01       		.byte	1
+ 2550 09de 2F       		.byte	47
+ 2551 09df 02       		.byte	2
+ 2552 09e0 30       		.byte	48
+ 2553 09e1 07       		.byte	7
+ 2554 09e2 31       		.byte	49
+ 2555 09e3 03       		.byte	3
+ 2556 09e4 32       		.byte	50
+ 2557 09e5 80       		.byte	-128
+ 2558 09e6 33       		.byte	51
+ 2559 09e7 04       		.byte	4
+ 2560 09e8 34       		.byte	52
+ 2561 09e9 18       		.byte	24
+ 2562 09ea 35       		.byte	53
+ 2563 09eb 08       		.byte	8
+ 2564 09ec 36       		.byte	54
+ 2565 09ed 60       		.byte	96
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 46
+
+
+ 2566 09ee 3E       		.byte	62
+ 2567 09ef 40       		.byte	64
+ 2568 09f0 40       		.byte	64
+ 2569 09f1 63       		.byte	99
+ 2570 09f2 41       		.byte	65
+ 2571 09f3 05       		.byte	5
+ 2572 09f4 42       		.byte	66
+ 2573 09f5 02       		.byte	2
+ 2574 09f6 44       		.byte	68
+ 2575 09f7 01       		.byte	1
+ 2576 09f8 46       		.byte	70
+ 2577 09f9 0C       		.byte	12
+ 2578 09fa 47       		.byte	71
+ 2579 09fb 0E       		.byte	14
+ 2580 09fc 48       		.byte	72
+ 2581 09fd 14       		.byte	20
+ 2582 09fe 49       		.byte	73
+ 2583 09ff FF       		.byte	-1
+ 2584 0a00 4A       		.byte	74
+ 2585 0a01 FF       		.byte	-1
+ 2586 0a02 4B       		.byte	75
+ 2587 0a03 FF       		.byte	-1
+ 2588 0a04 4C       		.byte	76
+ 2589 0a05 62       		.byte	98
+ 2590 0a06 4D       		.byte	77
+ 2591 0a07 A0       		.byte	-96
+ 2592 0a08 4E       		.byte	78
+ 2593 0a09 F0       		.byte	-16
+ 2594 0a0a 4F       		.byte	79
+ 2595 0a0b 41       		.byte	65
+ 2596 0a0c 50       		.byte	80
+ 2597 0a0d 0C       		.byte	12
+ 2598 0a0e 56       		.byte	86
+ 2599 0a0f 02       		.byte	2
+ 2600 0a10 57       		.byte	87
+ 2601 0a11 11       		.byte	17
+ 2602 0a12 58       		.byte	88
+ 2603 0a13 04       		.byte	4
+ 2604 0a14 59       		.byte	89
+ 2605 0a15 04       		.byte	4
+ 2606 0a16 5A       		.byte	90
+ 2607 0a17 04       		.byte	4
+ 2608 0a18 5B       		.byte	91
+ 2609 0a19 04       		.byte	4
+ 2610 0a1a 5C       		.byte	92
+ 2611 0a1b 13       		.byte	19
+ 2612 0a1c 5D       		.byte	93
+ 2613 0a1d 33       		.byte	51
+ 2614 0a1e 5F       		.byte	95
+ 2615 0a1f 01       		.byte	1
+ 2616 0a20 66       		.byte	102
+ 2617 0a21 40       		.byte	64
+ 2618 0a22 67       		.byte	103
+ 2619 0a23 02       		.byte	2
+ 2620 0a24 69       		.byte	105
+ 2621 0a25 10       		.byte	16
+ 2622 0a26 6A       		.byte	106
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 47
+
+
+ 2623 0a27 30       		.byte	48
+ 2624 0a28 6B       		.byte	107
+ 2625 0a29 10       		.byte	16
+ 2626 0a2a 6D       		.byte	109
+ 2627 0a2b 10       		.byte	16
+ 2628 0a2c 6E       		.byte	110
+ 2629 0a2d 10       		.byte	16
+ 2630 0a2e 6F       		.byte	111
+ 2631 0a2f 12       		.byte	18
+ 2632 0a30 81       		.byte	-127
+ 2633 0a31 0D       		.byte	13
+ 2634 0a32 83       		.byte	-125
+ 2635 0a33 20       		.byte	32
+ 2636 0a34 89       		.byte	-119
+ 2637 0a35 21       		.byte	33
+ 2638 0a36 8B       		.byte	-117
+ 2639 0a37 1A       		.byte	26
+ 2640 0a38 91       		.byte	-111
+ 2641 0a39 14       		.byte	20
+ 2642 0a3a 93       		.byte	-109
+ 2643 0a3b 21       		.byte	33
+ 2644 0a3c 95       		.byte	-107
+ 2645 0a3d 04       		.byte	4
+ 2646 0a3e 97       		.byte	-105
+ 2647 0a3f 2A       		.byte	42
+ 2648 0a40 99       		.byte	-103
+ 2649 0a41 27       		.byte	39
+ 2650 0a42 A4       		.byte	-92
+ 2651 0a43 01       		.byte	1
+ 2652 0a44 A9       		.byte	-87
+ 2653 0a45 0D       		.byte	13
+ 2654 0a46 B0       		.byte	-80
+ 2655 0a47 01       		.byte	1
+ 2656 0a48 B5       		.byte	-75
+ 2657 0a49 1F       		.byte	31
+ 2658 0a4a B7       		.byte	-73
+ 2659 0a4b 20       		.byte	32
+ 2660 0a4c BF       		.byte	-65
+ 2661 0a4d 40       		.byte	64
+ 2662 0a4e C0       		.byte	-64
+ 2663 0a4f 30       		.byte	48
+ 2664 0a50 C1       		.byte	-63
+ 2665 0a51 06       		.byte	6
+ 2666 0a52 C5       		.byte	-59
+ 2667 0a53 D1       		.byte	-47
+ 2668 0a54 C6       		.byte	-58
+ 2669 0a55 20       		.byte	32
+ 2670 0a56 C8       		.byte	-56
+ 2671 0a57 0B       		.byte	11
+ 2672 0a58 C9       		.byte	-55
+ 2673 0a59 FF       		.byte	-1
+ 2674 0a5a CA       		.byte	-54
+ 2675 0a5b FF       		.byte	-1
+ 2676 0a5c CB       		.byte	-53
+ 2677 0a5d FF       		.byte	-1
+ 2678 0a5e CD       		.byte	-51
+ 2679 0a5f A0       		.byte	-96
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 48
+
+
+ 2680 0a60 CF       		.byte	-49
+ 2681 0a61 04       		.byte	4
+ 2682 0a62 D0       		.byte	-48
+ 2683 0a63 18       		.byte	24
+ 2684 0a64 D2       		.byte	-46
+ 2685 0a65 80       		.byte	-128
+ 2686 0a66 D4       		.byte	-44
+ 2687 0a67 25       		.byte	37
+ 2688 0a68 D8       		.byte	-40
+ 2689 0a69 04       		.byte	4
+ 2690 0a6a D9       		.byte	-39
+ 2691 0a6b 04       		.byte	4
+ 2692 0a6c DA       		.byte	-38
+ 2693 0a6d 04       		.byte	4
+ 2694 0a6e DB       		.byte	-37
+ 2695 0a6f 04       		.byte	4
+ 2696 0a70 DC       		.byte	-36
+ 2697 0a71 31       		.byte	49
+ 2698 0a72 DD       		.byte	-35
+ 2699 0a73 22       		.byte	34
+ 2700 0a74 DF       		.byte	-33
+ 2701 0a75 01       		.byte	1
+ 2702 0a76 E0       		.byte	-32
+ 2703 0a77 40       		.byte	64
+ 2704 0a78 E2       		.byte	-30
+ 2705 0a79 C0       		.byte	-64
+ 2706 0a7a E4       		.byte	-28
+ 2707 0a7b 40       		.byte	64
+ 2708 0a7c E5       		.byte	-27
+ 2709 0a7d 40       		.byte	64
+ 2710 0a7e E6       		.byte	-26
+ 2711 0a7f C0       		.byte	-64
+ 2712 0a80 E8       		.byte	-24
+ 2713 0a81 C0       		.byte	-64
+ 2714 0a82 EA       		.byte	-22
+ 2715 0a83 C0       		.byte	-64
+ 2716 0a84 EC       		.byte	-20
+ 2717 0a85 C0       		.byte	-64
+ 2718 0a86 EE       		.byte	-18
+ 2719 0a87 C0       		.byte	-64
+ 2720 0a88 00       		.byte	0
+ 2721 0a89 20       		.byte	32
+ 2722 0a8a 01       		.byte	1
+ 2723 0a8b 40       		.byte	64
+ 2724 0a8c 03       		.byte	3
+ 2725 0a8d 02       		.byte	2
+ 2726 0a8e 09       		.byte	9
+ 2727 0a8f 20       		.byte	32
+ 2728 0a90 0A       		.byte	10
+ 2729 0a91 84       		.byte	-124
+ 2730 0a92 0C       		.byte	12
+ 2731 0a93 40       		.byte	64
+ 2732 0a94 0E       		.byte	14
+ 2733 0a95 82       		.byte	-126
+ 2734 0a96 0F       		.byte	15
+ 2735 0a97 40       		.byte	64
+ 2736 0a98 10       		.byte	16
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 49
+
+
+ 2737 0a99 20       		.byte	32
+ 2738 0a9a 11       		.byte	17
+ 2739 0a9b 10       		.byte	16
+ 2740 0a9c 17       		.byte	23
+ 2741 0a9d 04       		.byte	4
+ 2742 0a9e 18       		.byte	24
+ 2743 0a9f 01       		.byte	1
+ 2744 0aa0 1A       		.byte	26
+ 2745 0aa1 14       		.byte	20
+ 2746 0aa2 1B       		.byte	27
+ 2747 0aa3 0A       		.byte	10
+ 2748 0aa4 1E       		.byte	30
+ 2749 0aa5 40       		.byte	64
+ 2750 0aa6 1F       		.byte	31
+ 2751 0aa7 01       		.byte	1
+ 2752 0aa8 21       		.byte	33
+ 2753 0aa9 08       		.byte	8
+ 2754 0aaa 22       		.byte	34
+ 2755 0aab 02       		.byte	2
+ 2756 0aac 23       		.byte	35
+ 2757 0aad 04       		.byte	4
+ 2758 0aae 25       		.byte	37
+ 2759 0aaf 10       		.byte	16
+ 2760 0ab0 26       		.byte	38
+ 2761 0ab1 50       		.byte	80
+ 2762 0ab2 29       		.byte	41
+ 2763 0ab3 02       		.byte	2
+ 2764 0ab4 2A       		.byte	42
+ 2765 0ab5 80       		.byte	-128
+ 2766 0ab6 2F       		.byte	47
+ 2767 0ab7 04       		.byte	4
+ 2768 0ab8 32       		.byte	50
+ 2769 0ab9 04       		.byte	4
+ 2770 0aba 35       		.byte	53
+ 2771 0abb 04       		.byte	4
+ 2772 0abc 36       		.byte	54
+ 2773 0abd 21       		.byte	33
+ 2774 0abe 3D       		.byte	61
+ 2775 0abf 20       		.byte	32
+ 2776 0ac0 3F       		.byte	63
+ 2777 0ac1 02       		.byte	2
+ 2778 0ac2 40       		.byte	64
+ 2779 0ac3 01       		.byte	1
+ 2780 0ac4 41       		.byte	65
+ 2781 0ac5 10       		.byte	16
+ 2782 0ac6 42       		.byte	66
+ 2783 0ac7 10       		.byte	16
+ 2784 0ac8 45       		.byte	69
+ 2785 0ac9 04       		.byte	4
+ 2786 0aca 4A       		.byte	74
+ 2787 0acb 04       		.byte	4
+ 2788 0acc 4B       		.byte	75
+ 2789 0acd 80       		.byte	-128
+ 2790 0ace 4F       		.byte	79
+ 2791 0acf 29       		.byte	41
+ 2792 0ad0 50       		.byte	80
+ 2793 0ad1 40       		.byte	64
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 50
+
+
+ 2794 0ad2 52       		.byte	82
+ 2795 0ad3 08       		.byte	8
+ 2796 0ad4 57       		.byte	87
+ 2797 0ad5 10       		.byte	16
+ 2798 0ad6 5B       		.byte	91
+ 2799 0ad7 20       		.byte	32
+ 2800 0ad8 5C       		.byte	92
+ 2801 0ad9 48       		.byte	72
+ 2802 0ada 5F       		.byte	95
+ 2803 0adb 01       		.byte	1
+ 2804 0adc 66       		.byte	102
+ 2805 0add 20       		.byte	32
+ 2806 0ade 68       		.byte	104
+ 2807 0adf 20       		.byte	32
+ 2808 0ae0 69       		.byte	105
+ 2809 0ae1 10       		.byte	16
+ 2810 0ae2 6A       		.byte	106
+ 2811 0ae3 80       		.byte	-128
+ 2812 0ae4 70       		.byte	112
+ 2813 0ae5 14       		.byte	20
+ 2814 0ae6 71       		.byte	113
+ 2815 0ae7 40       		.byte	64
+ 2816 0ae8 74       		.byte	116
+ 2817 0ae9 01       		.byte	1
+ 2818 0aea 78       		.byte	120
+ 2819 0aeb 08       		.byte	8
+ 2820 0aec 7B       		.byte	123
+ 2821 0aed 10       		.byte	16
+ 2822 0aee 82       		.byte	-126
+ 2823 0aef A0       		.byte	-96
+ 2824 0af0 86       		.byte	-122
+ 2825 0af1 10       		.byte	16
+ 2826 0af2 89       		.byte	-119
+ 2827 0af3 40       		.byte	64
+ 2828 0af4 8A       		.byte	-118
+ 2829 0af5 04       		.byte	4
+ 2830 0af6 8B       		.byte	-117
+ 2831 0af7 04       		.byte	4
+ 2832 0af8 8D       		.byte	-115
+ 2833 0af9 10       		.byte	16
+ 2834 0afa 8E       		.byte	-114
+ 2835 0afb 09       		.byte	9
+ 2836 0afc 8F       		.byte	-113
+ 2837 0afd 05       		.byte	5
+ 2838 0afe C0       		.byte	-64
+ 2839 0aff 03       		.byte	3
+ 2840 0b00 C2       		.byte	-62
+ 2841 0b01 0A       		.byte	10
+ 2842 0b02 C4       		.byte	-60
+ 2843 0b03 26       		.byte	38
+ 2844 0b04 CA       		.byte	-54
+ 2845 0b05 29       		.byte	41
+ 2846 0b06 CC       		.byte	-52
+ 2847 0b07 E2       		.byte	-30
+ 2848 0b08 CE       		.byte	-50
+ 2849 0b09 A0       		.byte	-96
+ 2850 0b0a D0       		.byte	-48
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 51
+
+
+ 2851 0b0b 4E       		.byte	78
+ 2852 0b0c D2       		.byte	-46
+ 2853 0b0d 2C       		.byte	44
+ 2854 0b0e D6       		.byte	-42
+ 2855 0b0f D4       		.byte	-44
+ 2856 0b10 D8       		.byte	-40
+ 2857 0b11 20       		.byte	32
+ 2858 0b12 E0       		.byte	-32
+ 2859 0b13 11       		.byte	17
+ 2860 0b14 E4       		.byte	-28
+ 2861 0b15 10       		.byte	16
+ 2862 0b16 E6       		.byte	-26
+ 2863 0b17 40       		.byte	64
+ 2864 0b18 80       		.byte	-128
+ 2865 0b19 20       		.byte	32
+ 2866 0b1a 88       		.byte	-120
+ 2867 0b1b 80       		.byte	-128
+ 2868 0b1c 8F       		.byte	-113
+ 2869 0b1d 02       		.byte	2
+ 2870 0b1e 9C       		.byte	-100
+ 2871 0b1f 20       		.byte	32
+ 2872 0b20 A4       		.byte	-92
+ 2873 0b21 80       		.byte	-128
+ 2874 0b22 A7       		.byte	-89
+ 2875 0b23 02       		.byte	2
+ 2876 0b24 A9       		.byte	-87
+ 2877 0b25 21       		.byte	33
+ 2878 0b26 AB       		.byte	-85
+ 2879 0b27 80       		.byte	-128
+ 2880 0b28 AC       		.byte	-84
+ 2881 0b29 10       		.byte	16
+ 2882 0b2a B0       		.byte	-80
+ 2883 0b2b 40       		.byte	64
+ 2884 0b2c E6       		.byte	-26
+ 2885 0b2d 06       		.byte	6
+ 2886 0b2e EA       		.byte	-22
+ 2887 0b2f 09       		.byte	9
+ 2888 0b30 EE       		.byte	-18
+ 2889 0b31 05       		.byte	5
+ 2890 0b32 80       		.byte	-128
+ 2891 0b33 02       		.byte	2
+ 2892 0b34 86       		.byte	-122
+ 2893 0b35 04       		.byte	4
+ 2894 0b36 96       		.byte	-106
+ 2895 0b37 08       		.byte	8
+ 2896 0b38 9C       		.byte	-100
+ 2897 0b39 62       		.byte	98
+ 2898 0b3a 9D       		.byte	-99
+ 2899 0b3b 20       		.byte	32
+ 2900 0b3c A4       		.byte	-92
+ 2901 0b3d 90       		.byte	-112
+ 2902 0b3e A5       		.byte	-91
+ 2903 0b3f 01       		.byte	1
+ 2904 0b40 A7       		.byte	-89
+ 2905 0b41 82       		.byte	-126
+ 2906 0b42 A8       		.byte	-88
+ 2907 0b43 10       		.byte	16
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 52
+
+
+ 2908 0b44 AA       		.byte	-86
+ 2909 0b45 04       		.byte	4
+ 2910 0b46 AB       		.byte	-85
+ 2911 0b47 40       		.byte	64
+ 2912 0b48 AD       		.byte	-83
+ 2913 0b49 42       		.byte	66
+ 2914 0b4a AF       		.byte	-81
+ 2915 0b4b 14       		.byte	20
+ 2916 0b4c B1       		.byte	-79
+ 2917 0b4d 40       		.byte	64
+ 2918 0b4e B2       		.byte	-78
+ 2919 0b4f 08       		.byte	8
+ 2920 0b50 B3       		.byte	-77
+ 2921 0b51 21       		.byte	33
+ 2922 0b52 B7       		.byte	-73
+ 2923 0b53 10       		.byte	16
+ 2924 0b54 E6       		.byte	-26
+ 2925 0b55 09       		.byte	9
+ 2926 0b56 E8       		.byte	-24
+ 2927 0b57 08       		.byte	8
+ 2928 0b58 EA       		.byte	-22
+ 2929 0b59 02       		.byte	2
+ 2930 0b5a EC       		.byte	-20
+ 2931 0b5b 0C       		.byte	12
+ 2932 0b5c 00       		.byte	0
+ 2933 0b5d E2       		.byte	-30
+ 2934 0b5e 01       		.byte	1
+ 2935 0b5f 01       		.byte	1
+ 2936 0b60 03       		.byte	3
+ 2937 0b61 0E       		.byte	14
+ 2938 0b62 04       		.byte	4
+ 2939 0b63 04       		.byte	4
+ 2940 0b64 06       		.byte	6
+ 2941 0b65 E0       		.byte	-32
+ 2942 0b66 08       		.byte	8
+ 2943 0b67 01       		.byte	1
+ 2944 0b68 09       		.byte	9
+ 2945 0b69 05       		.byte	5
+ 2946 0b6a 0B       		.byte	11
+ 2947 0b6b 30       		.byte	48
+ 2948 0b6c 0D       		.byte	13
+ 2949 0b6d 05       		.byte	5
+ 2950 0b6e 0E       		.byte	14
+ 2951 0b6f 02       		.byte	2
+ 2952 0b70 0F       		.byte	15
+ 2953 0b71 10       		.byte	16
+ 2954 0b72 10       		.byte	16
+ 2955 0b73 3D       		.byte	61
+ 2956 0b74 11       		.byte	17
+ 2957 0b75 81       		.byte	-127
+ 2958 0b76 12       		.byte	18
+ 2959 0b77 C2       		.byte	-62
+ 2960 0b78 13       		.byte	19
+ 2961 0b79 28       		.byte	40
+ 2962 0b7a 14       		.byte	20
+ 2963 0b7b 40       		.byte	64
+ 2964 0b7c 15       		.byte	21
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 53
+
+
+ 2965 0b7d 04       		.byte	4
+ 2966 0b7e 16       		.byte	22
+ 2967 0b7f 1D       		.byte	29
+ 2968 0b80 17       		.byte	23
+ 2969 0b81 01       		.byte	1
+ 2970 0b82 1A       		.byte	26
+ 2971 0b83 08       		.byte	8
+ 2972 0b84 1B       		.byte	27
+ 2973 0b85 80       		.byte	-128
+ 2974 0b86 1C       		.byte	28
+ 2975 0b87 5D       		.byte	93
+ 2976 0b88 1E       		.byte	30
+ 2977 0b89 A2       		.byte	-94
+ 2978 0b8a 1F       		.byte	31
+ 2979 0b8b 10       		.byte	16
+ 2980 0b8c 21       		.byte	33
+ 2981 0b8d 05       		.byte	5
+ 2982 0b8e 22       		.byte	34
+ 2983 0b8f FF       		.byte	-1
+ 2984 0b90 23       		.byte	35
+ 2985 0b91 10       		.byte	16
+ 2986 0b92 24       		.byte	36
+ 2987 0b93 92       		.byte	-110
+ 2988 0b94 26       		.byte	38
+ 2989 0b95 60       		.byte	96
+ 2990 0b96 27       		.byte	39
+ 2991 0b97 40       		.byte	64
+ 2992 0b98 28       		.byte	40
+ 2993 0b99 01       		.byte	1
+ 2994 0b9a 29       		.byte	41
+ 2995 0b9b 04       		.byte	4
+ 2996 0b9c 2B       		.byte	43
+ 2997 0b9d 01       		.byte	1
+ 2998 0b9e 2C       		.byte	44
+ 2999 0b9f 0D       		.byte	13
+ 3000 0ba0 2D       		.byte	45
+ 3001 0ba1 81       		.byte	-127
+ 3002 0ba2 2F       		.byte	47
+ 3003 0ba3 02       		.byte	2
+ 3004 0ba4 31       		.byte	49
+ 3005 0ba5 0F       		.byte	15
+ 3006 0ba6 33       		.byte	51
+ 3007 0ba7 80       		.byte	-128
+ 3008 0ba8 34       		.byte	52
+ 3009 0ba9 FF       		.byte	-1
+ 3010 0baa 35       		.byte	53
+ 3011 0bab 70       		.byte	112
+ 3012 0bac 3A       		.byte	58
+ 3013 0bad 02       		.byte	2
+ 3014 0bae 3B       		.byte	59
+ 3015 0baf 22       		.byte	34
+ 3016 0bb0 3E       		.byte	62
+ 3017 0bb1 10       		.byte	16
+ 3018 0bb2 58       		.byte	88
+ 3019 0bb3 04       		.byte	4
+ 3020 0bb4 59       		.byte	89
+ 3021 0bb5 04       		.byte	4
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 54
+
+
+ 3022 0bb6 5C       		.byte	92
+ 3023 0bb7 03       		.byte	3
+ 3024 0bb8 5F       		.byte	95
+ 3025 0bb9 01       		.byte	1
+ 3026 0bba 82       		.byte	-126
+ 3027 0bbb 08       		.byte	8
+ 3028 0bbc 85       		.byte	-123
+ 3029 0bbd 80       		.byte	-128
+ 3030 0bbe 86       		.byte	-122
+ 3031 0bbf 40       		.byte	64
+ 3032 0bc0 87       		.byte	-121
+ 3033 0bc1 56       		.byte	86
+ 3034 0bc2 89       		.byte	-119
+ 3035 0bc3 33       		.byte	51
+ 3036 0bc4 8A       		.byte	-118
+ 3037 0bc5 98       		.byte	-104
+ 3038 0bc6 8B       		.byte	-117
+ 3039 0bc7 0C       		.byte	12
+ 3040 0bc8 8E       		.byte	-114
+ 3041 0bc9 94       		.byte	-108
+ 3042 0bca 92       		.byte	-110
+ 3043 0bcb 20       		.byte	32
+ 3044 0bcc 94       		.byte	-108
+ 3045 0bcd 90       		.byte	-112
+ 3046 0bce 95       		.byte	-107
+ 3047 0bcf 46       		.byte	70
+ 3048 0bd0 96       		.byte	-106
+ 3049 0bd1 02       		.byte	2
+ 3050 0bd2 97       		.byte	-105
+ 3051 0bd3 A9       		.byte	-87
+ 3052 0bd4 98       		.byte	-104
+ 3053 0bd5 C0       		.byte	-64
+ 3054 0bd6 99       		.byte	-103
+ 3055 0bd7 0E       		.byte	14
+ 3056 0bd8 9B       		.byte	-101
+ 3057 0bd9 30       		.byte	48
+ 3058 0bda A0       		.byte	-96
+ 3059 0bdb 0F       		.byte	15
+ 3060 0bdc A1       		.byte	-95
+ 3061 0bdd 40       		.byte	64
+ 3062 0bde A3       		.byte	-93
+ 3063 0bdf 13       		.byte	19
+ 3064 0be0 A4       		.byte	-92
+ 3065 0be1 04       		.byte	4
+ 3066 0be2 A6       		.byte	-90
+ 3067 0be3 08       		.byte	8
+ 3068 0be4 A7       		.byte	-89
+ 3069 0be5 01       		.byte	1
+ 3070 0be6 A8       		.byte	-88
+ 3071 0be7 FF       		.byte	-1
+ 3072 0be8 A9       		.byte	-87
+ 3073 0be9 FF       		.byte	-1
+ 3074 0bea AC       		.byte	-84
+ 3075 0beb 90       		.byte	-112
+ 3076 0bec AD       		.byte	-83
+ 3077 0bed 2A       		.byte	42
+ 3078 0bee AE       		.byte	-82
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 55
+
+
+ 3079 0bef 01       		.byte	1
+ 3080 0bf0 AF       		.byte	-81
+ 3081 0bf1 54       		.byte	84
+ 3082 0bf2 B2       		.byte	-78
+ 3083 0bf3 C0       		.byte	-64
+ 3084 0bf4 B3       		.byte	-77
+ 3085 0bf5 FF       		.byte	-1
+ 3086 0bf6 B4       		.byte	-76
+ 3087 0bf7 3F       		.byte	63
+ 3088 0bf8 B8       		.byte	-72
+ 3089 0bf9 20       		.byte	32
+ 3090 0bfa D8       		.byte	-40
+ 3091 0bfb 04       		.byte	4
+ 3092 0bfc D9       		.byte	-39
+ 3093 0bfd 04       		.byte	4
+ 3094 0bfe DC       		.byte	-36
+ 3095 0bff 11       		.byte	17
+ 3096 0c00 DF       		.byte	-33
+ 3097 0c01 01       		.byte	1
+ 3098 0c02 00       		.byte	0
+ 3099 0c03 20       		.byte	32
+ 3100 0c04 01       		.byte	1
+ 3101 0c05 08       		.byte	8
+ 3102 0c06 02       		.byte	2
+ 3103 0c07 41       		.byte	65
+ 3104 0c08 04       		.byte	4
+ 3105 0c09 02       		.byte	2
+ 3106 0c0a 05       		.byte	5
+ 3107 0c0b 06       		.byte	6
+ 3108 0c0c 06       		.byte	6
+ 3109 0c0d 24       		.byte	36
+ 3110 0c0e 07       		.byte	7
+ 3111 0c0f 01       		.byte	1
+ 3112 0c10 0A       		.byte	10
+ 3113 0c11 80       		.byte	-128
+ 3114 0c12 0B       		.byte	11
+ 3115 0c13 28       		.byte	40
+ 3116 0c14 0C       		.byte	12
+ 3117 0c15 80       		.byte	-128
+ 3118 0c16 0E       		.byte	14
+ 3119 0c17 28       		.byte	40
+ 3120 0c18 0F       		.byte	15
+ 3121 0c19 80       		.byte	-128
+ 3122 0c1a 10       		.byte	16
+ 3123 0c1b 08       		.byte	8
+ 3124 0c1c 11       		.byte	17
+ 3125 0c1d 04       		.byte	4
+ 3126 0c1e 12       		.byte	18
+ 3127 0c1f 80       		.byte	-128
+ 3128 0c20 13       		.byte	19
+ 3129 0c21 40       		.byte	64
+ 3130 0c22 14       		.byte	20
+ 3131 0c23 42       		.byte	66
+ 3132 0c24 15       		.byte	21
+ 3133 0c25 80       		.byte	-128
+ 3134 0c26 16       		.byte	22
+ 3135 0c27 08       		.byte	8
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 56
+
+
+ 3136 0c28 17       		.byte	23
+ 3137 0c29 04       		.byte	4
+ 3138 0c2a 19       		.byte	25
+ 3139 0c2b 08       		.byte	8
+ 3140 0c2c 1A       		.byte	26
+ 3141 0c2d 04       		.byte	4
+ 3142 0c2e 1B       		.byte	27
+ 3143 0c2f 08       		.byte	8
+ 3144 0c30 1D       		.byte	29
+ 3145 0c31 01       		.byte	1
+ 3146 0c32 1F       		.byte	31
+ 3147 0c33 20       		.byte	32
+ 3148 0c34 20       		.byte	32
+ 3149 0c35 20       		.byte	32
+ 3150 0c36 21       		.byte	33
+ 3151 0c37 08       		.byte	8
+ 3152 0c38 23       		.byte	35
+ 3153 0c39 10       		.byte	16
+ 3154 0c3a 25       		.byte	37
+ 3155 0c3b 11       		.byte	17
+ 3156 0c3c 26       		.byte	38
+ 3157 0c3d 14       		.byte	20
+ 3158 0c3e 27       		.byte	39
+ 3159 0c3f 10       		.byte	16
+ 3160 0c40 29       		.byte	41
+ 3161 0c41 10       		.byte	16
+ 3162 0c42 2A       		.byte	42
+ 3163 0c43 41       		.byte	65
+ 3164 0c44 2B       		.byte	43
+ 3165 0c45 10       		.byte	16
+ 3166 0c46 2C       		.byte	44
+ 3167 0c47 80       		.byte	-128
+ 3168 0c48 2E       		.byte	46
+ 3169 0c49 20       		.byte	32
+ 3170 0c4a 2F       		.byte	47
+ 3171 0c4b 22       		.byte	34
+ 3172 0c4c 30       		.byte	48
+ 3173 0c4d 30       		.byte	48
+ 3174 0c4e 31       		.byte	49
+ 3175 0c4f 08       		.byte	8
+ 3176 0c50 34       		.byte	52
+ 3177 0c51 40       		.byte	64
+ 3178 0c52 35       		.byte	53
+ 3179 0c53 02       		.byte	2
+ 3180 0c54 37       		.byte	55
+ 3181 0c55 14       		.byte	20
+ 3182 0c56 39       		.byte	57
+ 3183 0c57 04       		.byte	4
+ 3184 0c58 3B       		.byte	59
+ 3185 0c59 20       		.byte	32
+ 3186 0c5a 3D       		.byte	61
+ 3187 0c5b 22       		.byte	34
+ 3188 0c5c 3F       		.byte	63
+ 3189 0c5d 80       		.byte	-128
+ 3190 0c5e 81       		.byte	-127
+ 3191 0c5f 01       		.byte	1
+ 3192 0c60 86       		.byte	-122
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 57
+
+
+ 3193 0c61 10       		.byte	16
+ 3194 0c62 88       		.byte	-120
+ 3195 0c63 10       		.byte	16
+ 3196 0c64 89       		.byte	-119
+ 3197 0c65 40       		.byte	64
+ 3198 0c66 8A       		.byte	-118
+ 3199 0c67 10       		.byte	16
+ 3200 0c68 8B       		.byte	-117
+ 3201 0c69 40       		.byte	64
+ 3202 0c6a 90       		.byte	-112
+ 3203 0c6b 02       		.byte	2
+ 3204 0c6c 91       		.byte	-111
+ 3205 0c6d 84       		.byte	-124
+ 3206 0c6e 92       		.byte	-110
+ 3207 0c6f 80       		.byte	-128
+ 3208 0c70 93       		.byte	-109
+ 3209 0c71 28       		.byte	40
+ 3210 0c72 96       		.byte	-106
+ 3211 0c73 04       		.byte	4
+ 3212 0c74 97       		.byte	-105
+ 3213 0c75 10       		.byte	16
+ 3214 0c76 98       		.byte	-104
+ 3215 0c77 40       		.byte	64
+ 3216 0c78 99       		.byte	-103
+ 3217 0c79 70       		.byte	112
+ 3218 0c7a 9A       		.byte	-102
+ 3219 0c7b 4D       		.byte	77
+ 3220 0c7c 9B       		.byte	-101
+ 3221 0c7d 01       		.byte	1
+ 3222 0c7e 9D       		.byte	-99
+ 3223 0c7f 01       		.byte	1
+ 3224 0c80 9E       		.byte	-98
+ 3225 0c81 10       		.byte	16
+ 3226 0c82 9F       		.byte	-97
+ 3227 0c83 54       		.byte	84
+ 3228 0c84 A0       		.byte	-96
+ 3229 0c85 A9       		.byte	-87
+ 3230 0c86 A1       		.byte	-95
+ 3231 0c87 40       		.byte	64
+ 3232 0c88 A2       		.byte	-94
+ 3233 0c89 83       		.byte	-125
+ 3234 0c8a A3       		.byte	-93
+ 3235 0c8b 52       		.byte	82
+ 3236 0c8c A5       		.byte	-91
+ 3237 0c8d 10       		.byte	16
+ 3238 0c8e A9       		.byte	-87
+ 3239 0c8f 40       		.byte	64
+ 3240 0c90 AC       		.byte	-84
+ 3241 0c91 40       		.byte	64
+ 3242 0c92 AE       		.byte	-82
+ 3243 0c93 02       		.byte	2
+ 3244 0c94 B0       		.byte	-80
+ 3245 0c95 20       		.byte	32
+ 3246 0c96 B1       		.byte	-79
+ 3247 0c97 10       		.byte	16
+ 3248 0c98 B3       		.byte	-77
+ 3249 0c99 40       		.byte	64
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 58
+
+
+ 3250 0c9a B5       		.byte	-75
+ 3251 0c9b 04       		.byte	4
+ 3252 0c9c C0       		.byte	-64
+ 3253 0c9d FF       		.byte	-1
+ 3254 0c9e C2       		.byte	-62
+ 3255 0c9f FE       		.byte	-2
+ 3256 0ca0 C4       		.byte	-60
+ 3257 0ca1 FF       		.byte	-1
+ 3258 0ca2 CA       		.byte	-54
+ 3259 0ca3 FF       		.byte	-1
+ 3260 0ca4 CC       		.byte	-52
+ 3261 0ca5 F6       		.byte	-10
+ 3262 0ca6 CE       		.byte	-50
+ 3263 0ca7 B6       		.byte	-74
+ 3264 0ca8 E8       		.byte	-24
+ 3265 0ca9 A8       		.byte	-88
+ 3266 0caa EA       		.byte	-22
+ 3267 0cab 10       		.byte	16
+ 3268 0cac EC       		.byte	-20
+ 3269 0cad 20       		.byte	32
+ 3270 0cae 02       		.byte	2
+ 3271 0caf 1B       		.byte	27
+ 3272 0cb0 05       		.byte	5
+ 3273 0cb1 01       		.byte	1
+ 3274 0cb2 07       		.byte	7
+ 3275 0cb3 02       		.byte	2
+ 3276 0cb4 09       		.byte	9
+ 3277 0cb5 75       		.byte	117
+ 3278 0cb6 10       		.byte	16
+ 3279 0cb7 12       		.byte	18
+ 3280 0cb8 12       		.byte	18
+ 3281 0cb9 01       		.byte	1
+ 3282 0cba 14       		.byte	20
+ 3283 0cbb 01       		.byte	1
+ 3284 0cbc 15       		.byte	21
+ 3285 0cbd 64       		.byte	100
+ 3286 0cbe 16       		.byte	22
+ 3287 0cbf 06       		.byte	6
+ 3288 0cc0 17       		.byte	23
+ 3289 0cc1 11       		.byte	17
+ 3290 0cc2 19       		.byte	25
+ 3291 0cc3 10       		.byte	16
+ 3292 0cc4 1B       		.byte	27
+ 3293 0cc5 E0       		.byte	-32
+ 3294 0cc6 1D       		.byte	29
+ 3295 0cc7 01       		.byte	1
+ 3296 0cc8 1E       		.byte	30
+ 3297 0cc9 13       		.byte	19
+ 3298 0cca 1F       		.byte	31
+ 3299 0ccb 0E       		.byte	14
+ 3300 0ccc 21       		.byte	33
+ 3301 0ccd 35       		.byte	53
+ 3302 0cce 23       		.byte	35
+ 3303 0ccf 40       		.byte	64
+ 3304 0cd0 25       		.byte	37
+ 3305 0cd1 75       		.byte	117
+ 3306 0cd2 26       		.byte	38
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 59
+
+
+ 3307 0cd3 13       		.byte	19
+ 3308 0cd4 28       		.byte	40
+ 3309 0cd5 01       		.byte	1
+ 3310 0cd6 29       		.byte	41
+ 3311 0cd7 11       		.byte	17
+ 3312 0cd8 2A       		.byte	42
+ 3313 0cd9 04       		.byte	4
+ 3314 0cda 2B       		.byte	43
+ 3315 0cdb 88       		.byte	-120
+ 3316 0cdc 2C       		.byte	44
+ 3317 0cdd 01       		.byte	1
+ 3318 0cde 2D       		.byte	45
+ 3319 0cdf 24       		.byte	36
+ 3320 0ce0 2E       		.byte	46
+ 3321 0ce1 32       		.byte	50
+ 3322 0ce2 2F       		.byte	47
+ 3323 0ce3 51       		.byte	81
+ 3324 0ce4 30       		.byte	48
+ 3325 0ce5 20       		.byte	32
+ 3326 0ce6 32       		.byte	50
+ 3327 0ce7 07       		.byte	7
+ 3328 0ce8 34       		.byte	52
+ 3329 0ce9 10       		.byte	16
+ 3330 0cea 35       		.byte	53
+ 3331 0ceb F0       		.byte	-16
+ 3332 0cec 36       		.byte	54
+ 3333 0ced 08       		.byte	8
+ 3334 0cee 37       		.byte	55
+ 3335 0cef 0F       		.byte	15
+ 3336 0cf0 3A       		.byte	58
+ 3337 0cf1 08       		.byte	8
+ 3338 0cf2 3B       		.byte	59
+ 3339 0cf3 A0       		.byte	-96
+ 3340 0cf4 3E       		.byte	62
+ 3341 0cf5 10       		.byte	16
+ 3342 0cf6 54       		.byte	84
+ 3343 0cf7 20       		.byte	32
+ 3344 0cf8 56       		.byte	86
+ 3345 0cf9 04       		.byte	4
+ 3346 0cfa 58       		.byte	88
+ 3347 0cfb 04       		.byte	4
+ 3348 0cfc 59       		.byte	89
+ 3349 0cfd 04       		.byte	4
+ 3350 0cfe 5B       		.byte	91
+ 3351 0cff 04       		.byte	4
+ 3352 0d00 5C       		.byte	92
+ 3353 0d01 11       		.byte	17
+ 3354 0d02 5D       		.byte	93
+ 3355 0d03 10       		.byte	16
+ 3356 0d04 5F       		.byte	95
+ 3357 0d05 01       		.byte	1
+ 3358 0d06 80       		.byte	-128
+ 3359 0d07 2F       		.byte	47
+ 3360 0d08 82       		.byte	-126
+ 3361 0d09 80       		.byte	-128
+ 3362 0d0a 84       		.byte	-124
+ 3363 0d0b 05       		.byte	5
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 60
+
+
+ 3364 0d0c 85       		.byte	-123
+ 3365 0d0d 46       		.byte	70
+ 3366 0d0e 86       		.byte	-122
+ 3367 0d0f 6A       		.byte	106
+ 3368 0d10 87       		.byte	-121
+ 3369 0d11 A9       		.byte	-87
+ 3370 0d12 88       		.byte	-120
+ 3371 0d13 20       		.byte	32
+ 3372 0d14 8A       		.byte	-118
+ 3373 0d15 C0       		.byte	-64
+ 3374 0d16 8C       		.byte	-116
+ 3375 0d17 01       		.byte	1
+ 3376 0d18 8D       		.byte	-115
+ 3377 0d19 0E       		.byte	14
+ 3378 0d1a 8E       		.byte	-114
+ 3379 0d1b 02       		.byte	2
+ 3380 0d1c 8F       		.byte	-113
+ 3381 0d1d 30       		.byte	48
+ 3382 0d1e 90       		.byte	-112
+ 3383 0d1f 06       		.byte	6
+ 3384 0d20 92       		.byte	-110
+ 3385 0d21 60       		.byte	96
+ 3386 0d22 93       		.byte	-109
+ 3387 0d23 01       		.byte	1
+ 3388 0d24 94       		.byte	-108
+ 3389 0d25 60       		.byte	96
+ 3390 0d26 95       		.byte	-107
+ 3391 0d27 2A       		.byte	42
+ 3392 0d28 96       		.byte	-106
+ 3393 0d29 02       		.byte	2
+ 3394 0d2a 97       		.byte	-105
+ 3395 0d2b 54       		.byte	84
+ 3396 0d2c 98       		.byte	-104
+ 3397 0d2d 01       		.byte	1
+ 3398 0d2e 99       		.byte	-103
+ 3399 0d2f 40       		.byte	64
+ 3400 0d30 9A       		.byte	-102
+ 3401 0d31 64       		.byte	100
+ 3402 0d32 9B       		.byte	-101
+ 3403 0d33 13       		.byte	19
+ 3404 0d34 9D       		.byte	-99
+ 3405 0d35 80       		.byte	-128
+ 3406 0d36 9E       		.byte	-98
+ 3407 0d37 10       		.byte	16
+ 3408 0d38 9F       		.byte	-97
+ 3409 0d39 56       		.byte	86
+ 3410 0d3a A0       		.byte	-96
+ 3411 0d3b 08       		.byte	8
+ 3412 0d3c A1       		.byte	-95
+ 3413 0d3d 33       		.byte	51
+ 3414 0d3e A2       		.byte	-94
+ 3415 0d3f 65       		.byte	101
+ 3416 0d40 A3       		.byte	-93
+ 3417 0d41 0C       		.byte	12
+ 3418 0d42 A4       		.byte	-92
+ 3419 0d43 61       		.byte	97
+ 3420 0d44 A6       		.byte	-90
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 61
+
+
+ 3421 0d45 02       		.byte	2
+ 3422 0d46 A8       		.byte	-88
+ 3423 0d47 40       		.byte	64
+ 3424 0d48 AA       		.byte	-86
+ 3425 0d49 20       		.byte	32
+ 3426 0d4a AD       		.byte	-83
+ 3427 0d4b FF       		.byte	-1
+ 3428 0d4c B2       		.byte	-78
+ 3429 0d4d 1F       		.byte	31
+ 3430 0d4e B3       		.byte	-77
+ 3431 0d4f FF       		.byte	-1
+ 3432 0d50 B4       		.byte	-76
+ 3433 0d51 E0       		.byte	-32
+ 3434 0d52 BA       		.byte	-70
+ 3435 0d53 20       		.byte	32
+ 3436 0d54 D8       		.byte	-40
+ 3437 0d55 04       		.byte	4
+ 3438 0d56 D9       		.byte	-39
+ 3439 0d57 04       		.byte	4
+ 3440 0d58 DF       		.byte	-33
+ 3441 0d59 01       		.byte	1
+ 3442 0d5a 00       		.byte	0
+ 3443 0d5b 02       		.byte	2
+ 3444 0d5c 04       		.byte	4
+ 3445 0d5d 02       		.byte	2
+ 3446 0d5e 05       		.byte	5
+ 3447 0d5f 14       		.byte	20
+ 3448 0d60 06       		.byte	6
+ 3449 0d61 80       		.byte	-128
+ 3450 0d62 07       		.byte	7
+ 3451 0d63 01       		.byte	1
+ 3452 0d64 0A       		.byte	10
+ 3453 0d65 51       		.byte	81
+ 3454 0d66 0D       		.byte	13
+ 3455 0d67 20       		.byte	32
+ 3456 0d68 0E       		.byte	14
+ 3457 0d69 22       		.byte	34
+ 3458 0d6a 0F       		.byte	15
+ 3459 0d6b 80       		.byte	-128
+ 3460 0d6c 10       		.byte	16
+ 3461 0d6d 0C       		.byte	12
+ 3462 0d6e 12       		.byte	18
+ 3463 0d6f 12       		.byte	18
+ 3464 0d70 14       		.byte	20
+ 3465 0d71 40       		.byte	64
+ 3466 0d72 15       		.byte	21
+ 3467 0d73 20       		.byte	32
+ 3468 0d74 17       		.byte	23
+ 3469 0d75 04       		.byte	4
+ 3470 0d76 18       		.byte	24
+ 3471 0d77 04       		.byte	4
+ 3472 0d78 1A       		.byte	26
+ 3473 0d79 51       		.byte	81
+ 3474 0d7a 1D       		.byte	29
+ 3475 0d7b 14       		.byte	20
+ 3476 0d7c 21       		.byte	33
+ 3477 0d7d 80       		.byte	-128
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 62
+
+
+ 3478 0d7e 22       		.byte	34
+ 3479 0d7f 10       		.byte	16
+ 3480 0d80 23       		.byte	35
+ 3481 0d81 0A       		.byte	10
+ 3482 0d82 25       		.byte	37
+ 3483 0d83 04       		.byte	4
+ 3484 0d84 28       		.byte	40
+ 3485 0d85 14       		.byte	20
+ 3486 0d86 2A       		.byte	42
+ 3487 0d87 41       		.byte	65
+ 3488 0d88 2C       		.byte	44
+ 3489 0d89 80       		.byte	-128
+ 3490 0d8a 2E       		.byte	46
+ 3491 0d8b 80       		.byte	-128
+ 3492 0d8c 31       		.byte	49
+ 3493 0d8d 88       		.byte	-120
+ 3494 0d8e 32       		.byte	50
+ 3495 0d8f 10       		.byte	16
+ 3496 0d90 34       		.byte	52
+ 3497 0d91 42       		.byte	66
+ 3498 0d92 35       		.byte	53
+ 3499 0d93 04       		.byte	4
+ 3500 0d94 36       		.byte	54
+ 3501 0d95 10       		.byte	16
+ 3502 0d96 37       		.byte	55
+ 3503 0d97 01       		.byte	1
+ 3504 0d98 3B       		.byte	59
+ 3505 0d99 28       		.byte	40
+ 3506 0d9a 3D       		.byte	61
+ 3507 0d9b 08       		.byte	8
+ 3508 0d9c 3F       		.byte	63
+ 3509 0d9d 80       		.byte	-128
+ 3510 0d9e 45       		.byte	69
+ 3511 0d9f 04       		.byte	4
+ 3512 0da0 47       		.byte	71
+ 3513 0da1 04       		.byte	4
+ 3514 0da2 59       		.byte	89
+ 3515 0da3 20       		.byte	32
+ 3516 0da4 5B       		.byte	91
+ 3517 0da5 4A       		.byte	74
+ 3518 0da6 60       		.byte	96
+ 3519 0da7 04       		.byte	4
+ 3520 0da8 61       		.byte	97
+ 3521 0da9 40       		.byte	64
+ 3522 0daa 63       		.byte	99
+ 3523 0dab 40       		.byte	64
+ 3524 0dac 80       		.byte	-128
+ 3525 0dad 80       		.byte	-128
+ 3526 0dae 81       		.byte	-127
+ 3527 0daf 30       		.byte	48
+ 3528 0db0 83       		.byte	-125
+ 3529 0db1 48       		.byte	72
+ 3530 0db2 87       		.byte	-121
+ 3531 0db3 40       		.byte	64
+ 3532 0db4 89       		.byte	-119
+ 3533 0db5 10       		.byte	16
+ 3534 0db6 8D       		.byte	-115
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 63
+
+
+ 3535 0db7 04       		.byte	4
+ 3536 0db8 90       		.byte	-112
+ 3537 0db9 02       		.byte	2
+ 3538 0dba 93       		.byte	-109
+ 3539 0dbb 28       		.byte	40
+ 3540 0dbc 98       		.byte	-104
+ 3541 0dbd 52       		.byte	82
+ 3542 0dbe 99       		.byte	-103
+ 3543 0dbf 60       		.byte	96
+ 3544 0dc0 9A       		.byte	-102
+ 3545 0dc1 51       		.byte	81
+ 3546 0dc2 9D       		.byte	-99
+ 3547 0dc3 04       		.byte	4
+ 3548 0dc4 9F       		.byte	-97
+ 3549 0dc5 04       		.byte	4
+ 3550 0dc6 A0       		.byte	-96
+ 3551 0dc7 89       		.byte	-119
+ 3552 0dc8 A1       		.byte	-95
+ 3553 0dc9 08       		.byte	8
+ 3554 0dca A2       		.byte	-94
+ 3555 0dcb 13       		.byte	19
+ 3556 0dcc A3       		.byte	-93
+ 3557 0dcd 48       		.byte	72
+ 3558 0dce A9       		.byte	-87
+ 3559 0dcf 04       		.byte	4
+ 3560 0dd0 AA       		.byte	-86
+ 3561 0dd1 04       		.byte	4
+ 3562 0dd2 AB       		.byte	-85
+ 3563 0dd3 40       		.byte	64
+ 3564 0dd4 AF       		.byte	-81
+ 3565 0dd5 10       		.byte	16
+ 3566 0dd6 C0       		.byte	-64
+ 3567 0dd7 F8       		.byte	-8
+ 3568 0dd8 C2       		.byte	-62
+ 3569 0dd9 FD       		.byte	-3
+ 3570 0dda C4       		.byte	-60
+ 3571 0ddb 77       		.byte	119
+ 3572 0ddc CA       		.byte	-54
+ 3573 0ddd 9F       		.byte	-97
+ 3574 0dde CC       		.byte	-52
+ 3575 0ddf FE       		.byte	-2
+ 3576 0de0 CE       		.byte	-50
+ 3577 0de1 56       		.byte	86
+ 3578 0de2 D6       		.byte	-42
+ 3579 0de3 0F       		.byte	15
+ 3580 0de4 D8       		.byte	-40
+ 3581 0de5 0D       		.byte	13
+ 3582 0de6 E6       		.byte	-26
+ 3583 0de7 C0       		.byte	-64
+ 3584 0de8 EA       		.byte	-22
+ 3585 0de9 81       		.byte	-127
+ 3586 0dea 30       		.byte	48
+ 3587 0deb 08       		.byte	8
+ 3588 0dec 32       		.byte	50
+ 3589 0ded 20       		.byte	32
+ 3590 0dee 37       		.byte	55
+ 3591 0def 10       		.byte	16
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 64
+
+
+ 3592 0df0 57       		.byte	87
+ 3593 0df1 40       		.byte	64
+ 3594 0df2 CC       		.byte	-52
+ 3595 0df3 70       		.byte	112
+ 3596 0df4 D4       		.byte	-44
+ 3597 0df5 40       		.byte	64
+ 3598 0df6 8C       		.byte	-116
+ 3599 0df7 08       		.byte	8
+ 3600 0df8 9F       		.byte	-97
+ 3601 0df9 10       		.byte	16
+ 3602 0dfa A4       		.byte	-92
+ 3603 0dfb 08       		.byte	8
+ 3604 0dfc A6       		.byte	-90
+ 3605 0dfd 20       		.byte	32
+ 3606 0dfe A7       		.byte	-89
+ 3607 0dff 40       		.byte	64
+ 3608 0e00 3E       		.byte	62
+ 3609 0e01 10       		.byte	16
+ 3610 0e02 9F       		.byte	-97
+ 3611 0e03 10       		.byte	16
+ 3612 0e04 A6       		.byte	-90
+ 3613 0e05 20       		.byte	32
+ 3614 0e06 AB       		.byte	-85
+ 3615 0e07 40       		.byte	64
+ 3616 0e08 CE       		.byte	-50
+ 3617 0e09 20       		.byte	32
+ 3618 0e0a EA       		.byte	-22
+ 3619 0e0b 20       		.byte	32
+ 3620 0e0c 83       		.byte	-125
+ 3621 0e0d 10       		.byte	16
+ 3622 0e0e 96       		.byte	-106
+ 3623 0e0f 10       		.byte	16
+ 3624 0e10 9F       		.byte	-97
+ 3625 0e11 10       		.byte	16
+ 3626 0e12 A6       		.byte	-90
+ 3627 0e13 20       		.byte	32
+ 3628 0e14 E2       		.byte	-30
+ 3629 0e15 20       		.byte	32
+ 3630 0e16 00       		.byte	0
+ 3631 0e17 02       		.byte	2
+ 3632 0e18 05       		.byte	5
+ 3633 0e19 08       		.byte	8
+ 3634 0e1a 08       		.byte	8
+ 3635 0e1b 08       		.byte	8
+ 3636 0e1c 0C       		.byte	12
+ 3637 0e1d 04       		.byte	4
+ 3638 0e1e 10       		.byte	16
+ 3639 0e1f 10       		.byte	16
+ 3640 0e20 15       		.byte	21
+ 3641 0e21 01       		.byte	1
+ 3642 0e22 52       		.byte	82
+ 3643 0e23 02       		.byte	2
+ 3644 0e24 5C       		.byte	92
+ 3645 0e25 10       		.byte	16
+ 3646 0e26 65       		.byte	101
+ 3647 0e27 80       		.byte	-128
+ 3648 0e28 82       		.byte	-126
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 65
+
+
+ 3649 0e29 02       		.byte	2
+ 3650 0e2a 89       		.byte	-119
+ 3651 0e2b 08       		.byte	8
+ 3652 0e2c C0       		.byte	-64
+ 3653 0e2d 0C       		.byte	12
+ 3654 0e2e C2       		.byte	-62
+ 3655 0e2f 0C       		.byte	12
+ 3656 0e30 C4       		.byte	-60
+ 3657 0e31 0C       		.byte	12
+ 3658 0e32 D4       		.byte	-44
+ 3659 0e33 01       		.byte	1
+ 3660 0e34 D6       		.byte	-42
+ 3661 0e35 05       		.byte	5
+ 3662 0e36 E2       		.byte	-30
+ 3663 0e37 01       		.byte	1
+ 3664 0e38 91       		.byte	-111
+ 3665 0e39 01       		.byte	1
+ 3666 0e3a 94       		.byte	-108
+ 3667 0e3b 10       		.byte	16
+ 3668 0e3c 98       		.byte	-104
+ 3669 0e3d 10       		.byte	16
+ 3670 0e3e 9D       		.byte	-99
+ 3671 0e3f 80       		.byte	-128
+ 3672 0e40 A0       		.byte	-96
+ 3673 0e41 01       		.byte	1
+ 3674 0e42 AC       		.byte	-84
+ 3675 0e43 01       		.byte	1
+ 3676 0e44 B0       		.byte	-80
+ 3677 0e45 0C       		.byte	12
+ 3678 0e46 EA       		.byte	-22
+ 3679 0e47 01       		.byte	1
+ 3680 0e48 EE       		.byte	-18
+ 3681 0e49 01       		.byte	1
+ 3682 0e4a 80       		.byte	-128
+ 3683 0e4b 10       		.byte	16
+ 3684 0e4c 8D       		.byte	-115
+ 3685 0e4d 80       		.byte	-128
+ 3686 0e4e 91       		.byte	-111
+ 3687 0e4f 01       		.byte	1
+ 3688 0e50 94       		.byte	-108
+ 3689 0e51 10       		.byte	16
+ 3690 0e52 98       		.byte	-104
+ 3691 0e53 10       		.byte	16
+ 3692 0e54 9D       		.byte	-99
+ 3693 0e55 80       		.byte	-128
+ 3694 0e56 B0       		.byte	-80
+ 3695 0e57 01       		.byte	1
+ 3696 0e58 E4       		.byte	-28
+ 3697 0e59 02       		.byte	2
+ 3698 0e5a EA       		.byte	-22
+ 3699 0e5b 01       		.byte	1
+ 3700 0e5c 86       		.byte	-122
+ 3701 0e5d 01       		.byte	1
+ 3702 0e5e 91       		.byte	-111
+ 3703 0e5f 01       		.byte	1
+ 3704 0e60 98       		.byte	-104
+ 3705 0e61 10       		.byte	16
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 66
+
+
+ 3706 0e62 96       		.byte	-106
+ 3707 0e63 10       		.byte	16
+ 3708 0e64 A6       		.byte	-90
+ 3709 0e65 20       		.byte	32
+ 3710 0e66 86       		.byte	-122
+ 3711 0e67 20       		.byte	32
+ 3712 0e68 A6       		.byte	-90
+ 3713 0e69 20       		.byte	32
+ 3714 0e6a AA       		.byte	-86
+ 3715 0e6b 10       		.byte	16
+ 3716 0e6c E6       		.byte	-26
+ 3717 0e6d 40       		.byte	64
+ 3718 0e6e EA       		.byte	-22
+ 3719 0e6f 80       		.byte	-128
+ 3720 0e70 10       		.byte	16
+ 3721 0e71 40       		.byte	64
+ 3722 0e72 13       		.byte	19
+ 3723 0e73 20       		.byte	32
+ 3724 0e74 14       		.byte	20
+ 3725 0e75 80       		.byte	-128
+ 3726 0e76 78       		.byte	120
+ 3727 0e77 10       		.byte	16
+ 3728 0e78 7D       		.byte	125
+ 3729 0e79 01       		.byte	1
+ 3730 0e7a 91       		.byte	-111
+ 3731 0e7b 01       		.byte	1
+ 3732 0e7c 92       		.byte	-110
+ 3733 0e7d 01       		.byte	1
+ 3734 0e7e 93       		.byte	-109
+ 3735 0e7f 10       		.byte	16
+ 3736 0e80 98       		.byte	-104
+ 3737 0e81 10       		.byte	16
+ 3738 0e82 AF       		.byte	-81
+ 3739 0e83 10       		.byte	16
+ 3740 0e84 C4       		.byte	-60
+ 3741 0e85 0E       		.byte	14
+ 3742 0e86 DE       		.byte	-34
+ 3743 0e87 03       		.byte	3
+ 3744 0e88 08       		.byte	8
+ 3745 0e89 09       		.byte	9
+ 3746 0e8a 0C       		.byte	12
+ 3747 0e8b 04       		.byte	4
+ 3748 0e8c 5A       		.byte	90
+ 3749 0e8d 01       		.byte	1
+ 3750 0e8e 67       		.byte	103
+ 3751 0e8f 10       		.byte	16
+ 3752 0e90 78       		.byte	120
+ 3753 0e91 40       		.byte	64
+ 3754 0e92 7C       		.byte	124
+ 3755 0e93 80       		.byte	-128
+ 3756 0e94 88       		.byte	-120
+ 3757 0e95 05       		.byte	5
+ 3758 0e96 92       		.byte	-110
+ 3759 0e97 01       		.byte	1
+ 3760 0e98 93       		.byte	-109
+ 3761 0e99 10       		.byte	16
+ 3762 0e9a 98       		.byte	-104
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 67
+
+
+ 3763 0e9b C0       		.byte	-64
+ 3764 0e9c 9C       		.byte	-100
+ 3765 0e9d 08       		.byte	8
+ 3766 0e9e AB       		.byte	-85
+ 3767 0e9f 20       		.byte	32
+ 3768 0ea0 B0       		.byte	-80
+ 3769 0ea1 08       		.byte	8
+ 3770 0ea2 C2       		.byte	-62
+ 3771 0ea3 0C       		.byte	12
+ 3772 0ea4 D6       		.byte	-42
+ 3773 0ea5 02       		.byte	2
+ 3774 0ea6 D8       		.byte	-40
+ 3775 0ea7 01       		.byte	1
+ 3776 0ea8 DC       		.byte	-36
+ 3777 0ea9 01       		.byte	1
+ 3778 0eaa DE       		.byte	-34
+ 3779 0eab 04       		.byte	4
+ 3780 0eac E6       		.byte	-26
+ 3781 0ead 05       		.byte	5
+ 3782 0eae EA       		.byte	-22
+ 3783 0eaf 01       		.byte	1
+ 3784 0eb0 00       		.byte	0
+ 3785 0eb1 0F       		.byte	15
+ 3786 0eb2 08       		.byte	8
+ 3787 0eb3 0F       		.byte	15
+ 3788 0eb4 0A       		.byte	10
+ 3789 0eb5 03       		.byte	3
+ 3790 0eb6 0C       		.byte	12
+ 3791 0eb7 0B       		.byte	11
+ 3792 0eb8 0E       		.byte	14
+ 3793 0eb9 0F       		.byte	15
+ 3794 0eba 10       		.byte	16
+ 3795 0ebb 0B       		.byte	11
+ 3796 0ebc 1C       		.byte	28
+ 3797 0ebd 0B       		.byte	11
+ 3798 0ebe 00       		.byte	0
+ 3799 0ebf 3F       		.byte	63
+ 3800 0ec0 03       		.byte	3
+ 3801 0ec1 C0       		.byte	-64
+ 3802 0ec2 00       		.byte	0
+ 3803 0ec3 00       		.byte	0
+ 3804 0ec4 20       		.byte	32
+ 3805 0ec5 30       		.byte	48
+ 3806 0ec6 00       		.byte	0
+ 3807 0ec7 00       		.byte	0
+ 3808 0ec8 30       		.byte	48
+ 3809 0ec9 00       		.byte	0
+ 3810 0eca 00       		.byte	0
+ 3811 0ecb 00       		.byte	0
+ 3812 0ecc 03       		.byte	3
+ 3813 0ecd 01       		.byte	1
+ 3814 0ece 00       		.byte	0
+ 3815 0ecf 00       		.byte	0
+ 3816 0ed0 7F       		.byte	127
+ 3817 0ed1 0C       		.byte	12
+ 3818 0ed2 00       		.byte	0
+ 3819 0ed3 30       		.byte	48
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 68
+
+
+ 3820 0ed4 08       		.byte	8
+ 3821 0ed5 20       		.byte	32
+ 3822 0ed6 07       		.byte	7
+ 3823 0ed7 00       		.byte	0
+ 3824 0ed8 3A       		.byte	58
+ 3825 0ed9 00       		.byte	0
+ 3826 0eda 04       		.byte	4
+ 3827 0edb 01       		.byte	1
+ 3828 0edc 10       		.byte	16
+ 3829 0edd 02       		.byte	2
+ 3830 0ede 07       		.byte	7
+ 3831 0edf 00       		.byte	0
+ 3832 0ee0 05       		.byte	5
+ 3833 0ee1 01       		.byte	1
+ 3834 0ee2 78       		.byte	120
+ 3835 0ee3 00       		.byte	0
+ 3836 0ee4 01       		.byte	1
+ 3837 0ee5 01       		.byte	1
+ 3838 0ee6 00       		.byte	0
+ 3839 0ee7 00       		.byte	0
+ 3840 0ee8 40       		.byte	64
+ 3841 0ee9 00       		.byte	0
+ 3842 0eea 07       		.byte	7
+ 3843 0eeb 78       		.byte	120
+ 3844 0eec 22       		.byte	34
+ 3845 0eed 01       		.byte	1
+ 3846 0eee 05       		.byte	5
+ 3847 0eef 00       		.byte	0
+ 3848 0ef0 01       		.byte	1
+ 3849 0ef1 64       		.byte	100
+ 3850 0ef2 00       		.byte	0
+ 3851 0ef3 00       		.byte	0
+ 3852 0ef4 03       		.byte	3
+ 3853 0ef5 0C       		.byte	12
+ 3854 0ef6 00       		.byte	0
+ 3855 0ef7 50       		.byte	80
+ 3856 0ef8 01       		.byte	1
+ 3857 0ef9 01       		.byte	1
+ 3858 0efa 00       		.byte	0
+ 3859 0efb 00       		.byte	0
+ 3860 0efc 7F       		.byte	127
+ 3861 0efd 03       		.byte	3
+ 3862 0efe 00       		.byte	0
+ 3863 0eff 0C       		.byte	12
+ 3864 0f00 00       		.byte	0
+ 3865 0f01 70       		.byte	112
+ 3866 0f02 00       		.byte	0
+ 3867 0f03 00       		.byte	0
+ 3868 0f04 08       		.byte	8
+ 3869 0f05 0A       		.byte	10
+ 3870 0f06 00       		.byte	0
+ 3871 0f07 20       		.byte	32
+ 3872 0f08 00       		.byte	0
+ 3873 0f09 00       		.byte	0
+ 3874 0f0a 01       		.byte	1
+ 3875 0f0b 05       		.byte	5
+ 3876 0f0c 36       		.byte	54
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 69
+
+
+ 3877 0f0d 00       		.byte	0
+ 3878 0f0e 00       		.byte	0
+ 3879 0f0f 00       		.byte	0
+ 3880 0f10 04       		.byte	4
+ 3881 0f11 0B       		.byte	11
+ 3882 0f12 0D       		.byte	13
+ 3883 0f13 0D       		.byte	13
+ 3884 0f14 15       		.byte	21
+ 3885 0f15 FF       		.byte	-1
+ 3886 0f16 7F       		.byte	127
+ 3887 0f17 FF       		.byte	-1
+ 3888 0f18 42       		.byte	66
+ 3889 0f19 A0       		.byte	-96
+ 3890 0f1a 70       		.byte	112
+ 3891 0f1b 00       		.byte	0
+ 3892 0f1c 0C       		.byte	12
+ 3893 0f1d 00       		.byte	0
+ 3894 0f1e 00       		.byte	0
+ 3895 0f1f 00       		.byte	0
+ 3896 0f20 18       		.byte	24
+ 3897 0f21 00       		.byte	0
+ 3898 0f22 04       		.byte	4
+ 3899 0f23 00       		.byte	0
+ 3900 0f24 04       		.byte	4
+ 3901 0f25 04       		.byte	4
+ 3902 0f26 04       		.byte	4
+ 3903 0f27 04       		.byte	4
+ 3904 0f28 32       		.byte	50
+ 3905 0f29 30       		.byte	48
+ 3906 0f2a 00       		.byte	0
+ 3907 0f2b 01       		.byte	1
+ 3908 0f2c 00       		.byte	0
+ 3909 0f2d 09       		.byte	9
+ 3910 0f2e 40       		.byte	64
+ 3911 0f2f 09       		.byte	9
+ 3912 0f30 30       		.byte	48
+ 3913 0f31 09       		.byte	9
+ 3914 0f32 00       		.byte	0
+ 3915 0f33 00       		.byte	0
+ 3916 0f34 00       		.byte	0
+ 3917 0f35 00       		.byte	0
+ 3918 0f36 00       		.byte	0
+ 3919 0f37 00       		.byte	0
+ 3920 0f38 00       		.byte	0
+ 3921 0f39 00       		.byte	0
+ 3922 0f3a 00       		.byte	0
+ 3923 0f3b 00       		.byte	0
+ 3924 0f3c 00       		.byte	0
+ 3925 0f3d 00       		.byte	0
+ 3926 0f3e 00       		.byte	0
+ 3927 0f3f 00       		.byte	0
+ 3928 0f40 00       		.byte	0
+ 3929 0f41 00       		.byte	0
+ 3930 0f42 00       		.byte	0
+ 3931 0f43 00       		.byte	0
+ 3932 0f44 00       		.byte	0
+ 3933 0f45 00       		.byte	0
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 70
+
+
+ 3934 0f46 00       		.byte	0
+ 3935 0f47 00       		.byte	0
+ 3936 0f48 00       		.byte	0
+ 3937 0f49 00       		.byte	0
+ 3938 0f4a 00       		.byte	0
+ 3939 0f4b 00       		.byte	0
+ 3940 0f4c 00       		.byte	0
+ 3941 0f4d 80       		.byte	-128
+ 3942 0f4e B0       		.byte	-80
+ 3943 0f4f 00       		.byte	0
+ 3944 0f50 30       		.byte	48
+ 3945 0f51 00       		.byte	0
+ 3946 0f52 00       		.byte	0
+ 3947 0f53 00       		.byte	0
+ 3948 0f54 00       		.byte	0
+ 3949 0f55 01       		.byte	1
+ 3950 0f56 01       		.byte	1
+ 3951 0f57 00       		.byte	0
+ 3952 0f58 01       		.byte	1
+ 3953 0f59 00       		.byte	0
+ 3954 0f5a 00       		.byte	0
+ 3955 0f5b 00       		.byte	0
+ 3956 0f5c 00       		.byte	0
+ 3957 0f5d C0       		.byte	-64
+ 3958 0f5e F0       		.byte	-16
+ 3959 0f5f 00       		.byte	0
+ 3960 0f60 30       		.byte	48
+ 3961 0f61 00       		.byte	0
+ 3962 0f62 00       		.byte	0
+ 3963 0f63 00       		.byte	0
+ 3964 0f64 43       		.byte	67
+ 3965 0f65 00       		.byte	0
+ 3966 0f66 30       		.byte	48
+ 3967 0f67 C3       		.byte	-61
+ 3968 0f68 C0       		.byte	-64
+ 3969 0f69 00       		.byte	0
+ 3970 0f6a 43       		.byte	67
+ 3971 0f6b 00       		.byte	0
+ 3972 0f6c 00       		.byte	0
+ 3973 0f6d 00       		.byte	0
+ 3974 0f6e 00       		.byte	0
+ 3975 0f6f 00       		.byte	0
+ 3976              		.global	cy_meta_custnvl
+ 3977              		.section	.cycustnvl,"a",%progbits
+ 3978              		.align	2
+ 3979              		.type	cy_meta_custnvl, %object
+ 3980              		.size	cy_meta_custnvl, 4
+ 3981              	cy_meta_custnvl:
+ 3982 0000 00       		.byte	0
+ 3983 0001 00       		.byte	0
+ 3984 0002 40       		.byte	64
+ 3985 0003 05       		.byte	5
+ 3986              		.global	cy_meta_wonvl
+ 3987              		.section	.cywolatch,"a",%progbits
+ 3988              		.align	2
+ 3989              		.type	cy_meta_wonvl, %object
+ 3990              		.size	cy_meta_wonvl, 4
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 71
+
+
+ 3991              	cy_meta_wonvl:
+ 3992 0000 BC       		.byte	-68
+ 3993 0001 90       		.byte	-112
+ 3994 0002 AC       		.byte	-84
+ 3995 0003 AF       		.byte	-81
+ 3996              		.global	cy_meta_flashprotect
+ 3997              		.section	.cyflashprotect,"a",%progbits
+ 3998              		.align	2
+ 3999              		.type	cy_meta_flashprotect, %object
+ 4000              		.size	cy_meta_flashprotect, 256
+ 4001              	cy_meta_flashprotect:
+ 4002 0000 00000000 		.space	256
+ 4002      00000000 
+ 4002      00000000 
+ 4002      00000000 
+ 4002      00000000 
+ 4003              		.global	cy_metadata
+ 4004              		.section	.cymeta,"a",%progbits
+ 4005              		.align	2
+ 4006              		.type	cy_metadata, %object
+ 4007              		.size	cy_metadata, 12
+ 4008              	cy_metadata:
+ 4009 0000 00       		.byte	0
+ 4010 0001 01       		.byte	1
+ 4011 0002 2E       		.byte	46
+ 4012 0003 12       		.byte	18
+ 4013 0004 30       		.byte	48
+ 4014 0005 69       		.byte	105
+ 4015 0006 00       		.byte	0
+ 4016 0007 01       		.byte	1
+ 4017 0008 00       		.byte	0
+ 4018 0009 00       		.byte	0
+ 4019 000a 00       		.byte	0
+ 4020 000b 00       		.byte	0
+ 4021              		.text
+ 4022              	.Letext0:
+ 4023              		.file 1 ".\\Generated_Source\\PSoC5\\cymetadata.c"
+ 4024              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 4025              		.section	.debug_info,"",%progbits
+ 4026              	.Ldebug_info0:
+ 4027 0000 3F010000 		.4byte	0x13f
+ 4028 0004 0200     		.2byte	0x2
+ 4029 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 4030 000a 04       		.byte	0x4
+ 4031 000b 01       		.uleb128 0x1
+ 4032 000c 45010000 		.4byte	.LASF18
+ 4033 0010 01       		.byte	0x1
+ 4034 0011 00000000 		.4byte	.LASF19
+ 4035 0015 B8000000 		.4byte	.LASF20
+ 4036 0019 00000000 		.4byte	.Ldebug_line0
+ 4037 001d 02       		.uleb128 0x2
+ 4038 001e 01       		.byte	0x1
+ 4039 001f 06       		.byte	0x6
+ 4040 0020 97010000 		.4byte	.LASF0
+ 4041 0024 02       		.uleb128 0x2
+ 4042 0025 01       		.byte	0x1
+ 4043 0026 08       		.byte	0x8
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 72
+
+
+ 4044 0027 38000000 		.4byte	.LASF1
+ 4045 002b 02       		.uleb128 0x2
+ 4046 002c 02       		.byte	0x2
+ 4047 002d 05       		.byte	0x5
+ 4048 002e 35010000 		.4byte	.LASF2
+ 4049 0032 02       		.uleb128 0x2
+ 4050 0033 02       		.byte	0x2
+ 4051 0034 07       		.byte	0x7
+ 4052 0035 58000000 		.4byte	.LASF3
+ 4053 0039 02       		.uleb128 0x2
+ 4054 003a 04       		.byte	0x4
+ 4055 003b 05       		.byte	0x5
+ 4056 003c 8E010000 		.4byte	.LASF4
+ 4057 0040 02       		.uleb128 0x2
+ 4058 0041 04       		.byte	0x4
+ 4059 0042 07       		.byte	0x7
+ 4060 0043 46000000 		.4byte	.LASF5
+ 4061 0047 02       		.uleb128 0x2
+ 4062 0048 08       		.byte	0x8
+ 4063 0049 05       		.byte	0x5
+ 4064 004a 22010000 		.4byte	.LASF6
+ 4065 004e 02       		.uleb128 0x2
+ 4066 004f 08       		.byte	0x8
+ 4067 0050 07       		.byte	0x7
+ 4068 0051 A1000000 		.4byte	.LASF7
+ 4069 0055 03       		.uleb128 0x3
+ 4070 0056 04       		.byte	0x4
+ 4071 0057 05       		.byte	0x5
+ 4072 0058 696E7400 		.ascii	"int\000"
+ 4073 005c 02       		.uleb128 0x2
+ 4074 005d 04       		.byte	0x4
+ 4075 005e 07       		.byte	0x7
+ 4076 005f 94000000 		.4byte	.LASF8
+ 4077 0063 04       		.uleb128 0x4
+ 4078 0064 3F010000 		.4byte	.LASF21
+ 4079 0068 02       		.byte	0x2
+ 4080 0069 5B       		.byte	0x5b
+ 4081 006a 24000000 		.4byte	0x24
+ 4082 006e 02       		.uleb128 0x2
+ 4083 006f 04       		.byte	0x4
+ 4084 0070 04       		.byte	0x4
+ 4085 0071 32000000 		.4byte	.LASF9
+ 4086 0075 02       		.uleb128 0x2
+ 4087 0076 08       		.byte	0x8
+ 4088 0077 04       		.byte	0x4
+ 4089 0078 6B000000 		.4byte	.LASF10
+ 4090 007c 02       		.uleb128 0x2
+ 4091 007d 01       		.byte	0x1
+ 4092 007e 08       		.byte	0x8
+ 4093 007f 30010000 		.4byte	.LASF11
+ 4094 0083 05       		.uleb128 0x5
+ 4095 0084 63000000 		.4byte	0x63
+ 4096 0088 94000000 		.4byte	0x94
+ 4097 008c 06       		.uleb128 0x6
+ 4098 008d 94000000 		.4byte	0x94
+ 4099 0091 6F0F     		.2byte	0xf6f
+ 4100 0093 00       		.byte	0
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 73
+
+
+ 4101 0094 02       		.uleb128 0x2
+ 4102 0095 04       		.byte	0x4
+ 4103 0096 07       		.byte	0x7
+ 4104 0097 19010000 		.4byte	.LASF12
+ 4105 009b 07       		.uleb128 0x7
+ 4106 009c 82000000 		.4byte	.LASF13
+ 4107 00a0 01       		.byte	0x1
+ 4108 00a1 1C       		.byte	0x1c
+ 4109 00a2 AD000000 		.4byte	0xad
+ 4110 00a6 01       		.byte	0x1
+ 4111 00a7 05       		.byte	0x5
+ 4112 00a8 03       		.byte	0x3
+ 4113 00a9 00000000 		.4byte	cy_meta_configecc
+ 4114 00ad 08       		.uleb128 0x8
+ 4115 00ae 83000000 		.4byte	0x83
+ 4116 00b2 05       		.uleb128 0x5
+ 4117 00b3 63000000 		.4byte	0x63
+ 4118 00b7 C2000000 		.4byte	0xc2
+ 4119 00bb 09       		.uleb128 0x9
+ 4120 00bc 94000000 		.4byte	0x94
+ 4121 00c0 03       		.byte	0x3
+ 4122 00c1 00       		.byte	0
+ 4123 00c2 0A       		.uleb128 0xa
+ 4124 00c3 72000000 		.4byte	.LASF14
+ 4125 00c7 01       		.byte	0x1
+ 4126 00c8 1402     		.2byte	0x214
+ 4127 00ca D5000000 		.4byte	0xd5
+ 4128 00ce 01       		.byte	0x1
+ 4129 00cf 05       		.byte	0x5
+ 4130 00d0 03       		.byte	0x3
+ 4131 00d1 00000000 		.4byte	cy_meta_custnvl
+ 4132 00d5 08       		.uleb128 0x8
+ 4133 00d6 B2000000 		.4byte	0xb2
+ 4134 00da 0A       		.uleb128 0xa
+ 4135 00db 0B010000 		.4byte	.LASF15
+ 4136 00df 01       		.byte	0x1
+ 4137 00e0 1F02     		.2byte	0x21f
+ 4138 00e2 ED000000 		.4byte	0xed
+ 4139 00e6 01       		.byte	0x1
+ 4140 00e7 05       		.byte	0x5
+ 4141 00e8 03       		.byte	0x3
+ 4142 00e9 00000000 		.4byte	cy_meta_wonvl
+ 4143 00ed 08       		.uleb128 0x8
+ 4144 00ee B2000000 		.4byte	0xb2
+ 4145 00f2 05       		.uleb128 0x5
+ 4146 00f3 63000000 		.4byte	0x63
+ 4147 00f7 02010000 		.4byte	0x102
+ 4148 00fb 09       		.uleb128 0x9
+ 4149 00fc 94000000 		.4byte	0x94
+ 4150 0100 FF       		.byte	0xff
+ 4151 0101 00       		.byte	0
+ 4152 0102 0A       		.uleb128 0xa
+ 4153 0103 F6000000 		.4byte	.LASF16
+ 4154 0107 01       		.byte	0x1
+ 4155 0108 2A02     		.2byte	0x22a
+ 4156 010a 15010000 		.4byte	0x115
+ 4157 010e 01       		.byte	0x1
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 74
+
+
+ 4158 010f 05       		.byte	0x5
+ 4159 0110 03       		.byte	0x3
+ 4160 0111 00000000 		.4byte	cy_meta_flashprotect
+ 4161 0115 08       		.uleb128 0x8
+ 4162 0116 F2000000 		.4byte	0xf2
+ 4163 011a 05       		.uleb128 0x5
+ 4164 011b 63000000 		.4byte	0x63
+ 4165 011f 2A010000 		.4byte	0x12a
+ 4166 0123 09       		.uleb128 0x9
+ 4167 0124 94000000 		.4byte	0x94
+ 4168 0128 0B       		.byte	0xb
+ 4169 0129 00       		.byte	0
+ 4170 012a 0A       		.uleb128 0xa
+ 4171 012b 26000000 		.4byte	.LASF17
+ 4172 012f 01       		.byte	0x1
+ 4173 0130 5402     		.2byte	0x254
+ 4174 0132 3D010000 		.4byte	0x13d
+ 4175 0136 01       		.byte	0x1
+ 4176 0137 05       		.byte	0x5
+ 4177 0138 03       		.byte	0x3
+ 4178 0139 00000000 		.4byte	cy_metadata
+ 4179 013d 08       		.uleb128 0x8
+ 4180 013e 1A010000 		.4byte	0x11a
+ 4181 0142 00       		.byte	0
+ 4182              		.section	.debug_abbrev,"",%progbits
+ 4183              	.Ldebug_abbrev0:
+ 4184 0000 01       		.uleb128 0x1
+ 4185 0001 11       		.uleb128 0x11
+ 4186 0002 01       		.byte	0x1
+ 4187 0003 25       		.uleb128 0x25
+ 4188 0004 0E       		.uleb128 0xe
+ 4189 0005 13       		.uleb128 0x13
+ 4190 0006 0B       		.uleb128 0xb
+ 4191 0007 03       		.uleb128 0x3
+ 4192 0008 0E       		.uleb128 0xe
+ 4193 0009 1B       		.uleb128 0x1b
+ 4194 000a 0E       		.uleb128 0xe
+ 4195 000b 10       		.uleb128 0x10
+ 4196 000c 06       		.uleb128 0x6
+ 4197 000d 00       		.byte	0
+ 4198 000e 00       		.byte	0
+ 4199 000f 02       		.uleb128 0x2
+ 4200 0010 24       		.uleb128 0x24
+ 4201 0011 00       		.byte	0
+ 4202 0012 0B       		.uleb128 0xb
+ 4203 0013 0B       		.uleb128 0xb
+ 4204 0014 3E       		.uleb128 0x3e
+ 4205 0015 0B       		.uleb128 0xb
+ 4206 0016 03       		.uleb128 0x3
+ 4207 0017 0E       		.uleb128 0xe
+ 4208 0018 00       		.byte	0
+ 4209 0019 00       		.byte	0
+ 4210 001a 03       		.uleb128 0x3
+ 4211 001b 24       		.uleb128 0x24
+ 4212 001c 00       		.byte	0
+ 4213 001d 0B       		.uleb128 0xb
+ 4214 001e 0B       		.uleb128 0xb
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 75
+
+
+ 4215 001f 3E       		.uleb128 0x3e
+ 4216 0020 0B       		.uleb128 0xb
+ 4217 0021 03       		.uleb128 0x3
+ 4218 0022 08       		.uleb128 0x8
+ 4219 0023 00       		.byte	0
+ 4220 0024 00       		.byte	0
+ 4221 0025 04       		.uleb128 0x4
+ 4222 0026 16       		.uleb128 0x16
+ 4223 0027 00       		.byte	0
+ 4224 0028 03       		.uleb128 0x3
+ 4225 0029 0E       		.uleb128 0xe
+ 4226 002a 3A       		.uleb128 0x3a
+ 4227 002b 0B       		.uleb128 0xb
+ 4228 002c 3B       		.uleb128 0x3b
+ 4229 002d 0B       		.uleb128 0xb
+ 4230 002e 49       		.uleb128 0x49
+ 4231 002f 13       		.uleb128 0x13
+ 4232 0030 00       		.byte	0
+ 4233 0031 00       		.byte	0
+ 4234 0032 05       		.uleb128 0x5
+ 4235 0033 01       		.uleb128 0x1
+ 4236 0034 01       		.byte	0x1
+ 4237 0035 49       		.uleb128 0x49
+ 4238 0036 13       		.uleb128 0x13
+ 4239 0037 01       		.uleb128 0x1
+ 4240 0038 13       		.uleb128 0x13
+ 4241 0039 00       		.byte	0
+ 4242 003a 00       		.byte	0
+ 4243 003b 06       		.uleb128 0x6
+ 4244 003c 21       		.uleb128 0x21
+ 4245 003d 00       		.byte	0
+ 4246 003e 49       		.uleb128 0x49
+ 4247 003f 13       		.uleb128 0x13
+ 4248 0040 2F       		.uleb128 0x2f
+ 4249 0041 05       		.uleb128 0x5
+ 4250 0042 00       		.byte	0
+ 4251 0043 00       		.byte	0
+ 4252 0044 07       		.uleb128 0x7
+ 4253 0045 34       		.uleb128 0x34
+ 4254 0046 00       		.byte	0
+ 4255 0047 03       		.uleb128 0x3
+ 4256 0048 0E       		.uleb128 0xe
+ 4257 0049 3A       		.uleb128 0x3a
+ 4258 004a 0B       		.uleb128 0xb
+ 4259 004b 3B       		.uleb128 0x3b
+ 4260 004c 0B       		.uleb128 0xb
+ 4261 004d 49       		.uleb128 0x49
+ 4262 004e 13       		.uleb128 0x13
+ 4263 004f 3F       		.uleb128 0x3f
+ 4264 0050 0C       		.uleb128 0xc
+ 4265 0051 02       		.uleb128 0x2
+ 4266 0052 0A       		.uleb128 0xa
+ 4267 0053 00       		.byte	0
+ 4268 0054 00       		.byte	0
+ 4269 0055 08       		.uleb128 0x8
+ 4270 0056 26       		.uleb128 0x26
+ 4271 0057 00       		.byte	0
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 76
+
+
+ 4272 0058 49       		.uleb128 0x49
+ 4273 0059 13       		.uleb128 0x13
+ 4274 005a 00       		.byte	0
+ 4275 005b 00       		.byte	0
+ 4276 005c 09       		.uleb128 0x9
+ 4277 005d 21       		.uleb128 0x21
+ 4278 005e 00       		.byte	0
+ 4279 005f 49       		.uleb128 0x49
+ 4280 0060 13       		.uleb128 0x13
+ 4281 0061 2F       		.uleb128 0x2f
+ 4282 0062 0B       		.uleb128 0xb
+ 4283 0063 00       		.byte	0
+ 4284 0064 00       		.byte	0
+ 4285 0065 0A       		.uleb128 0xa
+ 4286 0066 34       		.uleb128 0x34
+ 4287 0067 00       		.byte	0
+ 4288 0068 03       		.uleb128 0x3
+ 4289 0069 0E       		.uleb128 0xe
+ 4290 006a 3A       		.uleb128 0x3a
+ 4291 006b 0B       		.uleb128 0xb
+ 4292 006c 3B       		.uleb128 0x3b
+ 4293 006d 05       		.uleb128 0x5
+ 4294 006e 49       		.uleb128 0x49
+ 4295 006f 13       		.uleb128 0x13
+ 4296 0070 3F       		.uleb128 0x3f
+ 4297 0071 0C       		.uleb128 0xc
+ 4298 0072 02       		.uleb128 0x2
+ 4299 0073 0A       		.uleb128 0xa
+ 4300 0074 00       		.byte	0
+ 4301 0075 00       		.byte	0
+ 4302 0076 00       		.byte	0
+ 4303              		.section	.debug_aranges,"",%progbits
+ 4304 0000 14000000 		.4byte	0x14
+ 4305 0004 0200     		.2byte	0x2
+ 4306 0006 00000000 		.4byte	.Ldebug_info0
+ 4307 000a 04       		.byte	0x4
+ 4308 000b 00       		.byte	0
+ 4309 000c 0000     		.2byte	0
+ 4310 000e 0000     		.2byte	0
+ 4311 0010 00000000 		.4byte	0
+ 4312 0014 00000000 		.4byte	0
+ 4313              		.section	.debug_line,"",%progbits
+ 4314              	.Ldebug_line0:
+ 4315 0000 4F000000 		.section	.debug_str,"MS",%progbits,1
+ 4315      02004900 
+ 4315      00000201 
+ 4315      FB0E0D00 
+ 4315      01010101 
+ 4316              	.LASF19:
+ 4317 0000 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cymetadata.c\000"
+ 4317      6E657261 
+ 4317      7465645F 
+ 4317      536F7572 
+ 4317      63655C50 
+ 4318              	.LASF17:
+ 4319 0026 63795F6D 		.ascii	"cy_metadata\000"
+ 4319      65746164 
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 77
+
+
+ 4319      61746100 
+ 4320              	.LASF9:
+ 4321 0032 666C6F61 		.ascii	"float\000"
+ 4321      7400
+ 4322              	.LASF1:
+ 4323 0038 756E7369 		.ascii	"unsigned char\000"
+ 4323      676E6564 
+ 4323      20636861 
+ 4323      7200
+ 4324              	.LASF5:
+ 4325 0046 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4325      20756E73 
+ 4325      69676E65 
+ 4325      6420696E 
+ 4325      7400
+ 4326              	.LASF3:
+ 4327 0058 73686F72 		.ascii	"short unsigned int\000"
+ 4327      7420756E 
+ 4327      7369676E 
+ 4327      65642069 
+ 4327      6E7400
+ 4328              	.LASF10:
+ 4329 006b 646F7562 		.ascii	"double\000"
+ 4329      6C6500
+ 4330              	.LASF14:
+ 4331 0072 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 4331      6574615F 
+ 4331      63757374 
+ 4331      6E766C00 
+ 4332              	.LASF13:
+ 4333 0082 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 4333      6574615F 
+ 4333      636F6E66 
+ 4333      69676563 
+ 4333      6300
+ 4334              	.LASF8:
+ 4335 0094 756E7369 		.ascii	"unsigned int\000"
+ 4335      676E6564 
+ 4335      20696E74 
+ 4335      00
+ 4336              	.LASF7:
+ 4337 00a1 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 4337      206C6F6E 
+ 4337      6720756E 
+ 4337      7369676E 
+ 4337      65642069 
+ 4338              	.LASF20:
+ 4339 00b8 433A5C55 		.ascii	"C:\\Users\\devdev\\Documents\\PSoC Creator\\SFT1.0v"
+ 4339      73657273 
+ 4339      5C646576 
+ 4339      6465765C 
+ 4339      446F6375 
+ 4340 00e6 5C446573 		.ascii	"\\Design01.cydsn\000"
+ 4340      69676E30 
+ 4340      312E6379 
+ 4340      64736E00 
+ 4341              	.LASF16:
+ARM GAS  C:\Users\devdev\AppData\Local\Temp\cco2EhUp.s 			page 78
+
+
+ 4342 00f6 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 4342      6574615F 
+ 4342      666C6173 
+ 4342      6870726F 
+ 4342      74656374 
+ 4343              	.LASF15:
+ 4344 010b 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 4344      6574615F 
+ 4344      776F6E76 
+ 4344      6C00
+ 4345              	.LASF12:
+ 4346 0119 73697A65 		.ascii	"sizetype\000"
+ 4346      74797065 
+ 4346      00
+ 4347              	.LASF6:
+ 4348 0122 6C6F6E67 		.ascii	"long long int\000"
+ 4348      206C6F6E 
+ 4348      6720696E 
+ 4348      7400
+ 4349              	.LASF11:
+ 4350 0130 63686172 		.ascii	"char\000"
+ 4350      00
+ 4351              	.LASF2:
+ 4352 0135 73686F72 		.ascii	"short int\000"
+ 4352      7420696E 
+ 4352      7400
+ 4353              	.LASF21:
+ 4354 013f 75696E74 		.ascii	"uint8\000"
+ 4354      3800
+ 4355              	.LASF18:
+ 4356 0145 474E5520 		.ascii	"GNU C 4.7.3 20130312 (release) [ARM/embedded-4_7-br"
+ 4356      4320342E 
+ 4356      372E3320 
+ 4356      32303133 
+ 4356      30333132 
+ 4357 0178 616E6368 		.ascii	"anch revision 196615]\000"
+ 4357      20726576 
+ 4357      6973696F 
+ 4357      6E203139 
+ 4357      36363135 
+ 4358              	.LASF4:
+ 4359 018e 6C6F6E67 		.ascii	"long int\000"
+ 4359      20696E74 
+ 4359      00
+ 4360              	.LASF0:
+ 4361 0197 7369676E 		.ascii	"signed char\000"
+ 4361      65642063 
+ 4361      68617200 
+ 4362              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.7.3 20130312 (release) [ARM/embedded-4_7-br
