@@ -31,7 +31,7 @@ CY_ISR(myHandler){
     num[3] = num[2];
     num[2] = num[1];
     num[1] = UART_1_ReadRxData();
-B_LED_ON();
+R_LED_ON();
     if(num[8]==0x80){
         sum1 = num[2]+num[3]+num[4]+num[5]+num[6]+num[7];
         sum1 = sum1 & 0X7f;
@@ -56,12 +56,144 @@ B_LED_ON();
 		}
     }               
 }
+/*
+1:RightRear
+2:RightFront
+3:LeftFront
+4:LeftRear
+*/
+
+void RightFrontMotor(int16 nRotate){
+    int16 nPwm;
+    if(nRotate==0){
+        nPwm = 0;
+    }else{
+        if(nRotate<-255){nRotate=-255;}
+        if(nRotate>255){nRotate=255;}
+        if(nRotate<0){
+            CW_CCW_2_Write(1);           
+            nPwm = -nRotate;
+        }else{
+            CW_CCW_2_Write(0);           
+            nPwm = nRotate;
+        }    
+    }
+    VDAC8_2_SetValue(nPwm);
+}
+void RightRearMotor(int16 nRotate){
+    int16 nPwm;
+    if(nRotate==0){
+        nPwm = 0;
+    }else{
+        if(nRotate<-255){nRotate=-255;}
+        if(nRotate>255){nRotate=255;}
+        if(nRotate<0){
+            CW_CCW_1_Write(1);           
+            nPwm = -nRotate;
+        }else{
+            CW_CCW_1_Write(0);           
+            nPwm = nRotate;
+        }    
+    }
+    VDAC8_1_SetValue(nPwm);
+}
+void LeftFrontMotor(int16 nRotate){
+    int16 nPwm;
+    if(nRotate==0){
+        nPwm = 0;
+    }else{
+        if(nRotate<-255){nRotate=-255;}
+        if(nRotate>255){nRotate=255;}
+        if(nRotate<0){
+            CW_CCW_3_Write(0);           
+            nPwm = -nRotate;
+        }else{
+            CW_CCW_3_Write(1);           
+            nPwm = nRotate;
+        }    
+    }
+    VDAC8_3_SetValue(nPwm);
+}
+void LeftRearMotor(int16 nRotate){
+    int16 nPwm;
+    if(nRotate==0){
+        nPwm = 0;
+    }else{
+        if(nRotate<-255){nRotate=-255;}
+        if(nRotate>255){nRotate=255;}
+        if(nRotate<0){
+            CW_CCW_4_Write(0);           
+            nPwm = -nRotate;
+        }else{
+            CW_CCW_4_Write(1);           
+            nPwm = nRotate;
+        }    
+    }
+    VDAC8_4_SetValue(nPwm);
+}
 
 int main()
 {
     isr_1_StartEx((cyisraddress)myHandler);
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     PI();
+    VDAC8_1_Start();
+    VDAC8_1_SetValue(0u);
+    VDAC8_2_Start();
+    VDAC8_2_SetValue(0u);
+    VDAC8_3_Start();
+    VDAC8_3_SetValue(0u);
+    VDAC8_4_Start();
+    VDAC8_4_SetValue(0u);
+
+    RUN_BRAKE_1_Write(1);
+    RUN_BRAKE_2_Write(1);
+    RUN_BRAKE_3_Write(1);
+    RUN_BRAKE_4_Write(1);    
+    
+    while(1){
+    LeftRearMotor(30);
+    LeftFrontMotor(-30);
+    RightRearMotor(-30);
+    RightFrontMotor(30);
+    CyDelay(1000);
+    LeftRearMotor(-30);
+    LeftFrontMotor(30);
+    RightRearMotor(30);
+    RightFrontMotor(-30);
+    CyDelay(1000);    
+    }
+    
+    while(1){
+    LeftRearMotor(15);
+    CyDelay(1000);
+    LeftRearMotor(11);
+    CyDelay(1000);    
+    }
+    
+    
+    while(1){
+    VDAC8_1_SetValue(0u);
+    VDAC8_2_SetValue(0u);
+    VDAC8_3_SetValue(0u);
+    VDAC8_4_SetValue(0u);
+    CyDelay(10000);
+    B_LED_ON();
+    
+    VDAC8_1_SetValue(100u);
+    VDAC8_2_SetValue(100u);
+    VDAC8_3_SetValue(100u);
+    VDAC8_4_SetValue(100u);
+    CyDelay(10000);
+    B_LED_OFF();
+    }
+    
+                
+
+            CW_CCW_1_Write(1);
+            CW_CCW_2_Write(1);
+            CW_CCW_3_Write(1);
+            CW_CCW_4_Write(1);
   Enable2_Write(1);
     CyDelay(100);
     PI();
@@ -73,9 +205,9 @@ int main()
     CYGlobalIntEnable; 
     isr_1_Enable();
     while(1){
-    R_LED_ON();
-    CyDelay(1000);
-    R_LED_OFF();
+    B_LED_ON();
+    CyDelay(100);
+    B_LED_OFF();
     CyDelay(1000);
     }
     

@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: cts.c  
+* File Name: Pin_4.c  
 * Version 2.5
 *
 * Description:
@@ -15,15 +15,15 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "cts.h"
+#include "Pin_4.h"
 
 /* APIs are not generated for P15[7:6] on PSoC 5 */
 #if !(CY_PSOC5A &&\
-	 cts__PORT == 15 && ((cts__MASK & 0xC0) != 0))
+	 Pin_4__PORT == 15 && ((Pin_4__MASK & 0xC0) != 0))
 
 
 /*******************************************************************************
-* Function Name: cts_Write
+* Function Name: Pin_4_Write
 ********************************************************************************
 *
 * Summary:
@@ -36,15 +36,15 @@
 *  None
 *  
 *******************************************************************************/
-void cts_Write(uint8 value) 
+void Pin_4_Write(uint8 value) 
 {
-    uint8 staticBits = (cts_DR & (uint8)(~cts_MASK));
-    cts_DR = staticBits | ((uint8)(value << cts_SHIFT) & cts_MASK);
+    uint8 staticBits = (Pin_4_DR & (uint8)(~Pin_4_MASK));
+    Pin_4_DR = staticBits | ((uint8)(value << Pin_4_SHIFT) & Pin_4_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: cts_SetDriveMode
+* Function Name: Pin_4_SetDriveMode
 ********************************************************************************
 *
 * Summary:
@@ -53,27 +53,27 @@ void cts_Write(uint8 value)
 * Parameters:  
 *  mode:  Change the pins to one of the following drive modes.
 *
-*  cts_DM_STRONG     Strong Drive 
-*  cts_DM_OD_HI      Open Drain, Drives High 
-*  cts_DM_OD_LO      Open Drain, Drives Low 
-*  cts_DM_RES_UP     Resistive Pull Up 
-*  cts_DM_RES_DWN    Resistive Pull Down 
-*  cts_DM_RES_UPDWN  Resistive Pull Up/Down 
-*  cts_DM_DIG_HIZ    High Impedance Digital 
-*  cts_DM_ALG_HIZ    High Impedance Analog 
+*  Pin_4_DM_STRONG     Strong Drive 
+*  Pin_4_DM_OD_HI      Open Drain, Drives High 
+*  Pin_4_DM_OD_LO      Open Drain, Drives Low 
+*  Pin_4_DM_RES_UP     Resistive Pull Up 
+*  Pin_4_DM_RES_DWN    Resistive Pull Down 
+*  Pin_4_DM_RES_UPDWN  Resistive Pull Up/Down 
+*  Pin_4_DM_DIG_HIZ    High Impedance Digital 
+*  Pin_4_DM_ALG_HIZ    High Impedance Analog 
 *
 * Return: 
 *  None
 *
 *******************************************************************************/
-void cts_SetDriveMode(uint8 mode) 
+void Pin_4_SetDriveMode(uint8 mode) 
 {
-	CyPins_SetPinDriveMode(cts_0, mode);
+	CyPins_SetPinDriveMode(Pin_4_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: cts_Read
+* Function Name: Pin_4_Read
 ********************************************************************************
 *
 * Summary:
@@ -87,17 +87,17 @@ void cts_SetDriveMode(uint8 mode)
 *  Returns the current value of the Digital Port as a right justified number
 *  
 * Note:
-*  Macro cts_ReadPS calls this function. 
+*  Macro Pin_4_ReadPS calls this function. 
 *  
 *******************************************************************************/
-uint8 cts_Read(void) 
+uint8 Pin_4_Read(void) 
 {
-    return (cts_PS & cts_MASK) >> cts_SHIFT;
+    return (Pin_4_PS & Pin_4_MASK) >> Pin_4_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: cts_ReadDataReg
+* Function Name: Pin_4_ReadDataReg
 ********************************************************************************
 *
 * Summary:
@@ -110,17 +110,17 @@ uint8 cts_Read(void)
 *  Returns the current value assigned to the Digital Port's data output register
 *  
 *******************************************************************************/
-uint8 cts_ReadDataReg(void) 
+uint8 Pin_4_ReadDataReg(void) 
 {
-    return (cts_DR & cts_MASK) >> cts_SHIFT;
+    return (Pin_4_DR & Pin_4_MASK) >> Pin_4_SHIFT;
 }
 
 
 /* If Interrupts Are Enabled for this Pins component */ 
-#if defined(cts_INTSTAT) 
+#if defined(Pin_4_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: cts_ClearInterrupt
+    * Function Name: Pin_4_ClearInterrupt
     ********************************************************************************
     * Summary:
     *  Clears any active interrupts attached to port and returns the value of the 
@@ -133,9 +133,9 @@ uint8 cts_ReadDataReg(void)
     *  Returns the value of the interrupt status register
     *  
     *******************************************************************************/
-    uint8 cts_ClearInterrupt(void) 
+    uint8 Pin_4_ClearInterrupt(void) 
     {
-        return (cts_INTSTAT & cts_MASK) >> cts_SHIFT;
+        return (Pin_4_INTSTAT & Pin_4_MASK) >> Pin_4_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="SFT1.0v\Design01\Header Files">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="SFT1.0v\Design01\TopDesign.cysch">
 <ExpandedNodeIds>
 <v>SFT1.0v</v>
 <v>SFT1.0v\Design01</v>
@@ -48,10 +48,22 @@
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\Clock_1</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\Clock_1\Clock_1.c</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\Clock_1\Clock_1.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cts</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cts\cts.c</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cts\cts.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cts\cts_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_1</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_1\CW_CCW_1.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_1\CW_CCW_1.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_1\CW_CCW_1_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_2</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_2\CW_CCW_2.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_2\CW_CCW_2.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_2\CW_CCW_2_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_3</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_3\CW_CCW_3.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_3\CW_CCW_3.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_3\CW_CCW_3_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_4</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_4\CW_CCW_4.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_4\CW_CCW_4.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\CW_CCW_4\CW_CCW_4_aliases.h</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\cy_boot</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
@@ -129,6 +141,22 @@
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\isr_1</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\isr_1\isr_1.c</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\isr_1\isr_1.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_1</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_1\Pin_1.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_1\Pin_1.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_1\Pin_1_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_2</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_2\Pin_2.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_2\Pin_2.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_2\Pin_2_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_3</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_3\Pin_3.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_3\Pin_3.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_3\Pin_3_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_4</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_4\Pin_4.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_4\Pin_4.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\Pin_4\Pin_4_aliases.h</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\PWM_1</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\PWM_1\PWM_1.c</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\PWM_1\PWM_1.h</v>
@@ -141,6 +169,38 @@
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\rts\rts.c</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\rts\rts.h</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\rts\rts_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_1</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_1\RUN_BRAKE_1.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_1\RUN_BRAKE_1.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_1\RUN_BRAKE_1_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_2</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_2\RUN_BRAKE_2.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_2\RUN_BRAKE_2.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_2\RUN_BRAKE_2_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_3</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_3\RUN_BRAKE_3.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_3\RUN_BRAKE_3.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_3\RUN_BRAKE_3_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_4</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_4\RUN_BRAKE_4.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_4\RUN_BRAKE_4.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\RUN_BRAKE_4\RUN_BRAKE_4_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_1</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_1\SPEED_1.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_1\SPEED_1.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_1\SPEED_1_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_2</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_2\SPEED_2.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_2\SPEED_2.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_2\SPEED_2_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_3</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_3\SPEED_3.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_3\SPEED_3.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_3\SPEED_3_aliases.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_4</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_4\SPEED_4.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_4\SPEED_4.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\SPEED_4\SPEED_4_aliases.h</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\UART_1</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\UART_1\UART_1.c</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\UART_1\UART_1.h</v>
@@ -150,6 +210,22 @@
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\UART_1_IntClock</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\UART_1_IntClock\UART_1_IntClock.c</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\UART_1_IntClock\UART_1_IntClock.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_1</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_1\VDAC8_1.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_1\VDAC8_1.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_1\VDAC8_1_PM.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_2</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_2\VDAC8_2.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_2\VDAC8_2.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_2\VDAC8_2_PM.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_3</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_3\VDAC8_3.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_3\VDAC8_3.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_3\VDAC8_3_PM.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_4</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_4\VDAC8_4.c</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_4\VDAC8_4.h</v>
+<v>SFT1.0v\Design01\Generated_Source\PSoC5\VDAC8_4\VDAC8_4_PM.c</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\cydevice.h</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\cydevice_trm.h</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\cydevicegnu.inc</v>
@@ -182,39 +258,6 @@
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\B_LED</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\B_LED\B_LED.c</v>
 <v>SFT1.0v\Design01\Generated_Source\PSoC5\B_LED\B_LED.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\B_LED\B_LED_aliases.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\BuzzerPin</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\BuzzerPin\BuzzerPin.c</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\BuzzerPin\BuzzerPin.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\BuzzerPin\BuzzerPin_aliases.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\CLCK1</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\CLCK1\CLCK1.c</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\CLCK1\CLCK1.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\CLCK1\CLCK1_aliases.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\CLCK2</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\CLCK2\CLCK2.c</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\CLCK2\CLCK2.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\CLCK2\CLCK2_aliases.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\CLCK3</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\CLCK3\CLCK3.c</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\CLCK3\CLCK3.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\CLCK3\CLCK3_aliases.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\Clock_1</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\Clock_1\Clock_1.c</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\Clock_1\Clock_1.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cts</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cts\cts.c</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cts\cts.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cts\cts_aliases.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cy_boot</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
-<v>SFT1.0v\Design01\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -246,7 +289,10 @@
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CLCK3.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\Clock_1.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\Cm3Start.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\cts.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CW_CCW_1.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CW_CCW_2.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CW_CCW_3.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CW_CCW_4.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CyBootAsmGnu.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CyDmac.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\cyfitter_cfg.lst</v>
@@ -282,15 +328,35 @@
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_3_SLAVE.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\isr_1.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\main.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\Pin_1.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\Pin_2.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\Pin_3.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\Pin_4.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\PWM_1.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\PWM_1_PM.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\R_LED.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\rts.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\RUN_BRAKE_1.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\RUN_BRAKE_2.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\RUN_BRAKE_3.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\RUN_BRAKE_4.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\SPEED_1.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\SPEED_2.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\SPEED_3.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\SPEED_4.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\UART_1.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\UART_1_BOOT.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\UART_1_INT.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\UART_1_IntClock.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\UART_1_PM.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\VDAC8_1.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\VDAC8_1_PM.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\VDAC8_2.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\VDAC8_2_PM.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\VDAC8_3.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\VDAC8_3_PM.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\VDAC8_4.lst</v>
+<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\VDAC8_4_PM.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Design01.elf</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Design01.hex</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Design01.map</v>
@@ -311,39 +377,6 @@
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CLCK3.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\Clock_1.lst</v>
 <v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\Cm3Start.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\cts.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CyDmac.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CyFlash.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CyLib.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\cymetadata.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\cyPm.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\CySpc.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\cyutils.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\DATA1.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\DATA2.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\DATA3.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\Enable2.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_1.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_1_BOOT.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_1_INT.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_1_IntClock.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_1_MASTER.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_1_PM.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_1_SLAVE.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_2.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_2_BOOT.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_2_INT.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_2_IntClock.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_2_MASTER.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_2_PM.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_2_SLAVE.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_3.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_3_BOOT.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_3_INT.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_3_MASTER.lst</v>
-<v>SFT1.0v\Design01\CortexM3\ARM_GCC_473\Debug\Listing Files\I2C_3_PM.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -364,6 +397,7 @@
 <v>SFT1.0v\Design01\I2C_v3_30</v>
 <v>SFT1.0v\Design01\PWM_v3_0</v>
 <v>SFT1.0v\Design01\UART_v2_30</v>
+<v>SFT1.0v\Design01\VDAC8_v1_90</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>SFT1.0v</v>
@@ -377,6 +411,7 @@
 <v>SFT1.0v\Design01\I2C_v3_30</v>
 <v>SFT1.0v\Design01\PWM_v3_0</v>
 <v>SFT1.0v\Design01\UART_v2_30</v>
+<v>SFT1.0v\Design01\VDAC8_v1_90</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>

@@ -18,7 +18,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="Design01" Path="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn" Version="4.11" Type="Normal">
+  <Project Name="Design01" Path="C:\gitData\PSoC\SFT1.0v\Design01.cydsn" Version="4.11" Type="Normal">
     <CMSIS_SVD_File>Design01.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>
@@ -27,14 +27,14 @@
       <LinkerFile Toolchain="IAR EWARM">.\Generated_Source\PSoC5\Cm3Iar.icf</LinkerFile>
     </LinkerFiles>
     <Folders>
-      <Folder BuildType="BUILD" Path="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn">
-        <Files Root="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn">
+      <Folder BuildType="BUILD" Path="C:\gitData\PSoC\SFT1.0v\Design01.cydsn">
+        <Files Root="C:\gitData\PSoC\SFT1.0v\Design01.cydsn">
           <File BuildType="BUILD" Toolchain="">.\main.c</File>
           <File BuildType="BUILD" Toolchain="">.\global01.h</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn\Generated_Source\PSoC5">
-        <Files Root="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn">
+      <Folder BuildType="STRICT" Path="C:\gitData\PSoC\SFT1.0v\Design01.cydsn\Generated_Source\PSoC5">
+        <Files Root="C:\gitData\PSoC\SFT1.0v\Design01.cydsn">
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitter_cfg.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cyfitter_cfg.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cymetadata.c</File>
@@ -136,6 +136,12 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Enable2_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Enable2.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Enable2.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_2.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_2.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_1_PM.c</File>
@@ -148,50 +154,101 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\rts_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\rts.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\rts.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cts_aliases.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cts.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cts.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_1_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_2.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_2.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_2_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_3.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_3.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_3_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_4.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_4.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\VDAC8_4_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_3_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_3.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_3.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_4_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_4.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\Pin_4.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CW_CCW_1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CW_CCW_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CW_CCW_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CW_CCW_2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CW_CCW_2.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CW_CCW_2.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CW_CCW_3_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CW_CCW_3.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CW_CCW_3.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CW_CCW_4_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CW_CCW_4.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CW_CCW_4.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RUN_BRAKE_1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RUN_BRAKE_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RUN_BRAKE_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RUN_BRAKE_2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RUN_BRAKE_2.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RUN_BRAKE_2.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RUN_BRAKE_3_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RUN_BRAKE_3.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RUN_BRAKE_3.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RUN_BRAKE_4_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RUN_BRAKE_4.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RUN_BRAKE_4.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SPEED_1_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SPEED_1.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SPEED_1.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SPEED_2_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SPEED_2.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SPEED_2.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SPEED_3_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SPEED_3.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SPEED_3.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SPEED_4_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SPEED_4.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\SPEED_4.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\prebuild.bat</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\postbuild.bat</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\CyElfTool.exe</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\libelf.dll</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn\Generated_Source\PSoC5\ARM_GCC">
-        <Files Root="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn">
+      <Folder BuildType="STRICT" Path="C:\gitData\PSoC\SFT1.0v\Design01.cydsn\Generated_Source\PSoC5\ARM_GCC">
+        <Files Root="C:\gitData\PSoC\SFT1.0v\Design01.cydsn">
           <File BuildType="BUILD" Toolchain="ARM GCC">.\Generated_Source\PSoC5\ARM_GCC\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn\Generated_Source\PSoC5\ARM_Keil_MDK">
-        <Files Root="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn">
+      <Folder BuildType="STRICT" Path="C:\gitData\PSoC\SFT1.0v\Design01.cydsn\Generated_Source\PSoC5\ARM_Keil_MDK">
+        <Files Root="C:\gitData\PSoC\SFT1.0v\Design01.cydsn">
           <File BuildType="BUILD" Toolchain="ARM Keil MDK">.\Generated_Source\PSoC5\ARM_Keil_MDK\CyComponentLibrary.a</File>
         </Files>
       </Folder>
-      <Folder BuildType="STRICT" Path="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn\Generated_Source\PSoC5\IAR">
-        <Files Root="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn">
+      <Folder BuildType="STRICT" Path="C:\gitData\PSoC\SFT1.0v\Design01.cydsn\Generated_Source\PSoC5\IAR">
+        <Files Root="C:\gitData\PSoC\SFT1.0v\Design01.cydsn">
           <File BuildType="BUILD" Toolchain="IAR">.\Generated_Source\PSoC5\IAR\CyComponentLibrary.a</File>
         </Files>
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\codegentemp">
-        <Files Root="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn" />
+        <Files Root="C:\gitData\PSoC\SFT1.0v\Design01.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_441">
-        <Files Root="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn" />
+        <Files Root="C:\gitData\PSoC\SFT1.0v\Design01.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\ARM_GCC_473">
-        <Files Root="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn" />
+        <Files Root="C:\gitData\PSoC\SFT1.0v\Design01.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051_Keil_951">
-        <Files Root="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn" />
+        <Files Root="C:\gitData\PSoC\SFT1.0v\Design01.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\DP8051">
-        <Files Root="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn" />
+        <Files Root="C:\gitData\PSoC\SFT1.0v\Design01.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM0">
-        <Files Root="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn" />
+        <Files Root="C:\gitData\PSoC\SFT1.0v\Design01.cydsn" />
       </Folder>
       <Folder BuildType="EXCLUDE" Path=".\CortexM3">
-        <Files Root="C:\Users\devdev\Documents\PSoC Creator\SFT1.0v\Design01.cydsn" />
+        <Files Root="C:\gitData\PSoC\SFT1.0v\Design01.cydsn" />
       </Folder>
     </Folders>
   </Project>

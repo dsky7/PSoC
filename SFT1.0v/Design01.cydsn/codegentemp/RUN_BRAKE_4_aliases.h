@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: cts.h  
+* File Name: RUN_BRAKE_4.h  
 * Version 2.5
 *
 * Description:
@@ -14,8 +14,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_cts_ALIASES_H) /* Pins cts_ALIASES_H */
-#define CY_PINS_cts_ALIASES_H
+#if !defined(CY_PINS_RUN_BRAKE_4_ALIASES_H) /* Pins RUN_BRAKE_4_ALIASES_H */
+#define CY_PINS_RUN_BRAKE_4_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,8 +25,8 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define cts_0		cts__0__PC
+#define RUN_BRAKE_4_0		RUN_BRAKE_4__0__PC
 
-#endif /* End Pins cts_ALIASES_H */
+#endif /* End Pins RUN_BRAKE_4_ALIASES_H */
 
 /* [] END OF FILE */
