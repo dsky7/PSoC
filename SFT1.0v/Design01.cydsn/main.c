@@ -12,6 +12,7 @@
 #include	"global01.h"
 #include <project.h>
 
+int8 x1=127;
 void PI(void);
 void B_LED_ON(void);
 void R_LED_ON(void);
@@ -152,16 +153,16 @@ int main()
     RUN_BRAKE_4_Write(1);    
     
     while(1){
-    LeftRearMotor(30);
-    LeftFrontMotor(-30);
-    RightRearMotor(-30);
-    RightFrontMotor(30);
-    CyDelay(1000);
-    LeftRearMotor(-30);
-    LeftFrontMotor(30);
-    RightRearMotor(30);
-    RightFrontMotor(-30);
-    CyDelay(1000);    
+    LeftRearMotor(x1);
+    LeftFrontMotor(-x1);
+    RightRearMotor(-x1);
+    RightFrontMotor(x1);
+    CyDelay(500);
+    LeftRearMotor(-x1);
+    LeftFrontMotor(x1);
+    RightRearMotor(x1);
+    RightFrontMotor(-x1);
+    CyDelay(500);    
     }
     
     while(1){
