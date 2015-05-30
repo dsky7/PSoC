@@ -1,0 +1,11 @@
+attribute placement_force of \`$INSTANCE_NAME`:Comp_OV:ctComp\ : label is "F(Comparator,2)";
+attribute placement_force of \`$INSTANCE_NAME`:Comp_UV:ctComp\ : label is "F(Comparator,2)";
+attribute placement_force of \`$INSTANCE_NAME`:VDAC_OV:viDAC8\ : label is "F(VIDAC,2)";
+attribute placement_force of \`$INSTANCE_NAME`:VDAC_UV:viDAC8\ : label is "F(VIDAC,2)";
+attribute synthesis_off of \`$INSTANCE_NAME`:bVFD:next_channel\ : signal is true;
+attribute synthesis_off of \`$INSTANCE_NAME`:bVFD:trig_vdac_dma\ : signal is true;
+attribute synthesis_off of \`$INSTANCE_NAME`:bVFD:glitch_filter_capture\ : signal is true;
+attribute synthesis_off of \`$INSTANCE_NAME`:bVFD:read_write_glitch_filter\ : signal is true;
+attribute synthesis_off of \`$INSTANCE_NAME`:bVFD:check_cond\ : signal is true;
+attribute synthesis_off of \`$INSTANCE_NAME`:bVFD:end_of_cycle\ : signal is true;
+attribute synthesis_off of \`$INSTANCE_NAME`:actual_pg\ : signal is true;

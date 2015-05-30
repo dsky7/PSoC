@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<deviceData version="1"
+  xmlns="http://cypress.com/xsd/cydevicedata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://cypress.com/xsd/cydevicedata cydevicedata.xsd">
+
+  <block name="`$INSTANCE_NAME`" desc="Comparator" visible="true">
+
+    <register name="COMP_STATUS"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__COMP_STAT" bitWidth="32" desc="Comparator status">   
+	</register>  
+
+    <register name="COMP_CONTROL"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__CTBM_CTB_CTRL" bitWidth="32" desc="Comparator control">
+	</register> 
+    
+    <register name="COMP_INTERRUPT"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__INTR" bitWidth="32" desc="Comparator interrupt">
+	</register> 
+    
+    <register name="COMP_INTERRUPT_MASKED"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__INTR_MASKED" bitWidth="32" desc="Comparator interrupt masked">
+	</register>
+    
+    <register name="COMP_TRIM"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__OA_COMP_TRIM" bitWidth="32" desc="Comparator trim">
+	</register> 
+    
+    <register name="COMP_OFFSET_TRIM"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__OA_OFFSET_TRIM" bitWidth="32" desc="Comparator offset trim">
+	</register>
+    
+    <register name="COMP_RES_CONTROL"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__OA_RES_CTRL" bitWidth="32" desc="Comparator resistor control">
+	</register>
+    
+    
+    <register name="COMP_SLOPE_OFFSET_TRIM"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__OA_SLOPE_OFFSET_TRIM" bitWidth="32" desc="Comparator slope offset trim">
+	</register>
+    
+  </block>
+</deviceData>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ComponentStateRules Version="1">
+    <Rule>
+        <Pattern>
+            <Architecture>PSoC3</Architecture>
+            <Family>*</Family>
+            <Revision>*</Revision>
+            <Device>*</Device>
+        </Pattern>
+        <State>Production</State>
+        <Severity>None</Severity>
+        <Message />
+    </Rule>
+    <Rule>
+        <Pattern>
+            <Architecture>PSoC4</Architecture>
+            <ArchMember>PSoC4_3</ArchMember>
+        </Pattern>
+        <State>Incompatible</State>
+        <Severity>Error</Severity>
+        <Message />
+    </Rule>
+    <Rule>
+        <Pattern>
+            <Architecture>PSoC4</Architecture>
+            <Family>*</Family>
+            <Revision>*</Revision>
+            <Device>*</Device>
+        </Pattern>
+        <State>Production</State>
+        <Severity>Warning</Severity>
+        <Message>CY_BOOT: Function: CySysFlashWriteRow() fails to write a row of flash memory if the data to be written has a zero in the lower 32-bits of the checksum. See KBA94530 (http://www.cypress.com/go/KBA94530) for the details.</Message>
+    </Rule>
+    <Rule>
+        <Pattern>
+            <Architecture>PSoC5</Architecture>
+            <ArchMember>PSoC5LP</ArchMember>
+        </Pattern>
+        <State>Production</State>
+        <Severity>None</Severity>
+        <Message />
+    </Rule>
+</ComponentStateRules>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ComponentStateRules Version="1">
+    <Rule>
+        <Pattern>
+            <Architecture>PSoC3</Architecture>
+            <Family>*</Family>
+            <Revision>*</Revision>
+            <Device>*</Device>
+        </Pattern>
+        <State>Prototype</State>
+        <Severity>Note</Severity>
+        <Message> (`$INSTANCE_NAME`) component for PSoC 3 is not fully characterized. Therefore it is declared as a Prototype.</Message>
+    </Rule>
+    <Rule>
+        <Pattern>
+            <Architecture>PSoC4</Architecture>
+            <Family>*</Family>
+            <Revision>*</Revision>
+            <Device>*</Device>
+        </Pattern>
+        <State>Production</State>
+        <Severity>None</Severity>
+        <Message />
+    </Rule>
+    <Rule>
+        <Pattern>
+            <Architecture>PSoC5</Architecture>
+            <ArchMember>PSoC5LP</ArchMember>
+        </Pattern>
+        <State>Prototype</State>
+        <Severity>Note</Severity>
+        <Message> (`$INSTANCE_NAME`) component for PSoC 5LP is not fully characterized. Therefore it is declared as a Prototype.</Message>
+    </Rule>
+</ComponentStateRules>

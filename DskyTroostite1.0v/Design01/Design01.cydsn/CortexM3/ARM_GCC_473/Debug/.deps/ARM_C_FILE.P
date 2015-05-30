@@ -1,0 +1,80 @@
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/Clock_2.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/Clock_2.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/Clock_2.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/Clock_2.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/Clock_2.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/I2C_1.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_PVT.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_PVT.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/I2C_1_BOOT.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_PVT.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_BOOT.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_BOOT.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/I2C_1_INT.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_PVT.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_INT.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_INT.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/I2C_1_MASTER.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_PVT.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_MASTER.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_MASTER.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/I2C_1_PM.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_PVT.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_PM.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_PM.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/I2C_1_SLAVE.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_PVT.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_SLAVE.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/I2C_1_SLAVE.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/SCL_1.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/SCL_1.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/SCL_1_aliases.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cypins.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/SCL_1.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/SCL_1.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/SCL_1_aliases.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cypins.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/SCL_1.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/SDA_1.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/SDA_1.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/SDA_1_aliases.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cypins.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/SDA_1.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/SDA_1.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/SDA_1_aliases.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/SDA_1.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/cyfitter_cfg.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter_cfg.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter_cfg.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/isr_2.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/isr_2.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/isr_2.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/isr_2.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/isr_2.c : 
+

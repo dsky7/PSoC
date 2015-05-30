@@ -1,0 +1,36 @@
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/MotorPwmLeft.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmLeft.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmLeft.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmLeft.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmLeft.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/MotorPwmLeft_PM.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmLeft.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmLeft_PM.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmLeft_PM.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/MotorPwmRight.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmRight.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmRight.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmRight.h : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmRight.c : 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/CortexM3/ARM_GCC_473/Debug/MotorPwmRight_PM.o : G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyFlash.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CyLib.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/CySpc.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmRight.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyPm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/cytypes.h G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmRight_PM.c 
+
+G:/PSoc\ program/DskyTroostite1.0v/Design01/Design01.cydsn/Generated_Source/PSoC5/MotorPwmRight_PM.c : 
+

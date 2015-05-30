@@ -1,0 +1,50 @@
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/CortexM0/ARM_GCC_473/Debug/Cm0Start.o : E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/CyLib.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cytypes.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/Cm0Start.c 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/CyLib.h : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cytypes.h : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/Cm0Start.c : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/CortexM0/ARM_GCC_473/Debug/CyFlash.o : E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/CyFlash.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/CyLib.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cytypes.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/CyFlash.c 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/CyFlash.h : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/CyFlash.c : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/CortexM0/ARM_GCC_473/Debug/CyLib.o : E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/CyLib.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cytypes.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/CyLib.c 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/CyLib.c : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/CortexM0/ARM_GCC_473/Debug/Pin_1.o : E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/Pin_1.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/Pin_1_aliases.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cytypes.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/Pin_1.c 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/Pin_1.h : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/Pin_1_aliases.h : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/Pin_1.c : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/CortexM0/ARM_GCC_473/Debug/cyPm.o : E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/CyLib.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyPm.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cytypes.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyPm.c 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyPm.h : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyPm.c : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/CortexM0/ARM_GCC_473/Debug/cyfitter_cfg.o : E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/CyLib.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cytypes.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/CortexM0/ARM_GCC_473/Debug/cymetadata.o : E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cytypes.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cymetadata.c 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cymetadata.c : 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/CortexM0/ARM_GCC_473/Debug/cyutils.o : E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cydevice_trm.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyfitter.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cytypes.h E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyutils.c 
+
+E:/PSoc\ program/DskyTroostite1.0v/Design02/Design02.cydsn/Generated_Source/PSoC4/cyutils.c : 
+

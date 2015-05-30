@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<deviceData version="1"
+  xmlns="http://cypress.com/xsd/cydevicedata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://cypress.com/xsd/cydevicedata cydevicedata.xsd">
+
+  <block name="`$INSTANCE_NAME`" desc="Low Power Comparator" visible="true">
+
+    <register name="LPCOMP_CONFIG"
+		    address="`$INSTANCE_NAME`_cy_psoc4_lpcomp_1__LPCOMP_CONFIG" bitWidth="32" desc="LPCOMP configuration">
+    </register> 
+    
+    <register name="LPCOMP_INTERRUPT"
+		    address="`$INSTANCE_NAME`_cy_psoc4_lpcomp_1__LPCOMP_INTR" bitWidth="32" desc="LPCOMP interrupt">
+    </register> 
+    
+    <register name="LPCOMP_INTERRUPT_SET"
+		    address="`$INSTANCE_NAME`_cy_psoc4_lpcomp_1__LPCOMP_INTR_SET" bitWidth="32" desc="LPCOMP interrupt set">
+    </register>
+    
+    <register name="LPCOMP_TRIM_A"
+		    address="`$INSTANCE_NAME`_cy_psoc4_lpcomp_1__TRIM_A" bitWidth="32" desc="LPCOMP trim A">
+    </register>
+    
+    <register name="LPCOMP_TRIM_B"
+		    address="`$INSTANCE_NAME`_cy_psoc4_lpcomp_1__TRIM_B" bitWidth="32" desc="LPCOMP trim B">
+    </register>
+    
+  </block>
+</deviceData>
