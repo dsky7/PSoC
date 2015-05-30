@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<deviceData version="1"
+  xmlns="http://cypress.com/xsd/cydevicedata"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://cypress.com/xsd/cydevicedata cydevicedata.xsd">
+
+  <block name="`$INSTANCE_NAME`" desc="OpAmp" visible="true">
+
+    <register name="STATUS"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__COMP_STAT" bitWidth="32" desc="Opamp status">
+    </register>  
+    
+    <register name="CONTROL"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__CTBM_CTB_CTRL" bitWidth="32" desc="Opamp control">
+    </register>
+    
+    <register name="TRIM"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__OA_COMP_TRIM" bitWidth="32" desc="Opamp trim">
+    </register>
+    
+    <register name="OFFSET_TRIM"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__OA_OFFSET_TRIM" bitWidth="32" desc="Opamp offset trim">
+    </register>
+    
+    <register name="RES_CONTROL"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__OA_RES_CTRL" bitWidth="32" desc="Opamp resistor control">
+    </register>
+    
+    <register name="SLOPE_OFFSET_TRIM"
+		    address="`$INSTANCE_NAME`_cy_psoc4_abuf__OA_SLOPE_OFFSET_TRIM" bitWidth="32" desc="Opamp slope offset trim">
+    </register>
+    
+  </block>
+</deviceData>

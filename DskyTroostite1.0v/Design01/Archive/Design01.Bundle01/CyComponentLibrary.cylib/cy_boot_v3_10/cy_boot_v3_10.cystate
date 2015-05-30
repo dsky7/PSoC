@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ComponentStateRules Version="1">
+    <Rule>
+        <Pattern>
+            <Architecture>PSoC3</Architecture>
+            <Family>*</Family>
+            <Revision>*</Revision>
+            <Device>*</Device>
+        </Pattern>
+        <State>Production</State>
+        <Severity>Warning</Severity>
+        <Message>CY_BOOT: Function: CyPmSaveClocks() has a known defect that may cause unexpected operation when using the PLL. Symptoms include device reset during or after the function call or failure to return from a low power mode, such as sleep. See KBA90954 (http://www.cypress.com/?id=4&amp;rID=91681) for the details.</Message>
+    </Rule>
+    <Rule>
+        <Pattern>
+            <Architecture>PSoC4</Architecture>
+            <ArchMember>PSoC4_1</ArchMember>
+        </Pattern>
+        <State>Incompatible</State>
+        <Severity>Error</Severity>
+        <Message />
+    </Rule>
+    <Rule>
+        <Pattern>
+            <Architecture>PSoC4</Architecture>
+            <Family>*</Family>
+            <Revision>*</Revision>
+            <Device>*</Device>
+        </Pattern>
+        <State>Obsolete</State>
+        <Severity>Error</Severity>
+        <Message />
+    </Rule>
+    <Rule>
+        <Pattern>
+            <Architecture>PSoC5</Architecture>
+            <ArchMember>PSoC5LP</ArchMember>
+        </Pattern>
+        <State>Obsolete</State>
+        <Severity>Error</Severity>
+        <Message />
+    </Rule>
+</ComponentStateRules>
