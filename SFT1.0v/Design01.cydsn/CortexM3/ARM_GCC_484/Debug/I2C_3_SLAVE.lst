@@ -1,0 +1,1702 @@
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"I2C_3_SLAVE.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.comm	I2C_3_slStatus,1,1
+  19              		.comm	I2C_3_slRdBufPtr,4,4
+  20              		.comm	I2C_3_slRdBufSize,1,1
+  21              		.comm	I2C_3_slRdBufIndex,1,1
+  22              		.comm	I2C_3_slWrBufPtr,4,4
+  23              		.comm	I2C_3_slWrBufSize,1,1
+  24              		.comm	I2C_3_slWrBufIndex,1,1
+  25              		.section	.text.I2C_3_SlaveStatus,"ax",%progbits
+  26              		.align	2
+  27              		.global	I2C_3_SlaveStatus
+  28              		.thumb
+  29              		.thumb_func
+  30              		.type	I2C_3_SlaveStatus, %function
+  31              	I2C_3_SlaveStatus:
+  32              	.LFB0:
+  33              		.file 1 ".\\Generated_Source\\PSoC5\\I2C_3_SLAVE.c"
+   1:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * File Name: I2C_3_SLAVE.c
+   3:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Version 3.30
+   4:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+   5:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Description:
+   6:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  This file provides the source code of APIs for the I2C component Slave mode.
+   7:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+   8:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Note:
+   9:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+  10:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *******************************************************************************
+  11:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Copyright 2012, Cypress Semiconductor Corporation.  All rights reserved.
+  12:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * You may use this file only in accordance with the license, terms, conditions,
+  13:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  14:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * the software package with which this file was provided.
+  15:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *******************************************************************************/
+  16:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  17:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** #include "I2C_3_PVT.h"
+  18:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  19:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** #if(I2C_3_MODE_SLAVE_ENABLED)
+  20:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  21:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /**********************************
+  22:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *      System variables
+  23:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** **********************************/
+  24:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 2
+
+
+  25:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** volatile uint8 I2C_3_slStatus;   /* Slave Status  */
+  26:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  27:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /* Transmit buffer variables */
+  28:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** volatile uint8 * I2C_3_slRdBufPtr;   /* Pointer to Transmit buffer  */
+  29:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** volatile uint8   I2C_3_slRdBufSize;  /* Slave Transmit buffer size  */
+  30:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** volatile uint8   I2C_3_slRdBufIndex; /* Slave Transmit buffer Index */
+  31:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  32:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /* Receive buffer variables */
+  33:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** volatile uint8 * I2C_3_slWrBufPtr;   /* Pointer to Receive buffer  */
+  34:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** volatile uint8   I2C_3_slWrBufSize;  /* Slave Receive buffer size  */
+  35:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** volatile uint8   I2C_3_slWrBufIndex; /* Slave Receive buffer Index */
+  36:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  37:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** #if(I2C_3_SW_ADRR_DECODE)
+  38:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     volatile uint8 I2C_3_slAddress;  /* Software address variable */
+  39:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** #endif   /* (I2C_3_SW_ADRR_DECODE) */
+  40:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  41:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  42:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /*******************************************************************************
+  43:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Function Name: I2C_3_SlaveStatus
+  44:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** ********************************************************************************
+  45:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+  46:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Summary:
+  47:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Returns I2C slave's communication status.
+  48:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+  49:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Parameters:
+  50:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  None
+  51:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+  52:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Return:
+  53:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Current status of I2C slave.
+  54:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+  55:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Global variables:
+  56:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slStatus  - used to store current status of I2C slave.
+  57:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+  58:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *******************************************************************************/
+  59:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** uint8 I2C_3_SlaveStatus(void) 
+  60:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** {
+  34              		.loc 1 60 0
+  35              		.cfi_startproc
+  36              		@ args = 0, pretend = 0, frame = 0
+  37              		@ frame_needed = 1, uses_anonymous_args = 0
+  38              		@ link register save eliminated.
+  39 0000 80B4     		push	{r7}
+  40              		.cfi_def_cfa_offset 4
+  41              		.cfi_offset 7, -4
+  42 0002 00AF     		add	r7, sp, #0
+  43              		.cfi_def_cfa_register 7
+  61:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     return(I2C_3_slStatus);
+  44              		.loc 1 61 0
+  45 0004 034B     		ldr	r3, .L3
+  46 0006 1B78     		ldrb	r3, [r3]
+  47 0008 DBB2     		uxtb	r3, r3
+  62:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** }
+  48              		.loc 1 62 0
+  49 000a 1846     		mov	r0, r3
+  50 000c BD46     		mov	sp, r7
+  51              		@ sp needed
+  52 000e 5DF8047B 		ldr	r7, [sp], #4
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 3
+
+
+  53 0012 7047     		bx	lr
+  54              	.L4:
+  55              		.align	2
+  56              	.L3:
+  57 0014 00000000 		.word	I2C_3_slStatus
+  58              		.cfi_endproc
+  59              	.LFE0:
+  60              		.size	I2C_3_SlaveStatus, .-I2C_3_SlaveStatus
+  61              		.section	.text.I2C_3_SlaveClearReadStatus,"ax",%progbits
+  62              		.align	2
+  63              		.global	I2C_3_SlaveClearReadStatus
+  64              		.thumb
+  65              		.thumb_func
+  66              		.type	I2C_3_SlaveClearReadStatus, %function
+  67              	I2C_3_SlaveClearReadStatus:
+  68              	.LFB1:
+  63:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  64:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  65:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /*******************************************************************************
+  66:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Function Name: I2C_3_SlaveClearReadStatus
+  67:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** ********************************************************************************
+  68:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+  69:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Summary:
+  70:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Clears the read status flags and returns they values.
+  71:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  The I2C_3_SSTAT_RD_BUSY flag is not effected by clear.
+  72:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+  73:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Parameters:
+  74:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  None
+  75:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+  76:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Return:
+  77:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Current read status of I2C slave.
+  78:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+  79:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Global variables:
+  80:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slStatus  - used to store current status of I2C slave.
+  81:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+  82:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Reentrant:
+  83:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  No
+  84:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+  85:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *******************************************************************************/
+  86:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** uint8 I2C_3_SlaveClearReadStatus(void) 
+  87:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** {
+  69              		.loc 1 87 0
+  70              		.cfi_startproc
+  71              		@ args = 0, pretend = 0, frame = 8
+  72              		@ frame_needed = 1, uses_anonymous_args = 0
+  73              		@ link register save eliminated.
+  74 0000 80B4     		push	{r7}
+  75              		.cfi_def_cfa_offset 4
+  76              		.cfi_offset 7, -4
+  77 0002 83B0     		sub	sp, sp, #12
+  78              		.cfi_def_cfa_offset 16
+  79 0004 00AF     		add	r7, sp, #0
+  80              		.cfi_def_cfa_register 7
+  88:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     uint8 status;
+  89:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  90:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     /* Mask of transfer complete flag and Error status */
+  91:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     status = (I2C_3_slStatus & I2C_3_SSTAT_RD_MASK);
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 4
+
+
+  81              		.loc 1 91 0
+  82 0006 0A4B     		ldr	r3, .L7
+  83 0008 1B78     		ldrb	r3, [r3]
+  84 000a DBB2     		uxtb	r3, r3
+  85 000c 03F00F03 		and	r3, r3, #15
+  86 0010 FB71     		strb	r3, [r7, #7]
+  92:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     I2C_3_slStatus &= ((uint8) ~I2C_3_SSTAT_RD_CLEAR);
+  87              		.loc 1 92 0
+  88 0012 074B     		ldr	r3, .L7
+  89 0014 1B78     		ldrb	r3, [r3]
+  90 0016 DBB2     		uxtb	r3, r3
+  91 0018 23F00D03 		bic	r3, r3, #13
+  92 001c DAB2     		uxtb	r2, r3
+  93 001e 044B     		ldr	r3, .L7
+  94 0020 1A70     		strb	r2, [r3]
+  93:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  94:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     return(status);
+  95              		.loc 1 94 0
+  96 0022 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+  95:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** }
+  97              		.loc 1 95 0
+  98 0024 1846     		mov	r0, r3
+  99 0026 0C37     		adds	r7, r7, #12
+ 100 0028 BD46     		mov	sp, r7
+ 101              		@ sp needed
+ 102 002a 5DF8047B 		ldr	r7, [sp], #4
+ 103 002e 7047     		bx	lr
+ 104              	.L8:
+ 105              		.align	2
+ 106              	.L7:
+ 107 0030 00000000 		.word	I2C_3_slStatus
+ 108              		.cfi_endproc
+ 109              	.LFE1:
+ 110              		.size	I2C_3_SlaveClearReadStatus, .-I2C_3_SlaveClearReadStatus
+ 111              		.section	.text.I2C_3_SlaveClearWriteStatus,"ax",%progbits
+ 112              		.align	2
+ 113              		.global	I2C_3_SlaveClearWriteStatus
+ 114              		.thumb
+ 115              		.thumb_func
+ 116              		.type	I2C_3_SlaveClearWriteStatus, %function
+ 117              	I2C_3_SlaveClearWriteStatus:
+ 118              	.LFB2:
+  96:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  97:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+  98:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /*******************************************************************************
+  99:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Function Name: I2C_3_SlaveClearWriteStatus
+ 100:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** ********************************************************************************
+ 101:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 102:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Summary:
+ 103:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Clears the write status flags and returns they values.
+ 104:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  The I2C_3_SSTAT_WR_BUSY flag is not effected by clear.
+ 105:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 106:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Parameters:
+ 107:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  None
+ 108:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 109:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Return:
+ 110:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Current write status of I2C slave.
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 5
+
+
+ 111:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 112:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Global variables:
+ 113:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slStatus  - used to store current status of I2C slave.
+ 114:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 115:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Reentrant:
+ 116:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  No
+ 117:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 118:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *******************************************************************************/
+ 119:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** uint8 I2C_3_SlaveClearWriteStatus(void) 
+ 120:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** {
+ 119              		.loc 1 120 0
+ 120              		.cfi_startproc
+ 121              		@ args = 0, pretend = 0, frame = 8
+ 122              		@ frame_needed = 1, uses_anonymous_args = 0
+ 123              		@ link register save eliminated.
+ 124 0000 80B4     		push	{r7}
+ 125              		.cfi_def_cfa_offset 4
+ 126              		.cfi_offset 7, -4
+ 127 0002 83B0     		sub	sp, sp, #12
+ 128              		.cfi_def_cfa_offset 16
+ 129 0004 00AF     		add	r7, sp, #0
+ 130              		.cfi_def_cfa_register 7
+ 121:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     uint8 status;
+ 122:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 123:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     /* Mask of transfer complete flag and Error status */
+ 124:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     status = (I2C_3_slStatus & I2C_3_SSTAT_WR_MASK);
+ 131              		.loc 1 124 0
+ 132 0006 0A4B     		ldr	r3, .L11
+ 133 0008 1B78     		ldrb	r3, [r3]
+ 134 000a DBB2     		uxtb	r3, r3
+ 135 000c 23F00F03 		bic	r3, r3, #15
+ 136 0010 FB71     		strb	r3, [r7, #7]
+ 125:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     I2C_3_slStatus &= ((uint8) ~I2C_3_SSTAT_WR_CLEAR);
+ 137              		.loc 1 125 0
+ 138 0012 074B     		ldr	r3, .L11
+ 139 0014 1B78     		ldrb	r3, [r3]
+ 140 0016 DBB2     		uxtb	r3, r3
+ 141 0018 03F02F03 		and	r3, r3, #47
+ 142 001c DAB2     		uxtb	r2, r3
+ 143 001e 044B     		ldr	r3, .L11
+ 144 0020 1A70     		strb	r2, [r3]
+ 126:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 127:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     return(status);
+ 145              		.loc 1 127 0
+ 146 0022 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 128:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** }
+ 147              		.loc 1 128 0
+ 148 0024 1846     		mov	r0, r3
+ 149 0026 0C37     		adds	r7, r7, #12
+ 150 0028 BD46     		mov	sp, r7
+ 151              		@ sp needed
+ 152 002a 5DF8047B 		ldr	r7, [sp], #4
+ 153 002e 7047     		bx	lr
+ 154              	.L12:
+ 155              		.align	2
+ 156              	.L11:
+ 157 0030 00000000 		.word	I2C_3_slStatus
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 6
+
+
+ 158              		.cfi_endproc
+ 159              	.LFE2:
+ 160              		.size	I2C_3_SlaveClearWriteStatus, .-I2C_3_SlaveClearWriteStatus
+ 161              		.section	.text.I2C_3_SlaveSetAddress,"ax",%progbits
+ 162              		.align	2
+ 163              		.global	I2C_3_SlaveSetAddress
+ 164              		.thumb
+ 165              		.thumb_func
+ 166              		.type	I2C_3_SlaveSetAddress, %function
+ 167              	I2C_3_SlaveSetAddress:
+ 168              	.LFB3:
+ 129:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 130:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 131:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /*******************************************************************************
+ 132:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Function Name: I2C_3_SlaveSetAddress
+ 133:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** ********************************************************************************
+ 134:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 135:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Summary:
+ 136:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Sets the I2C slave address.
+ 137:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 138:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Parameters:
+ 139:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  address: I2C slave address for the primary device. This value may be any
+ 140:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  address between 0 and 127.
+ 141:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 142:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Return:
+ 143:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  None
+ 144:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 145:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Global variables:
+ 146:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_Address  - used to store I2C slave address for the primary
+ 147:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  device when software address detect feature is used.
+ 148:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 149:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Reentrant:
+ 150:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  No
+ 151:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 152:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *******************************************************************************/
+ 153:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** void I2C_3_SlaveSetAddress(uint8 address) 
+ 154:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** {
+ 169              		.loc 1 154 0
+ 170              		.cfi_startproc
+ 171              		@ args = 0, pretend = 0, frame = 8
+ 172              		@ frame_needed = 1, uses_anonymous_args = 0
+ 173              		@ link register save eliminated.
+ 174 0000 80B4     		push	{r7}
+ 175              		.cfi_def_cfa_offset 4
+ 176              		.cfi_offset 7, -4
+ 177 0002 83B0     		sub	sp, sp, #12
+ 178              		.cfi_def_cfa_offset 16
+ 179 0004 00AF     		add	r7, sp, #0
+ 180              		.cfi_def_cfa_register 7
+ 181 0006 0346     		mov	r3, r0
+ 182 0008 FB71     		strb	r3, [r7, #7]
+ 155:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     #if(I2C_3_SW_ADRR_DECODE)
+ 156:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****         I2C_3_slAddress = (address & I2C_3_SLAVE_ADDR_MASK);
+ 157:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     #else
+ 158:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****         I2C_3_ADDR_REG  = (address & I2C_3_SLAVE_ADDR_MASK);
+ 183              		.loc 1 158 0
+ 184 000a 054B     		ldr	r3, .L14
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 7
+
+
+ 185 000c FA79     		ldrb	r2, [r7, #7]
+ 186 000e 02F07F02 		and	r2, r2, #127
+ 187 0012 D2B2     		uxtb	r2, r2
+ 188 0014 1A70     		strb	r2, [r3]
+ 159:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     #endif /* (I2C_3_SW_ADRR_DECODE) */
+ 160:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** }
+ 189              		.loc 1 160 0
+ 190 0016 0C37     		adds	r7, r7, #12
+ 191 0018 BD46     		mov	sp, r7
+ 192              		@ sp needed
+ 193 001a 5DF8047B 		ldr	r7, [sp], #4
+ 194 001e 7047     		bx	lr
+ 195              	.L15:
+ 196              		.align	2
+ 197              	.L14:
+ 198 0020 CA490040 		.word	1073760714
+ 199              		.cfi_endproc
+ 200              	.LFE3:
+ 201              		.size	I2C_3_SlaveSetAddress, .-I2C_3_SlaveSetAddress
+ 202              		.section	.text.I2C_3_SlaveInitReadBuf,"ax",%progbits
+ 203              		.align	2
+ 204              		.global	I2C_3_SlaveInitReadBuf
+ 205              		.thumb
+ 206              		.thumb_func
+ 207              		.type	I2C_3_SlaveInitReadBuf, %function
+ 208              	I2C_3_SlaveInitReadBuf:
+ 209              	.LFB4:
+ 161:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 162:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 163:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /*******************************************************************************
+ 164:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Function Name: I2C_3_SlaveInitReadBuf
+ 165:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** ********************************************************************************
+ 166:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 167:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Summary:
+ 168:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Sets the buffer pointer and size of the read buffer. This function also
+ 169:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  resets the transfer count returned with the I2C_SlaveGetReadBufSize function.
+ 170:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 171:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Parameters:
+ 172:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  readBuf:  Pointer to the data buffer to be read by the master.
+ 173:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  bufSize:  Size of the read buffer exposed to the I2C master.
+ 174:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 175:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Return:
+ 176:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  None
+ 177:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 178:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Global variables:
+ 179:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slRdBufPtr   - used to store pointer to slave read buffer.
+ 180:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slRdBufSize  - used to store salve read buffer size.
+ 181:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slRdBufIndex - used to store current index within slave
+ 182:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  read buffer.
+ 183:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 184:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Side Effects:
+ 185:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  If this function is called during a bus transaction, data from the previous
+ 186:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  buffer location and the beginning of current buffer may be transmitted.
+ 187:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 188:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Reentrant:
+ 189:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  No
+ 190:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 8
+
+
+ 191:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *******************************************************************************/
+ 192:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** void I2C_3_SlaveInitReadBuf(uint8 * rdBuf, uint8 bufSize)
+ 193:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****      
+ 194:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** {
+ 210              		.loc 1 194 0
+ 211              		.cfi_startproc
+ 212              		@ args = 0, pretend = 0, frame = 8
+ 213              		@ frame_needed = 1, uses_anonymous_args = 0
+ 214              		@ link register save eliminated.
+ 215 0000 80B4     		push	{r7}
+ 216              		.cfi_def_cfa_offset 4
+ 217              		.cfi_offset 7, -4
+ 218 0002 83B0     		sub	sp, sp, #12
+ 219              		.cfi_def_cfa_offset 16
+ 220 0004 00AF     		add	r7, sp, #0
+ 221              		.cfi_def_cfa_register 7
+ 222 0006 7860     		str	r0, [r7, #4]
+ 223 0008 0B46     		mov	r3, r1
+ 224 000a FB70     		strb	r3, [r7, #3]
+ 195:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     /* Check for proper buffer */
+ 196:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     if(NULL != rdBuf)
+ 225              		.loc 1 196 0
+ 226 000c 7B68     		ldr	r3, [r7, #4]
+ 227 000e 002B     		cmp	r3, #0
+ 228 0010 08D0     		beq	.L16
+ 197:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     {
+ 198:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****         I2C_3_slRdBufPtr   = (volatile uint8 *) rdBuf;    /* Set buffer pointer */
+ 229              		.loc 1 198 0
+ 230 0012 074B     		ldr	r3, .L18
+ 231 0014 7A68     		ldr	r2, [r7, #4]
+ 232 0016 1A60     		str	r2, [r3]
+ 199:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****         I2C_3_slRdBufSize  = bufSize;    /* Set buffer size */
+ 233              		.loc 1 199 0
+ 234 0018 064B     		ldr	r3, .L18+4
+ 235 001a FA78     		ldrb	r2, [r7, #3]
+ 236 001c 1A70     		strb	r2, [r3]
+ 200:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****         I2C_3_slRdBufIndex = 0u;         /* Clears buffer index */
+ 237              		.loc 1 200 0
+ 238 001e 064B     		ldr	r3, .L18+8
+ 239 0020 0022     		movs	r2, #0
+ 240 0022 1A70     		strb	r2, [r3]
+ 241              	.L16:
+ 201:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     }
+ 202:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** }
+ 242              		.loc 1 202 0
+ 243 0024 0C37     		adds	r7, r7, #12
+ 244 0026 BD46     		mov	sp, r7
+ 245              		@ sp needed
+ 246 0028 5DF8047B 		ldr	r7, [sp], #4
+ 247 002c 7047     		bx	lr
+ 248              	.L19:
+ 249 002e 00BF     		.align	2
+ 250              	.L18:
+ 251 0030 00000000 		.word	I2C_3_slRdBufPtr
+ 252 0034 00000000 		.word	I2C_3_slRdBufSize
+ 253 0038 00000000 		.word	I2C_3_slRdBufIndex
+ 254              		.cfi_endproc
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 9
+
+
+ 255              	.LFE4:
+ 256              		.size	I2C_3_SlaveInitReadBuf, .-I2C_3_SlaveInitReadBuf
+ 257              		.section	.text.I2C_3_SlaveInitWriteBuf,"ax",%progbits
+ 258              		.align	2
+ 259              		.global	I2C_3_SlaveInitWriteBuf
+ 260              		.thumb
+ 261              		.thumb_func
+ 262              		.type	I2C_3_SlaveInitWriteBuf, %function
+ 263              	I2C_3_SlaveInitWriteBuf:
+ 264              	.LFB5:
+ 203:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 204:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 205:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /*******************************************************************************
+ 206:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Function Name: I2C_3_SlaveInitWriteBuf
+ 207:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** ********************************************************************************
+ 208:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 209:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Summary:
+ 210:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Sets the buffer pointer and size of the read buffer. This function also
+ 211:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  resets the transfer count returned with the I2C_SlaveGetReadBufSize function.
+ 212:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 213:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Parameters:
+ 214:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  writeBuf:  Pointer to the data buffer to be read by the master.
+ 215:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  bufSize:  Size of the buffer exposed to the I2C master.
+ 216:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 217:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Return:
+ 218:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  None
+ 219:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 220:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Global variables:
+ 221:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slWrBufPtr   - used to store pointer to slave write buffer.
+ 222:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slWrBufSize  - used to store salve write buffer size.
+ 223:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slWrBufIndex - used to store current index within slave
+ 224:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  write buffer.
+ 225:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 226:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Side Effects:
+ 227:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  If this function is called during a bus transaction, data from the previous
+ 228:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  buffer location and the beginning of current buffer may be transmitted.
+ 229:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 230:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Reentrant:
+ 231:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  No
+ 232:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 233:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *******************************************************************************/
+ 234:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** void I2C_3_SlaveInitWriteBuf(uint8 * wrBuf, uint8 bufSize)
+ 235:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****      
+ 236:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** {
+ 265              		.loc 1 236 0
+ 266              		.cfi_startproc
+ 267              		@ args = 0, pretend = 0, frame = 8
+ 268              		@ frame_needed = 1, uses_anonymous_args = 0
+ 269              		@ link register save eliminated.
+ 270 0000 80B4     		push	{r7}
+ 271              		.cfi_def_cfa_offset 4
+ 272              		.cfi_offset 7, -4
+ 273 0002 83B0     		sub	sp, sp, #12
+ 274              		.cfi_def_cfa_offset 16
+ 275 0004 00AF     		add	r7, sp, #0
+ 276              		.cfi_def_cfa_register 7
+ 277 0006 7860     		str	r0, [r7, #4]
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 10
+
+
+ 278 0008 0B46     		mov	r3, r1
+ 279 000a FB70     		strb	r3, [r7, #3]
+ 237:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     /* Check for proper buffer */
+ 238:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     if(NULL != wrBuf)
+ 280              		.loc 1 238 0
+ 281 000c 7B68     		ldr	r3, [r7, #4]
+ 282 000e 002B     		cmp	r3, #0
+ 283 0010 08D0     		beq	.L20
+ 239:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     {
+ 240:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****         I2C_3_slWrBufPtr   = (volatile uint8 *) wrBuf;  /* Set buffer pointer */
+ 284              		.loc 1 240 0
+ 285 0012 074B     		ldr	r3, .L22
+ 286 0014 7A68     		ldr	r2, [r7, #4]
+ 287 0016 1A60     		str	r2, [r3]
+ 241:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****         I2C_3_slWrBufSize  = bufSize;   /* Set buffer size */
+ 288              		.loc 1 241 0
+ 289 0018 064B     		ldr	r3, .L22+4
+ 290 001a FA78     		ldrb	r2, [r7, #3]
+ 291 001c 1A70     		strb	r2, [r3]
+ 242:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****         I2C_3_slWrBufIndex = 0u;        /* Clears buffer index */
+ 292              		.loc 1 242 0
+ 293 001e 064B     		ldr	r3, .L22+8
+ 294 0020 0022     		movs	r2, #0
+ 295 0022 1A70     		strb	r2, [r3]
+ 296              	.L20:
+ 243:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     }
+ 244:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** }
+ 297              		.loc 1 244 0
+ 298 0024 0C37     		adds	r7, r7, #12
+ 299 0026 BD46     		mov	sp, r7
+ 300              		@ sp needed
+ 301 0028 5DF8047B 		ldr	r7, [sp], #4
+ 302 002c 7047     		bx	lr
+ 303              	.L23:
+ 304 002e 00BF     		.align	2
+ 305              	.L22:
+ 306 0030 00000000 		.word	I2C_3_slWrBufPtr
+ 307 0034 00000000 		.word	I2C_3_slWrBufSize
+ 308 0038 00000000 		.word	I2C_3_slWrBufIndex
+ 309              		.cfi_endproc
+ 310              	.LFE5:
+ 311              		.size	I2C_3_SlaveInitWriteBuf, .-I2C_3_SlaveInitWriteBuf
+ 312              		.section	.text.I2C_3_SlaveGetReadBufSize,"ax",%progbits
+ 313              		.align	2
+ 314              		.global	I2C_3_SlaveGetReadBufSize
+ 315              		.thumb
+ 316              		.thumb_func
+ 317              		.type	I2C_3_SlaveGetReadBufSize, %function
+ 318              	I2C_3_SlaveGetReadBufSize:
+ 319              	.LFB6:
+ 245:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 246:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 247:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /*******************************************************************************
+ 248:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Function Name: I2C_3_SlaveGetReadBufSize
+ 249:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** ********************************************************************************
+ 250:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 251:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Summary:
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 11
+
+
+ 252:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Returns the number of bytes read by the I2C master since an
+ 253:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_SlaveInitReadBuf or I2C_SlaveClearReadBuf function was executed.
+ 254:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  The maximum return value will be the size of the read buffer.
+ 255:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 256:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Parameters:
+ 257:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  None
+ 258:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 259:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Return:
+ 260:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Bytes read by master.
+ 261:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 262:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Global variables:
+ 263:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slRdBufIndex - used to store current index within slave
+ 264:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  read buffer.
+ 265:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 266:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *******************************************************************************/
+ 267:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** uint8 I2C_3_SlaveGetReadBufSize(void) 
+ 268:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** {
+ 320              		.loc 1 268 0
+ 321              		.cfi_startproc
+ 322              		@ args = 0, pretend = 0, frame = 0
+ 323              		@ frame_needed = 1, uses_anonymous_args = 0
+ 324              		@ link register save eliminated.
+ 325 0000 80B4     		push	{r7}
+ 326              		.cfi_def_cfa_offset 4
+ 327              		.cfi_offset 7, -4
+ 328 0002 00AF     		add	r7, sp, #0
+ 329              		.cfi_def_cfa_register 7
+ 269:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     return(I2C_3_slRdBufIndex);
+ 330              		.loc 1 269 0
+ 331 0004 034B     		ldr	r3, .L26
+ 332 0006 1B78     		ldrb	r3, [r3]
+ 333 0008 DBB2     		uxtb	r3, r3
+ 270:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** }
+ 334              		.loc 1 270 0
+ 335 000a 1846     		mov	r0, r3
+ 336 000c BD46     		mov	sp, r7
+ 337              		@ sp needed
+ 338 000e 5DF8047B 		ldr	r7, [sp], #4
+ 339 0012 7047     		bx	lr
+ 340              	.L27:
+ 341              		.align	2
+ 342              	.L26:
+ 343 0014 00000000 		.word	I2C_3_slRdBufIndex
+ 344              		.cfi_endproc
+ 345              	.LFE6:
+ 346              		.size	I2C_3_SlaveGetReadBufSize, .-I2C_3_SlaveGetReadBufSize
+ 347              		.section	.text.I2C_3_SlaveGetWriteBufSize,"ax",%progbits
+ 348              		.align	2
+ 349              		.global	I2C_3_SlaveGetWriteBufSize
+ 350              		.thumb
+ 351              		.thumb_func
+ 352              		.type	I2C_3_SlaveGetWriteBufSize, %function
+ 353              	I2C_3_SlaveGetWriteBufSize:
+ 354              	.LFB7:
+ 271:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 272:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 273:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /*******************************************************************************
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 12
+
+
+ 274:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Function Name: I2C_3_SlaveGetWriteBufSize
+ 275:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** ********************************************************************************
+ 276:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 277:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Summary:
+ 278:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Returns the number of bytes written by the I2C master since an
+ 279:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_SlaveInitWriteBuf or I2C_SlaveClearWriteBuf function was executed.
+ 280:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  The maximum return value will be the size of the write buffer.
+ 281:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 282:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Parameters:
+ 283:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  None
+ 284:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 285:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Return:
+ 286:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Bytes written by master.
+ 287:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 288:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Global variables:
+ 289:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slWrBufIndex - used to store current index within slave
+ 290:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  write buffer.
+ 291:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 292:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *******************************************************************************/
+ 293:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** uint8 I2C_3_SlaveGetWriteBufSize(void) 
+ 294:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** {
+ 355              		.loc 1 294 0
+ 356              		.cfi_startproc
+ 357              		@ args = 0, pretend = 0, frame = 0
+ 358              		@ frame_needed = 1, uses_anonymous_args = 0
+ 359              		@ link register save eliminated.
+ 360 0000 80B4     		push	{r7}
+ 361              		.cfi_def_cfa_offset 4
+ 362              		.cfi_offset 7, -4
+ 363 0002 00AF     		add	r7, sp, #0
+ 364              		.cfi_def_cfa_register 7
+ 295:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     return(I2C_3_slWrBufIndex);
+ 365              		.loc 1 295 0
+ 366 0004 034B     		ldr	r3, .L30
+ 367 0006 1B78     		ldrb	r3, [r3]
+ 368 0008 DBB2     		uxtb	r3, r3
+ 296:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** }
+ 369              		.loc 1 296 0
+ 370 000a 1846     		mov	r0, r3
+ 371 000c BD46     		mov	sp, r7
+ 372              		@ sp needed
+ 373 000e 5DF8047B 		ldr	r7, [sp], #4
+ 374 0012 7047     		bx	lr
+ 375              	.L31:
+ 376              		.align	2
+ 377              	.L30:
+ 378 0014 00000000 		.word	I2C_3_slWrBufIndex
+ 379              		.cfi_endproc
+ 380              	.LFE7:
+ 381              		.size	I2C_3_SlaveGetWriteBufSize, .-I2C_3_SlaveGetWriteBufSize
+ 382              		.section	.text.I2C_3_SlaveClearReadBuf,"ax",%progbits
+ 383              		.align	2
+ 384              		.global	I2C_3_SlaveClearReadBuf
+ 385              		.thumb
+ 386              		.thumb_func
+ 387              		.type	I2C_3_SlaveClearReadBuf, %function
+ 388              	I2C_3_SlaveClearReadBuf:
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 13
+
+
+ 389              	.LFB8:
+ 297:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 298:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 299:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /*******************************************************************************
+ 300:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Function Name: I2C_3_SlaveClearReadBuf
+ 301:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** ********************************************************************************
+ 302:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 303:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Summary:
+ 304:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Resets the read pointer to the first byte in the read buffer. The next byte
+ 305:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  read by the master will be the first byte in the read buffer.
+ 306:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 307:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Parameters:
+ 308:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  None
+ 309:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 310:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Return:
+ 311:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  None
+ 312:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 313:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Global variables:
+ 314:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slRdBufIndex - used to store current index within slave
+ 315:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  read buffer.
+ 316:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 317:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Reentrant:
+ 318:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  No
+ 319:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 320:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *******************************************************************************/
+ 321:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** void I2C_3_SlaveClearReadBuf(void) 
+ 322:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** {
+ 390              		.loc 1 322 0
+ 391              		.cfi_startproc
+ 392              		@ args = 0, pretend = 0, frame = 0
+ 393              		@ frame_needed = 1, uses_anonymous_args = 0
+ 394              		@ link register save eliminated.
+ 395 0000 80B4     		push	{r7}
+ 396              		.cfi_def_cfa_offset 4
+ 397              		.cfi_offset 7, -4
+ 398 0002 00AF     		add	r7, sp, #0
+ 399              		.cfi_def_cfa_register 7
+ 323:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     I2C_3_slRdBufIndex = 0u;
+ 400              		.loc 1 323 0
+ 401 0004 034B     		ldr	r3, .L33
+ 402 0006 0022     		movs	r2, #0
+ 403 0008 1A70     		strb	r2, [r3]
+ 324:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** }
+ 404              		.loc 1 324 0
+ 405 000a BD46     		mov	sp, r7
+ 406              		@ sp needed
+ 407 000c 5DF8047B 		ldr	r7, [sp], #4
+ 408 0010 7047     		bx	lr
+ 409              	.L34:
+ 410 0012 00BF     		.align	2
+ 411              	.L33:
+ 412 0014 00000000 		.word	I2C_3_slRdBufIndex
+ 413              		.cfi_endproc
+ 414              	.LFE8:
+ 415              		.size	I2C_3_SlaveClearReadBuf, .-I2C_3_SlaveClearReadBuf
+ 416              		.section	.text.I2C_3_SlaveClearWriteBuf,"ax",%progbits
+ 417              		.align	2
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 14
+
+
+ 418              		.global	I2C_3_SlaveClearWriteBuf
+ 419              		.thumb
+ 420              		.thumb_func
+ 421              		.type	I2C_3_SlaveClearWriteBuf, %function
+ 422              	I2C_3_SlaveClearWriteBuf:
+ 423              	.LFB9:
+ 325:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 326:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** 
+ 327:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** /*******************************************************************************
+ 328:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Function Name: I2C_3_SlaveClearRxBuf
+ 329:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** ********************************************************************************
+ 330:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 331:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Summary:
+ 332:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  Resets the write pointer to the first byte in the write buffer. The next byte
+ 333:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  written by the master will be the first byte in the write buffer.
+ 334:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 335:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Parameters:
+ 336:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  None
+ 337:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 338:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Return:
+ 339:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  None
+ 340:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 341:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Global variables:
+ 342:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  I2C_3_slWrBufIndex - used to store current index within slave
+ 343:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  write buffer.
+ 344:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 345:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** * Reentrant:
+ 346:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *  No
+ 347:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *
+ 348:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** *******************************************************************************/
+ 349:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** void I2C_3_SlaveClearWriteBuf(void) 
+ 350:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** {
+ 424              		.loc 1 350 0
+ 425              		.cfi_startproc
+ 426              		@ args = 0, pretend = 0, frame = 0
+ 427              		@ frame_needed = 1, uses_anonymous_args = 0
+ 428              		@ link register save eliminated.
+ 429 0000 80B4     		push	{r7}
+ 430              		.cfi_def_cfa_offset 4
+ 431              		.cfi_offset 7, -4
+ 432 0002 00AF     		add	r7, sp, #0
+ 433              		.cfi_def_cfa_register 7
+ 351:.\Generated_Source\PSoC5/I2C_3_SLAVE.c ****     I2C_3_slWrBufIndex = 0u;
+ 434              		.loc 1 351 0
+ 435 0004 034B     		ldr	r3, .L36
+ 436 0006 0022     		movs	r2, #0
+ 437 0008 1A70     		strb	r2, [r3]
+ 352:.\Generated_Source\PSoC5/I2C_3_SLAVE.c **** }
+ 438              		.loc 1 352 0
+ 439 000a BD46     		mov	sp, r7
+ 440              		@ sp needed
+ 441 000c 5DF8047B 		ldr	r7, [sp], #4
+ 442 0010 7047     		bx	lr
+ 443              	.L37:
+ 444 0012 00BF     		.align	2
+ 445              	.L36:
+ 446 0014 00000000 		.word	I2C_3_slWrBufIndex
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 15
+
+
+ 447              		.cfi_endproc
+ 448              	.LFE9:
+ 449              		.size	I2C_3_SlaveClearWriteBuf, .-I2C_3_SlaveClearWriteBuf
+ 450              		.text
+ 451              	.Letext0:
+ 452              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 453              		.section	.debug_info,"",%progbits
+ 454              	.Ldebug_info0:
+ 455 0000 5F020000 		.4byte	0x25f
+ 456 0004 0400     		.2byte	0x4
+ 457 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 458 000a 04       		.byte	0x4
+ 459 000b 01       		.uleb128 0x1
+ 460 000c 87000000 		.4byte	.LASF37
+ 461 0010 01       		.byte	0x1
+ 462 0011 00000000 		.4byte	.LASF38
+ 463 0015 FC010000 		.4byte	.LASF39
+ 464 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 465 001d 00000000 		.4byte	0
+ 466 0021 00000000 		.4byte	.Ldebug_line0
+ 467 0025 02       		.uleb128 0x2
+ 468 0026 01       		.byte	0x1
+ 469 0027 06       		.byte	0x6
+ 470 0028 E1020000 		.4byte	.LASF0
+ 471 002c 02       		.uleb128 0x2
+ 472 002d 01       		.byte	0x1
+ 473 002e 08       		.byte	0x8
+ 474 002f 74000000 		.4byte	.LASF1
+ 475 0033 02       		.uleb128 0x2
+ 476 0034 02       		.byte	0x2
+ 477 0035 05       		.byte	0x5
+ 478 0036 AE020000 		.4byte	.LASF2
+ 479 003a 02       		.uleb128 0x2
+ 480 003b 02       		.byte	0x2
+ 481 003c 07       		.byte	0x7
+ 482 003d 4E000000 		.4byte	.LASF3
+ 483 0041 02       		.uleb128 0x2
+ 484 0042 04       		.byte	0x4
+ 485 0043 05       		.byte	0x5
+ 486 0044 C0020000 		.4byte	.LASF4
+ 487 0048 02       		.uleb128 0x2
+ 488 0049 04       		.byte	0x4
+ 489 004a 07       		.byte	0x7
+ 490 004b 03010000 		.4byte	.LASF5
+ 491 004f 02       		.uleb128 0x2
+ 492 0050 08       		.byte	0x8
+ 493 0051 05       		.byte	0x5
+ 494 0052 44020000 		.4byte	.LASF6
+ 495 0056 02       		.uleb128 0x2
+ 496 0057 08       		.byte	0x8
+ 497 0058 07       		.byte	0x7
+ 498 0059 B3010000 		.4byte	.LASF7
+ 499 005d 03       		.uleb128 0x3
+ 500 005e 04       		.byte	0x4
+ 501 005f 05       		.byte	0x5
+ 502 0060 696E7400 		.ascii	"int\000"
+ 503 0064 02       		.uleb128 0x2
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 16
+
+
+ 504 0065 04       		.byte	0x4
+ 505 0066 07       		.byte	0x7
+ 506 0067 9E010000 		.4byte	.LASF8
+ 507 006b 04       		.uleb128 0x4
+ 508 006c 15010000 		.4byte	.LASF12
+ 509 0070 02       		.byte	0x2
+ 510 0071 5B       		.byte	0x5b
+ 511 0072 2C000000 		.4byte	0x2c
+ 512 0076 02       		.uleb128 0x2
+ 513 0077 04       		.byte	0x4
+ 514 0078 04       		.byte	0x4
+ 515 0079 6E000000 		.4byte	.LASF9
+ 516 007d 02       		.uleb128 0x2
+ 517 007e 08       		.byte	0x8
+ 518 007f 04       		.byte	0x4
+ 519 0080 4E010000 		.4byte	.LASF10
+ 520 0084 02       		.uleb128 0x2
+ 521 0085 01       		.byte	0x1
+ 522 0086 08       		.byte	0x8
+ 523 0087 6D020000 		.4byte	.LASF11
+ 524 008b 04       		.uleb128 0x4
+ 525 008c 82000000 		.4byte	.LASF13
+ 526 0090 02       		.byte	0x2
+ 527 0091 F0       		.byte	0xf0
+ 528 0092 96000000 		.4byte	0x96
+ 529 0096 05       		.uleb128 0x5
+ 530 0097 6B000000 		.4byte	0x6b
+ 531 009b 02       		.uleb128 0x2
+ 532 009c 04       		.byte	0x4
+ 533 009d 07       		.byte	0x7
+ 534 009e 3B020000 		.4byte	.LASF14
+ 535 00a2 06       		.uleb128 0x6
+ 536 00a3 55010000 		.4byte	.LASF25
+ 537 00a7 01       		.byte	0x1
+ 538 00a8 3B       		.byte	0x3b
+ 539 00a9 6B000000 		.4byte	0x6b
+ 540 00ad 00000000 		.4byte	.LFB0
+ 541 00b1 18000000 		.4byte	.LFE0-.LFB0
+ 542 00b5 01       		.uleb128 0x1
+ 543 00b6 9C       		.byte	0x9c
+ 544 00b7 07       		.uleb128 0x7
+ 545 00b8 52020000 		.4byte	.LASF15
+ 546 00bc 01       		.byte	0x1
+ 547 00bd 56       		.byte	0x56
+ 548 00be 6B000000 		.4byte	0x6b
+ 549 00c2 00000000 		.4byte	.LFB1
+ 550 00c6 34000000 		.4byte	.LFE1-.LFB1
+ 551 00ca 01       		.uleb128 0x1
+ 552 00cb 9C       		.byte	0x9c
+ 553 00cc DF000000 		.4byte	0xdf
+ 554 00d0 08       		.uleb128 0x8
+ 555 00d1 61000000 		.4byte	.LASF17
+ 556 00d5 01       		.byte	0x1
+ 557 00d6 58       		.byte	0x58
+ 558 00d7 6B000000 		.4byte	0x6b
+ 559 00db 02       		.uleb128 0x2
+ 560 00dc 91       		.byte	0x91
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 17
+
+
+ 561 00dd 77       		.sleb128 -9
+ 562 00de 00       		.byte	0
+ 563 00df 07       		.uleb128 0x7
+ 564 00e0 32010000 		.4byte	.LASF16
+ 565 00e4 01       		.byte	0x1
+ 566 00e5 77       		.byte	0x77
+ 567 00e6 6B000000 		.4byte	0x6b
+ 568 00ea 00000000 		.4byte	.LFB2
+ 569 00ee 34000000 		.4byte	.LFE2-.LFB2
+ 570 00f2 01       		.uleb128 0x1
+ 571 00f3 9C       		.byte	0x9c
+ 572 00f4 07010000 		.4byte	0x107
+ 573 00f8 08       		.uleb128 0x8
+ 574 00f9 61000000 		.4byte	.LASF17
+ 575 00fd 01       		.byte	0x1
+ 576 00fe 79       		.byte	0x79
+ 577 00ff 6B000000 		.4byte	0x6b
+ 578 0103 02       		.uleb128 0x2
+ 579 0104 91       		.byte	0x91
+ 580 0105 77       		.sleb128 -9
+ 581 0106 00       		.byte	0
+ 582 0107 09       		.uleb128 0x9
+ 583 0108 38000000 		.4byte	.LASF18
+ 584 010c 01       		.byte	0x1
+ 585 010d 99       		.byte	0x99
+ 586 010e 00000000 		.4byte	.LFB3
+ 587 0112 24000000 		.4byte	.LFE3-.LFB3
+ 588 0116 01       		.uleb128 0x1
+ 589 0117 9C       		.byte	0x9c
+ 590 0118 2B010000 		.4byte	0x12b
+ 591 011c 0A       		.uleb128 0xa
+ 592 011d AB010000 		.4byte	.LASF20
+ 593 0121 01       		.byte	0x1
+ 594 0122 99       		.byte	0x99
+ 595 0123 6B000000 		.4byte	0x6b
+ 596 0127 02       		.uleb128 0x2
+ 597 0128 91       		.byte	0x91
+ 598 0129 77       		.sleb128 -9
+ 599 012a 00       		.byte	0
+ 600 012b 09       		.uleb128 0x9
+ 601 012c CA010000 		.4byte	.LASF19
+ 602 0130 01       		.byte	0x1
+ 603 0131 C0       		.byte	0xc0
+ 604 0132 00000000 		.4byte	.LFB4
+ 605 0136 3C000000 		.4byte	.LFE4-.LFB4
+ 606 013a 01       		.uleb128 0x1
+ 607 013b 9C       		.byte	0x9c
+ 608 013c 5D010000 		.4byte	0x15d
+ 609 0140 0A       		.uleb128 0xa
+ 610 0141 68000000 		.4byte	.LASF21
+ 611 0145 01       		.byte	0x1
+ 612 0146 C0       		.byte	0xc0
+ 613 0147 5D010000 		.4byte	0x15d
+ 614 014b 02       		.uleb128 0x2
+ 615 014c 91       		.byte	0x91
+ 616 014d 74       		.sleb128 -12
+ 617 014e 0A       		.uleb128 0xa
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 18
+
+
+ 618 014f B8020000 		.4byte	.LASF22
+ 619 0153 01       		.byte	0x1
+ 620 0154 C0       		.byte	0xc0
+ 621 0155 6B000000 		.4byte	0x6b
+ 622 0159 02       		.uleb128 0x2
+ 623 015a 91       		.byte	0x91
+ 624 015b 73       		.sleb128 -13
+ 625 015c 00       		.byte	0
+ 626 015d 0B       		.uleb128 0xb
+ 627 015e 04       		.byte	0x4
+ 628 015f 6B000000 		.4byte	0x6b
+ 629 0163 09       		.uleb128 0x9
+ 630 0164 23020000 		.4byte	.LASF23
+ 631 0168 01       		.byte	0x1
+ 632 0169 EA       		.byte	0xea
+ 633 016a 00000000 		.4byte	.LFB5
+ 634 016e 3C000000 		.4byte	.LFE5-.LFB5
+ 635 0172 01       		.uleb128 0x1
+ 636 0173 9C       		.byte	0x9c
+ 637 0174 95010000 		.4byte	0x195
+ 638 0178 0A       		.uleb128 0xa
+ 639 0179 1B010000 		.4byte	.LASF24
+ 640 017d 01       		.byte	0x1
+ 641 017e EA       		.byte	0xea
+ 642 017f 5D010000 		.4byte	0x15d
+ 643 0183 02       		.uleb128 0x2
+ 644 0184 91       		.byte	0x91
+ 645 0185 74       		.sleb128 -12
+ 646 0186 0A       		.uleb128 0xa
+ 647 0187 B8020000 		.4byte	.LASF22
+ 648 018b 01       		.byte	0x1
+ 649 018c EA       		.byte	0xea
+ 650 018d 6B000000 		.4byte	0x6b
+ 651 0191 02       		.uleb128 0x2
+ 652 0192 91       		.byte	0x91
+ 653 0193 73       		.sleb128 -13
+ 654 0194 00       		.byte	0
+ 655 0195 0C       		.uleb128 0xc
+ 656 0196 85020000 		.4byte	.LASF26
+ 657 019a 01       		.byte	0x1
+ 658 019b 0B01     		.2byte	0x10b
+ 659 019d 6B000000 		.4byte	0x6b
+ 660 01a1 00000000 		.4byte	.LFB6
+ 661 01a5 18000000 		.4byte	.LFE6-.LFB6
+ 662 01a9 01       		.uleb128 0x1
+ 663 01aa 9C       		.byte	0x9c
+ 664 01ab 0C       		.uleb128 0xc
+ 665 01ac E1010000 		.4byte	.LASF27
+ 666 01b0 01       		.byte	0x1
+ 667 01b1 2501     		.2byte	0x125
+ 668 01b3 6B000000 		.4byte	0x6b
+ 669 01b7 00000000 		.4byte	.LFB7
+ 670 01bb 18000000 		.4byte	.LFE7-.LFB7
+ 671 01bf 01       		.uleb128 0x1
+ 672 01c0 9C       		.byte	0x9c
+ 673 01c1 0D       		.uleb128 0xd
+ 674 01c2 C9020000 		.4byte	.LASF28
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 19
+
+
+ 675 01c6 01       		.byte	0x1
+ 676 01c7 4101     		.2byte	0x141
+ 677 01c9 00000000 		.4byte	.LFB8
+ 678 01cd 18000000 		.4byte	.LFE8-.LFB8
+ 679 01d1 01       		.uleb128 0x1
+ 680 01d2 9C       		.byte	0x9c
+ 681 01d3 0D       		.uleb128 0xd
+ 682 01d4 ED020000 		.4byte	.LASF29
+ 683 01d8 01       		.byte	0x1
+ 684 01d9 5D01     		.2byte	0x15d
+ 685 01db 00000000 		.4byte	.LFB9
+ 686 01df 18000000 		.4byte	.LFE9-.LFB9
+ 687 01e3 01       		.uleb128 0x1
+ 688 01e4 9C       		.byte	0x9c
+ 689 01e5 0E       		.uleb128 0xe
+ 690 01e6 9F020000 		.4byte	.LASF30
+ 691 01ea 01       		.byte	0x1
+ 692 01eb 19       		.byte	0x19
+ 693 01ec 96000000 		.4byte	0x96
+ 694 01f0 05       		.uleb128 0x5
+ 695 01f1 03       		.byte	0x3
+ 696 01f2 00000000 		.4byte	I2C_3_slStatus
+ 697 01f6 0E       		.uleb128 0xe
+ 698 01f7 27000000 		.4byte	.LASF31
+ 699 01fb 01       		.byte	0x1
+ 700 01fc 1C       		.byte	0x1c
+ 701 01fd 07020000 		.4byte	0x207
+ 702 0201 05       		.uleb128 0x5
+ 703 0202 03       		.byte	0x3
+ 704 0203 00000000 		.4byte	I2C_3_slRdBufPtr
+ 705 0207 0B       		.uleb128 0xb
+ 706 0208 04       		.byte	0x4
+ 707 0209 96000000 		.4byte	0x96
+ 708 020d 0E       		.uleb128 0xe
+ 709 020e 67010000 		.4byte	.LASF32
+ 710 0212 01       		.byte	0x1
+ 711 0213 1D       		.byte	0x1d
+ 712 0214 96000000 		.4byte	0x96
+ 713 0218 05       		.uleb128 0x5
+ 714 0219 03       		.byte	0x3
+ 715 021a 00000000 		.4byte	I2C_3_slRdBufSize
+ 716 021e 0E       		.uleb128 0xe
+ 717 021f 72020000 		.4byte	.LASF33
+ 718 0223 01       		.byte	0x1
+ 719 0224 1E       		.byte	0x1e
+ 720 0225 96000000 		.4byte	0x96
+ 721 0229 05       		.uleb128 0x5
+ 722 022a 03       		.byte	0x3
+ 723 022b 00000000 		.4byte	I2C_3_slRdBufIndex
+ 724 022f 0E       		.uleb128 0xe
+ 725 0230 21010000 		.4byte	.LASF34
+ 726 0234 01       		.byte	0x1
+ 727 0235 21       		.byte	0x21
+ 728 0236 07020000 		.4byte	0x207
+ 729 023a 05       		.uleb128 0x5
+ 730 023b 03       		.byte	0x3
+ 731 023c 00000000 		.4byte	I2C_3_slWrBufPtr
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 20
+
+
+ 732 0240 0E       		.uleb128 0xe
+ 733 0241 79010000 		.4byte	.LASF35
+ 734 0245 01       		.byte	0x1
+ 735 0246 22       		.byte	0x22
+ 736 0247 96000000 		.4byte	0x96
+ 737 024b 05       		.uleb128 0x5
+ 738 024c 03       		.byte	0x3
+ 739 024d 00000000 		.4byte	I2C_3_slWrBufSize
+ 740 0251 0E       		.uleb128 0xe
+ 741 0252 8B010000 		.4byte	.LASF36
+ 742 0256 01       		.byte	0x1
+ 743 0257 23       		.byte	0x23
+ 744 0258 96000000 		.4byte	0x96
+ 745 025c 05       		.uleb128 0x5
+ 746 025d 03       		.byte	0x3
+ 747 025e 00000000 		.4byte	I2C_3_slWrBufIndex
+ 748 0262 00       		.byte	0
+ 749              		.section	.debug_abbrev,"",%progbits
+ 750              	.Ldebug_abbrev0:
+ 751 0000 01       		.uleb128 0x1
+ 752 0001 11       		.uleb128 0x11
+ 753 0002 01       		.byte	0x1
+ 754 0003 25       		.uleb128 0x25
+ 755 0004 0E       		.uleb128 0xe
+ 756 0005 13       		.uleb128 0x13
+ 757 0006 0B       		.uleb128 0xb
+ 758 0007 03       		.uleb128 0x3
+ 759 0008 0E       		.uleb128 0xe
+ 760 0009 1B       		.uleb128 0x1b
+ 761 000a 0E       		.uleb128 0xe
+ 762 000b 55       		.uleb128 0x55
+ 763 000c 17       		.uleb128 0x17
+ 764 000d 11       		.uleb128 0x11
+ 765 000e 01       		.uleb128 0x1
+ 766 000f 10       		.uleb128 0x10
+ 767 0010 17       		.uleb128 0x17
+ 768 0011 00       		.byte	0
+ 769 0012 00       		.byte	0
+ 770 0013 02       		.uleb128 0x2
+ 771 0014 24       		.uleb128 0x24
+ 772 0015 00       		.byte	0
+ 773 0016 0B       		.uleb128 0xb
+ 774 0017 0B       		.uleb128 0xb
+ 775 0018 3E       		.uleb128 0x3e
+ 776 0019 0B       		.uleb128 0xb
+ 777 001a 03       		.uleb128 0x3
+ 778 001b 0E       		.uleb128 0xe
+ 779 001c 00       		.byte	0
+ 780 001d 00       		.byte	0
+ 781 001e 03       		.uleb128 0x3
+ 782 001f 24       		.uleb128 0x24
+ 783 0020 00       		.byte	0
+ 784 0021 0B       		.uleb128 0xb
+ 785 0022 0B       		.uleb128 0xb
+ 786 0023 3E       		.uleb128 0x3e
+ 787 0024 0B       		.uleb128 0xb
+ 788 0025 03       		.uleb128 0x3
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 21
+
+
+ 789 0026 08       		.uleb128 0x8
+ 790 0027 00       		.byte	0
+ 791 0028 00       		.byte	0
+ 792 0029 04       		.uleb128 0x4
+ 793 002a 16       		.uleb128 0x16
+ 794 002b 00       		.byte	0
+ 795 002c 03       		.uleb128 0x3
+ 796 002d 0E       		.uleb128 0xe
+ 797 002e 3A       		.uleb128 0x3a
+ 798 002f 0B       		.uleb128 0xb
+ 799 0030 3B       		.uleb128 0x3b
+ 800 0031 0B       		.uleb128 0xb
+ 801 0032 49       		.uleb128 0x49
+ 802 0033 13       		.uleb128 0x13
+ 803 0034 00       		.byte	0
+ 804 0035 00       		.byte	0
+ 805 0036 05       		.uleb128 0x5
+ 806 0037 35       		.uleb128 0x35
+ 807 0038 00       		.byte	0
+ 808 0039 49       		.uleb128 0x49
+ 809 003a 13       		.uleb128 0x13
+ 810 003b 00       		.byte	0
+ 811 003c 00       		.byte	0
+ 812 003d 06       		.uleb128 0x6
+ 813 003e 2E       		.uleb128 0x2e
+ 814 003f 00       		.byte	0
+ 815 0040 3F       		.uleb128 0x3f
+ 816 0041 19       		.uleb128 0x19
+ 817 0042 03       		.uleb128 0x3
+ 818 0043 0E       		.uleb128 0xe
+ 819 0044 3A       		.uleb128 0x3a
+ 820 0045 0B       		.uleb128 0xb
+ 821 0046 3B       		.uleb128 0x3b
+ 822 0047 0B       		.uleb128 0xb
+ 823 0048 27       		.uleb128 0x27
+ 824 0049 19       		.uleb128 0x19
+ 825 004a 49       		.uleb128 0x49
+ 826 004b 13       		.uleb128 0x13
+ 827 004c 11       		.uleb128 0x11
+ 828 004d 01       		.uleb128 0x1
+ 829 004e 12       		.uleb128 0x12
+ 830 004f 06       		.uleb128 0x6
+ 831 0050 40       		.uleb128 0x40
+ 832 0051 18       		.uleb128 0x18
+ 833 0052 9742     		.uleb128 0x2117
+ 834 0054 19       		.uleb128 0x19
+ 835 0055 00       		.byte	0
+ 836 0056 00       		.byte	0
+ 837 0057 07       		.uleb128 0x7
+ 838 0058 2E       		.uleb128 0x2e
+ 839 0059 01       		.byte	0x1
+ 840 005a 3F       		.uleb128 0x3f
+ 841 005b 19       		.uleb128 0x19
+ 842 005c 03       		.uleb128 0x3
+ 843 005d 0E       		.uleb128 0xe
+ 844 005e 3A       		.uleb128 0x3a
+ 845 005f 0B       		.uleb128 0xb
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 22
+
+
+ 846 0060 3B       		.uleb128 0x3b
+ 847 0061 0B       		.uleb128 0xb
+ 848 0062 27       		.uleb128 0x27
+ 849 0063 19       		.uleb128 0x19
+ 850 0064 49       		.uleb128 0x49
+ 851 0065 13       		.uleb128 0x13
+ 852 0066 11       		.uleb128 0x11
+ 853 0067 01       		.uleb128 0x1
+ 854 0068 12       		.uleb128 0x12
+ 855 0069 06       		.uleb128 0x6
+ 856 006a 40       		.uleb128 0x40
+ 857 006b 18       		.uleb128 0x18
+ 858 006c 9742     		.uleb128 0x2117
+ 859 006e 19       		.uleb128 0x19
+ 860 006f 01       		.uleb128 0x1
+ 861 0070 13       		.uleb128 0x13
+ 862 0071 00       		.byte	0
+ 863 0072 00       		.byte	0
+ 864 0073 08       		.uleb128 0x8
+ 865 0074 34       		.uleb128 0x34
+ 866 0075 00       		.byte	0
+ 867 0076 03       		.uleb128 0x3
+ 868 0077 0E       		.uleb128 0xe
+ 869 0078 3A       		.uleb128 0x3a
+ 870 0079 0B       		.uleb128 0xb
+ 871 007a 3B       		.uleb128 0x3b
+ 872 007b 0B       		.uleb128 0xb
+ 873 007c 49       		.uleb128 0x49
+ 874 007d 13       		.uleb128 0x13
+ 875 007e 02       		.uleb128 0x2
+ 876 007f 18       		.uleb128 0x18
+ 877 0080 00       		.byte	0
+ 878 0081 00       		.byte	0
+ 879 0082 09       		.uleb128 0x9
+ 880 0083 2E       		.uleb128 0x2e
+ 881 0084 01       		.byte	0x1
+ 882 0085 3F       		.uleb128 0x3f
+ 883 0086 19       		.uleb128 0x19
+ 884 0087 03       		.uleb128 0x3
+ 885 0088 0E       		.uleb128 0xe
+ 886 0089 3A       		.uleb128 0x3a
+ 887 008a 0B       		.uleb128 0xb
+ 888 008b 3B       		.uleb128 0x3b
+ 889 008c 0B       		.uleb128 0xb
+ 890 008d 27       		.uleb128 0x27
+ 891 008e 19       		.uleb128 0x19
+ 892 008f 11       		.uleb128 0x11
+ 893 0090 01       		.uleb128 0x1
+ 894 0091 12       		.uleb128 0x12
+ 895 0092 06       		.uleb128 0x6
+ 896 0093 40       		.uleb128 0x40
+ 897 0094 18       		.uleb128 0x18
+ 898 0095 9742     		.uleb128 0x2117
+ 899 0097 19       		.uleb128 0x19
+ 900 0098 01       		.uleb128 0x1
+ 901 0099 13       		.uleb128 0x13
+ 902 009a 00       		.byte	0
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 23
+
+
+ 903 009b 00       		.byte	0
+ 904 009c 0A       		.uleb128 0xa
+ 905 009d 05       		.uleb128 0x5
+ 906 009e 00       		.byte	0
+ 907 009f 03       		.uleb128 0x3
+ 908 00a0 0E       		.uleb128 0xe
+ 909 00a1 3A       		.uleb128 0x3a
+ 910 00a2 0B       		.uleb128 0xb
+ 911 00a3 3B       		.uleb128 0x3b
+ 912 00a4 0B       		.uleb128 0xb
+ 913 00a5 49       		.uleb128 0x49
+ 914 00a6 13       		.uleb128 0x13
+ 915 00a7 02       		.uleb128 0x2
+ 916 00a8 18       		.uleb128 0x18
+ 917 00a9 00       		.byte	0
+ 918 00aa 00       		.byte	0
+ 919 00ab 0B       		.uleb128 0xb
+ 920 00ac 0F       		.uleb128 0xf
+ 921 00ad 00       		.byte	0
+ 922 00ae 0B       		.uleb128 0xb
+ 923 00af 0B       		.uleb128 0xb
+ 924 00b0 49       		.uleb128 0x49
+ 925 00b1 13       		.uleb128 0x13
+ 926 00b2 00       		.byte	0
+ 927 00b3 00       		.byte	0
+ 928 00b4 0C       		.uleb128 0xc
+ 929 00b5 2E       		.uleb128 0x2e
+ 930 00b6 00       		.byte	0
+ 931 00b7 3F       		.uleb128 0x3f
+ 932 00b8 19       		.uleb128 0x19
+ 933 00b9 03       		.uleb128 0x3
+ 934 00ba 0E       		.uleb128 0xe
+ 935 00bb 3A       		.uleb128 0x3a
+ 936 00bc 0B       		.uleb128 0xb
+ 937 00bd 3B       		.uleb128 0x3b
+ 938 00be 05       		.uleb128 0x5
+ 939 00bf 27       		.uleb128 0x27
+ 940 00c0 19       		.uleb128 0x19
+ 941 00c1 49       		.uleb128 0x49
+ 942 00c2 13       		.uleb128 0x13
+ 943 00c3 11       		.uleb128 0x11
+ 944 00c4 01       		.uleb128 0x1
+ 945 00c5 12       		.uleb128 0x12
+ 946 00c6 06       		.uleb128 0x6
+ 947 00c7 40       		.uleb128 0x40
+ 948 00c8 18       		.uleb128 0x18
+ 949 00c9 9742     		.uleb128 0x2117
+ 950 00cb 19       		.uleb128 0x19
+ 951 00cc 00       		.byte	0
+ 952 00cd 00       		.byte	0
+ 953 00ce 0D       		.uleb128 0xd
+ 954 00cf 2E       		.uleb128 0x2e
+ 955 00d0 00       		.byte	0
+ 956 00d1 3F       		.uleb128 0x3f
+ 957 00d2 19       		.uleb128 0x19
+ 958 00d3 03       		.uleb128 0x3
+ 959 00d4 0E       		.uleb128 0xe
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 24
+
+
+ 960 00d5 3A       		.uleb128 0x3a
+ 961 00d6 0B       		.uleb128 0xb
+ 962 00d7 3B       		.uleb128 0x3b
+ 963 00d8 05       		.uleb128 0x5
+ 964 00d9 27       		.uleb128 0x27
+ 965 00da 19       		.uleb128 0x19
+ 966 00db 11       		.uleb128 0x11
+ 967 00dc 01       		.uleb128 0x1
+ 968 00dd 12       		.uleb128 0x12
+ 969 00de 06       		.uleb128 0x6
+ 970 00df 40       		.uleb128 0x40
+ 971 00e0 18       		.uleb128 0x18
+ 972 00e1 9742     		.uleb128 0x2117
+ 973 00e3 19       		.uleb128 0x19
+ 974 00e4 00       		.byte	0
+ 975 00e5 00       		.byte	0
+ 976 00e6 0E       		.uleb128 0xe
+ 977 00e7 34       		.uleb128 0x34
+ 978 00e8 00       		.byte	0
+ 979 00e9 03       		.uleb128 0x3
+ 980 00ea 0E       		.uleb128 0xe
+ 981 00eb 3A       		.uleb128 0x3a
+ 982 00ec 0B       		.uleb128 0xb
+ 983 00ed 3B       		.uleb128 0x3b
+ 984 00ee 0B       		.uleb128 0xb
+ 985 00ef 49       		.uleb128 0x49
+ 986 00f0 13       		.uleb128 0x13
+ 987 00f1 3F       		.uleb128 0x3f
+ 988 00f2 19       		.uleb128 0x19
+ 989 00f3 02       		.uleb128 0x2
+ 990 00f4 18       		.uleb128 0x18
+ 991 00f5 00       		.byte	0
+ 992 00f6 00       		.byte	0
+ 993 00f7 00       		.byte	0
+ 994              		.section	.debug_aranges,"",%progbits
+ 995 0000 64000000 		.4byte	0x64
+ 996 0004 0200     		.2byte	0x2
+ 997 0006 00000000 		.4byte	.Ldebug_info0
+ 998 000a 04       		.byte	0x4
+ 999 000b 00       		.byte	0
+ 1000 000c 0000     		.2byte	0
+ 1001 000e 0000     		.2byte	0
+ 1002 0010 00000000 		.4byte	.LFB0
+ 1003 0014 18000000 		.4byte	.LFE0-.LFB0
+ 1004 0018 00000000 		.4byte	.LFB1
+ 1005 001c 34000000 		.4byte	.LFE1-.LFB1
+ 1006 0020 00000000 		.4byte	.LFB2
+ 1007 0024 34000000 		.4byte	.LFE2-.LFB2
+ 1008 0028 00000000 		.4byte	.LFB3
+ 1009 002c 24000000 		.4byte	.LFE3-.LFB3
+ 1010 0030 00000000 		.4byte	.LFB4
+ 1011 0034 3C000000 		.4byte	.LFE4-.LFB4
+ 1012 0038 00000000 		.4byte	.LFB5
+ 1013 003c 3C000000 		.4byte	.LFE5-.LFB5
+ 1014 0040 00000000 		.4byte	.LFB6
+ 1015 0044 18000000 		.4byte	.LFE6-.LFB6
+ 1016 0048 00000000 		.4byte	.LFB7
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 25
+
+
+ 1017 004c 18000000 		.4byte	.LFE7-.LFB7
+ 1018 0050 00000000 		.4byte	.LFB8
+ 1019 0054 18000000 		.4byte	.LFE8-.LFB8
+ 1020 0058 00000000 		.4byte	.LFB9
+ 1021 005c 18000000 		.4byte	.LFE9-.LFB9
+ 1022 0060 00000000 		.4byte	0
+ 1023 0064 00000000 		.4byte	0
+ 1024              		.section	.debug_ranges,"",%progbits
+ 1025              	.Ldebug_ranges0:
+ 1026 0000 00000000 		.4byte	.LFB0
+ 1027 0004 18000000 		.4byte	.LFE0
+ 1028 0008 00000000 		.4byte	.LFB1
+ 1029 000c 34000000 		.4byte	.LFE1
+ 1030 0010 00000000 		.4byte	.LFB2
+ 1031 0014 34000000 		.4byte	.LFE2
+ 1032 0018 00000000 		.4byte	.LFB3
+ 1033 001c 24000000 		.4byte	.LFE3
+ 1034 0020 00000000 		.4byte	.LFB4
+ 1035 0024 3C000000 		.4byte	.LFE4
+ 1036 0028 00000000 		.4byte	.LFB5
+ 1037 002c 3C000000 		.4byte	.LFE5
+ 1038 0030 00000000 		.4byte	.LFB6
+ 1039 0034 18000000 		.4byte	.LFE6
+ 1040 0038 00000000 		.4byte	.LFB7
+ 1041 003c 18000000 		.4byte	.LFE7
+ 1042 0040 00000000 		.4byte	.LFB8
+ 1043 0044 18000000 		.4byte	.LFE8
+ 1044 0048 00000000 		.4byte	.LFB9
+ 1045 004c 18000000 		.4byte	.LFE9
+ 1046 0050 00000000 		.4byte	0
+ 1047 0054 00000000 		.4byte	0
+ 1048              		.section	.debug_line,"",%progbits
+ 1049              	.Ldebug_line0:
+ 1050 0000 0D010000 		.section	.debug_str,"MS",%progbits,1
+ 1050      02004A00 
+ 1050      00000201 
+ 1050      FB0E0D00 
+ 1050      01010101 
+ 1051              	.LASF38:
+ 1052 0000 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\I2C_3_SLAVE.c\000"
+ 1052      6E657261 
+ 1052      7465645F 
+ 1052      536F7572 
+ 1052      63655C50 
+ 1053              	.LASF31:
+ 1054 0027 4932435F 		.ascii	"I2C_3_slRdBufPtr\000"
+ 1054      335F736C 
+ 1054      52644275 
+ 1054      66507472 
+ 1054      00
+ 1055              	.LASF18:
+ 1056 0038 4932435F 		.ascii	"I2C_3_SlaveSetAddress\000"
+ 1056      335F536C 
+ 1056      61766553 
+ 1056      65744164 
+ 1056      64726573 
+ 1057              	.LASF3:
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 26
+
+
+ 1058 004e 73686F72 		.ascii	"short unsigned int\000"
+ 1058      7420756E 
+ 1058      7369676E 
+ 1058      65642069 
+ 1058      6E7400
+ 1059              	.LASF17:
+ 1060 0061 73746174 		.ascii	"status\000"
+ 1060      757300
+ 1061              	.LASF21:
+ 1062 0068 72644275 		.ascii	"rdBuf\000"
+ 1062      6600
+ 1063              	.LASF9:
+ 1064 006e 666C6F61 		.ascii	"float\000"
+ 1064      7400
+ 1065              	.LASF1:
+ 1066 0074 756E7369 		.ascii	"unsigned char\000"
+ 1066      676E6564 
+ 1066      20636861 
+ 1066      7200
+ 1067              	.LASF13:
+ 1068 0082 72656738 		.ascii	"reg8\000"
+ 1068      00
+ 1069              	.LASF37:
+ 1070 0087 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 1070      4320342E 
+ 1070      382E3420 
+ 1070      32303134 
+ 1070      30353236 
+ 1071 00ba 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m3 -mthumb -g -O"
+ 1071      20726576 
+ 1071      6973696F 
+ 1071      6E203231 
+ 1071      31333538 
+ 1072 00ed 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 1072      66756E63 
+ 1072      74696F6E 
+ 1072      2D736563 
+ 1072      74696F6E 
+ 1073              	.LASF5:
+ 1074 0103 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1074      20756E73 
+ 1074      69676E65 
+ 1074      6420696E 
+ 1074      7400
+ 1075              	.LASF12:
+ 1076 0115 75696E74 		.ascii	"uint8\000"
+ 1076      3800
+ 1077              	.LASF24:
+ 1078 011b 77724275 		.ascii	"wrBuf\000"
+ 1078      6600
+ 1079              	.LASF34:
+ 1080 0121 4932435F 		.ascii	"I2C_3_slWrBufPtr\000"
+ 1080      335F736C 
+ 1080      57724275 
+ 1080      66507472 
+ 1080      00
+ 1081              	.LASF16:
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 27
+
+
+ 1082 0132 4932435F 		.ascii	"I2C_3_SlaveClearWriteStatus\000"
+ 1082      335F536C 
+ 1082      61766543 
+ 1082      6C656172 
+ 1082      57726974 
+ 1083              	.LASF10:
+ 1084 014e 646F7562 		.ascii	"double\000"
+ 1084      6C6500
+ 1085              	.LASF25:
+ 1086 0155 4932435F 		.ascii	"I2C_3_SlaveStatus\000"
+ 1086      335F536C 
+ 1086      61766553 
+ 1086      74617475 
+ 1086      7300
+ 1087              	.LASF32:
+ 1088 0167 4932435F 		.ascii	"I2C_3_slRdBufSize\000"
+ 1088      335F736C 
+ 1088      52644275 
+ 1088      6653697A 
+ 1088      6500
+ 1089              	.LASF35:
+ 1090 0179 4932435F 		.ascii	"I2C_3_slWrBufSize\000"
+ 1090      335F736C 
+ 1090      57724275 
+ 1090      6653697A 
+ 1090      6500
+ 1091              	.LASF36:
+ 1092 018b 4932435F 		.ascii	"I2C_3_slWrBufIndex\000"
+ 1092      335F736C 
+ 1092      57724275 
+ 1092      66496E64 
+ 1092      657800
+ 1093              	.LASF8:
+ 1094 019e 756E7369 		.ascii	"unsigned int\000"
+ 1094      676E6564 
+ 1094      20696E74 
+ 1094      00
+ 1095              	.LASF20:
+ 1096 01ab 61646472 		.ascii	"address\000"
+ 1096      65737300 
+ 1097              	.LASF7:
+ 1098 01b3 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1098      206C6F6E 
+ 1098      6720756E 
+ 1098      7369676E 
+ 1098      65642069 
+ 1099              	.LASF19:
+ 1100 01ca 4932435F 		.ascii	"I2C_3_SlaveInitReadBuf\000"
+ 1100      335F536C 
+ 1100      61766549 
+ 1100      6E697452 
+ 1100      65616442 
+ 1101              	.LASF27:
+ 1102 01e1 4932435F 		.ascii	"I2C_3_SlaveGetWriteBufSize\000"
+ 1102      335F536C 
+ 1102      61766547 
+ 1102      65745772 
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 28
+
+
+ 1102      69746542 
+ 1103              	.LASF39:
+ 1104 01fc 433A5C67 		.ascii	"C:\\gitData\\PSoC\\SFT1.0v\\Design01.cydsn\000"
+ 1104      69744461 
+ 1104      74615C50 
+ 1104      536F435C 
+ 1104      53465431 
+ 1105              	.LASF23:
+ 1106 0223 4932435F 		.ascii	"I2C_3_SlaveInitWriteBuf\000"
+ 1106      335F536C 
+ 1106      61766549 
+ 1106      6E697457 
+ 1106      72697465 
+ 1107              	.LASF14:
+ 1108 023b 73697A65 		.ascii	"sizetype\000"
+ 1108      74797065 
+ 1108      00
+ 1109              	.LASF6:
+ 1110 0244 6C6F6E67 		.ascii	"long long int\000"
+ 1110      206C6F6E 
+ 1110      6720696E 
+ 1110      7400
+ 1111              	.LASF15:
+ 1112 0252 4932435F 		.ascii	"I2C_3_SlaveClearReadStatus\000"
+ 1112      335F536C 
+ 1112      61766543 
+ 1112      6C656172 
+ 1112      52656164 
+ 1113              	.LASF11:
+ 1114 026d 63686172 		.ascii	"char\000"
+ 1114      00
+ 1115              	.LASF33:
+ 1116 0272 4932435F 		.ascii	"I2C_3_slRdBufIndex\000"
+ 1116      335F736C 
+ 1116      52644275 
+ 1116      66496E64 
+ 1116      657800
+ 1117              	.LASF26:
+ 1118 0285 4932435F 		.ascii	"I2C_3_SlaveGetReadBufSize\000"
+ 1118      335F536C 
+ 1118      61766547 
+ 1118      65745265 
+ 1118      61644275 
+ 1119              	.LASF30:
+ 1120 029f 4932435F 		.ascii	"I2C_3_slStatus\000"
+ 1120      335F736C 
+ 1120      53746174 
+ 1120      757300
+ 1121              	.LASF2:
+ 1122 02ae 73686F72 		.ascii	"short int\000"
+ 1122      7420696E 
+ 1122      7400
+ 1123              	.LASF22:
+ 1124 02b8 62756653 		.ascii	"bufSize\000"
+ 1124      697A6500 
+ 1125              	.LASF4:
+ 1126 02c0 6C6F6E67 		.ascii	"long int\000"
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccIGAmPA.s 			page 29
+
+
+ 1126      20696E74 
+ 1126      00
+ 1127              	.LASF28:
+ 1128 02c9 4932435F 		.ascii	"I2C_3_SlaveClearReadBuf\000"
+ 1128      335F536C 
+ 1128      61766543 
+ 1128      6C656172 
+ 1128      52656164 
+ 1129              	.LASF0:
+ 1130 02e1 7369676E 		.ascii	"signed char\000"
+ 1130      65642063 
+ 1130      68617200 
+ 1131              	.LASF29:
+ 1132 02ed 4932435F 		.ascii	"I2C_3_SlaveClearWriteBuf\000"
+ 1132      335F536C 
+ 1132      61766543 
+ 1132      6C656172 
+ 1132      57726974 
+ 1133              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

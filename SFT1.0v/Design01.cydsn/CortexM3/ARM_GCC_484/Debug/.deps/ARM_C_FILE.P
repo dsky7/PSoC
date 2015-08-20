@@ -1,0 +1,18 @@
+C:/gitData/PSoC/SFT1.0v/Design01.cydsn/CortexM3/ARM_GCC_484/Debug/DATA1.o : C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/DATA1.c C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/DATA1.h C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/DATA1_aliases.h C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/cydevice.h C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/cypins.h C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/cytypes.h 
+
+C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/DATA1.c : 
+
+C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/DATA1.h : 
+
+C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/DATA1_aliases.h : 
+
+C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/cyfitter.h : 
+
+C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/cypins.h : 
+
+C:/gitData/PSoC/SFT1.0v/Design01.cydsn/Generated_Source/PSoC5/cytypes.h : 
+

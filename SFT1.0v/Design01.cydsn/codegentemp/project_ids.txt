@@ -1,0 +1,7 @@
+C:\gitData\PSoC\SFT1.0v\Design01.cydsn\Design01.cyprj|5350c697-1c85-4297-a3fb-3002fcb53006
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|d1daa578-b8d7-467e-ae27-a4c298f7a038
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|f4918064-dde2-4ca6-8b7e-f0bb2e820c32
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|62534f40-2648-4260-8754-449e72f09401
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|4976a04e-4408-4beb-bea5-70eb7713ae0c
+C:\Program Files (x86)\Cypress\PSoC Creator\3.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|565c28b7-4e45-46ff-ab99-37e2f99e8b63
+C:\Users\dskyNote\Desktop\UART_Rx01\UART_Rx01.cydsn\UART_Rx01.cyprj|00f2691c-72bb-4f7b-8989-3fb2a2e22d07

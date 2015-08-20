@@ -1,0 +1,1351 @@
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 6
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"I2C_3.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	I2C_3_initVar
+  19              		.bss
+  20              		.type	I2C_3_initVar, %object
+  21              		.size	I2C_3_initVar, 1
+  22              	I2C_3_initVar:
+  23 0000 00       		.space	1
+  24              		.comm	I2C_3_state,1,1
+  25              		.section	.text.I2C_3_Init,"ax",%progbits
+  26              		.align	2
+  27              		.global	I2C_3_Init
+  28              		.thumb
+  29              		.thumb_func
+  30              		.type	I2C_3_Init, %function
+  31              	I2C_3_Init:
+  32              	.LFB0:
+  33              		.file 1 ".\\Generated_Source\\PSoC5\\I2C_3.c"
+   1:.\Generated_Source\PSoC5/I2C_3.c **** /*******************************************************************************
+   2:.\Generated_Source\PSoC5/I2C_3.c **** * File Name: I2C_3.c
+   3:.\Generated_Source\PSoC5/I2C_3.c **** * Version 3.30
+   4:.\Generated_Source\PSoC5/I2C_3.c **** *
+   5:.\Generated_Source\PSoC5/I2C_3.c **** * Description:
+   6:.\Generated_Source\PSoC5/I2C_3.c **** *  This file provides the source code of APIs for the I2C component.
+   7:.\Generated_Source\PSoC5/I2C_3.c **** *  Actual protocol and operation code resides in the interrupt service routine
+   8:.\Generated_Source\PSoC5/I2C_3.c **** *  file.
+   9:.\Generated_Source\PSoC5/I2C_3.c **** *
+  10:.\Generated_Source\PSoC5/I2C_3.c **** * Note:
+  11:.\Generated_Source\PSoC5/I2C_3.c **** *
+  12:.\Generated_Source\PSoC5/I2C_3.c **** *******************************************************************************
+  13:.\Generated_Source\PSoC5/I2C_3.c **** * Copyright 2008-2012, Cypress Semiconductor Corporation. All rights reserved.
+  14:.\Generated_Source\PSoC5/I2C_3.c **** * You may use this file only in accordance with the license, terms, conditions,
+  15:.\Generated_Source\PSoC5/I2C_3.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  16:.\Generated_Source\PSoC5/I2C_3.c **** * the software package with which this file was provided.
+  17:.\Generated_Source\PSoC5/I2C_3.c **** *******************************************************************************/
+  18:.\Generated_Source\PSoC5/I2C_3.c **** 
+  19:.\Generated_Source\PSoC5/I2C_3.c **** #include "I2C_3_PVT.h"
+  20:.\Generated_Source\PSoC5/I2C_3.c **** 
+  21:.\Generated_Source\PSoC5/I2C_3.c **** 
+  22:.\Generated_Source\PSoC5/I2C_3.c **** /**********************************
+  23:.\Generated_Source\PSoC5/I2C_3.c **** *      System variables
+  24:.\Generated_Source\PSoC5/I2C_3.c **** **********************************/
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 2
+
+
+  25:.\Generated_Source\PSoC5/I2C_3.c **** 
+  26:.\Generated_Source\PSoC5/I2C_3.c **** uint8 I2C_3_initVar = 0u;    /* Defines if component was initialized */
+  27:.\Generated_Source\PSoC5/I2C_3.c **** 
+  28:.\Generated_Source\PSoC5/I2C_3.c **** volatile uint8 I2C_3_state;  /* Current state of I2C FSM */
+  29:.\Generated_Source\PSoC5/I2C_3.c **** 
+  30:.\Generated_Source\PSoC5/I2C_3.c **** 
+  31:.\Generated_Source\PSoC5/I2C_3.c **** /*******************************************************************************
+  32:.\Generated_Source\PSoC5/I2C_3.c **** * Function Name: I2C_3_Init
+  33:.\Generated_Source\PSoC5/I2C_3.c **** ********************************************************************************
+  34:.\Generated_Source\PSoC5/I2C_3.c **** *
+  35:.\Generated_Source\PSoC5/I2C_3.c **** * Summary:
+  36:.\Generated_Source\PSoC5/I2C_3.c **** *  Initializes I2C registers with initial values provided from customizer.
+  37:.\Generated_Source\PSoC5/I2C_3.c **** *
+  38:.\Generated_Source\PSoC5/I2C_3.c **** * Parameters:
+  39:.\Generated_Source\PSoC5/I2C_3.c **** *  None
+  40:.\Generated_Source\PSoC5/I2C_3.c **** *
+  41:.\Generated_Source\PSoC5/I2C_3.c **** * Return:
+  42:.\Generated_Source\PSoC5/I2C_3.c **** *  None
+  43:.\Generated_Source\PSoC5/I2C_3.c **** *
+  44:.\Generated_Source\PSoC5/I2C_3.c **** * Global variables:
+  45:.\Generated_Source\PSoC5/I2C_3.c **** *  None
+  46:.\Generated_Source\PSoC5/I2C_3.c **** *
+  47:.\Generated_Source\PSoC5/I2C_3.c **** * Reentrant:
+  48:.\Generated_Source\PSoC5/I2C_3.c **** *  No
+  49:.\Generated_Source\PSoC5/I2C_3.c **** *
+  50:.\Generated_Source\PSoC5/I2C_3.c **** *******************************************************************************/
+  51:.\Generated_Source\PSoC5/I2C_3.c **** void I2C_3_Init(void) 
+  52:.\Generated_Source\PSoC5/I2C_3.c **** {
+  34              		.loc 1 52 0
+  35              		.cfi_startproc
+  36              		@ args = 0, pretend = 0, frame = 0
+  37              		@ frame_needed = 1, uses_anonymous_args = 0
+  38 0000 80B5     		push	{r7, lr}
+  39              		.cfi_def_cfa_offset 8
+  40              		.cfi_offset 7, -8
+  41              		.cfi_offset 14, -4
+  42 0002 00AF     		add	r7, sp, #0
+  43              		.cfi_def_cfa_register 7
+  53:.\Generated_Source\PSoC5/I2C_3.c ****     #if(I2C_3_FF_IMPLEMENTED)
+  54:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_CFG_REG  = I2C_3_DEFAULT_CFG;
+  44              		.loc 1 54 0
+  45 0004 154B     		ldr	r3, .L2
+  46 0006 0322     		movs	r2, #3
+  47 0008 1A70     		strb	r2, [r3]
+  55:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_XCFG_REG = I2C_3_DEFAULT_XCFG;
+  48              		.loc 1 55 0
+  49 000a 154B     		ldr	r3, .L2+4
+  50 000c 8122     		movs	r2, #129
+  51 000e 1A70     		strb	r2, [r3]
+  56:.\Generated_Source\PSoC5/I2C_3.c **** 
+  57:.\Generated_Source\PSoC5/I2C_3.c ****         #if(CY_PSOC5A)
+  58:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_CLKDIV_REG  = LO8(I2C_3_DEFAULT_DIVIDE_FACTOR);
+  59:.\Generated_Source\PSoC5/I2C_3.c ****         #else
+  60:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_CLKDIV1_REG = LO8(I2C_3_DEFAULT_DIVIDE_FACTOR);
+  52              		.loc 1 60 0
+  53 0010 144B     		ldr	r3, .L2+8
+  54 0012 0F22     		movs	r2, #15
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 3
+
+
+  55 0014 1A70     		strb	r2, [r3]
+  61:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_CLKDIV2_REG = HI8(I2C_3_DEFAULT_DIVIDE_FACTOR);
+  56              		.loc 1 61 0
+  57 0016 144B     		ldr	r3, .L2+12
+  58 0018 0022     		movs	r2, #0
+  59 001a 1A70     		strb	r2, [r3]
+  62:.\Generated_Source\PSoC5/I2C_3.c ****         #endif /* (CY_PSOC5A) */
+  63:.\Generated_Source\PSoC5/I2C_3.c **** 
+  64:.\Generated_Source\PSoC5/I2C_3.c ****     #else
+  65:.\Generated_Source\PSoC5/I2C_3.c ****         uint8 enableInterrupts;
+  66:.\Generated_Source\PSoC5/I2C_3.c **** 
+  67:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_CFG_REG      = I2C_3_DEFAULT_CFG;      /* control  */
+  68:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_INT_MASK_REG = I2C_3_DEFAULT_INT_MASK; /* int_mask */
+  69:.\Generated_Source\PSoC5/I2C_3.c **** 
+  70:.\Generated_Source\PSoC5/I2C_3.c ****         /* Enable interrupts from block */
+  71:.\Generated_Source\PSoC5/I2C_3.c ****         enableInterrupts = CyEnterCriticalSection();
+  72:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_INT_ENABLE_REG |= I2C_3_INTR_ENABLE; /* aux_ctl */
+  73:.\Generated_Source\PSoC5/I2C_3.c ****         CyExitCriticalSection(enableInterrupts);
+  74:.\Generated_Source\PSoC5/I2C_3.c **** 
+  75:.\Generated_Source\PSoC5/I2C_3.c ****         #if(I2C_3_MODE_MASTER_ENABLED)
+  76:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_MCLK_PRD_REG = I2C_3_DEFAULT_MCLK_PRD;
+  77:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_MCLK_CMP_REG = I2C_3_DEFAULT_MCLK_CMP;
+  78:.\Generated_Source\PSoC5/I2C_3.c ****          #endif /* (I2C_3_MODE_MASTER_ENABLED) */
+  79:.\Generated_Source\PSoC5/I2C_3.c **** 
+  80:.\Generated_Source\PSoC5/I2C_3.c ****         #if(I2C_3_MODE_SLAVE_ENABLED)
+  81:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_PERIOD_REG = I2C_3_DEFAULT_PERIOD;
+  82:.\Generated_Source\PSoC5/I2C_3.c ****         #endif  /* (I2C_3_MODE_SLAVE_ENABLED) */
+  83:.\Generated_Source\PSoC5/I2C_3.c **** 
+  84:.\Generated_Source\PSoC5/I2C_3.c ****     #endif /* (I2C_3_FF_IMPLEMENTED) */
+  85:.\Generated_Source\PSoC5/I2C_3.c **** 
+  86:.\Generated_Source\PSoC5/I2C_3.c ****     #if(I2C_3_TIMEOUT_ENABLED)
+  87:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_TimeoutInit();
+  88:.\Generated_Source\PSoC5/I2C_3.c ****     #endif /* (I2C_3_TIMEOUT_ENABLED) */
+  89:.\Generated_Source\PSoC5/I2C_3.c **** 
+  90:.\Generated_Source\PSoC5/I2C_3.c ****     /* Disable Interrupt and set vector and priority */
+  91:.\Generated_Source\PSoC5/I2C_3.c ****     CyIntDisable    (I2C_3_ISR_NUMBER);
+  60              		.loc 1 91 0
+  61 001c 134B     		ldr	r3, .L2+16
+  62 001e 4FF40042 		mov	r2, #32768
+  63 0022 1A60     		str	r2, [r3]
+  92:.\Generated_Source\PSoC5/I2C_3.c ****     CyIntSetPriority(I2C_3_ISR_NUMBER, I2C_3_ISR_PRIORITY);
+  64              		.loc 1 92 0
+  65 0024 0F20     		movs	r0, #15
+  66 0026 0721     		movs	r1, #7
+  67 0028 FFF7FEFF 		bl	CyIntSetPriority
+  93:.\Generated_Source\PSoC5/I2C_3.c ****     #if(I2C_3_INTERN_I2C_INTR_HANDLER)
+  94:.\Generated_Source\PSoC5/I2C_3.c ****         (void) CyIntSetVector(I2C_3_ISR_NUMBER, &I2C_3_ISR);
+  68              		.loc 1 94 0
+  69 002c 0F20     		movs	r0, #15
+  70 002e 1049     		ldr	r1, .L2+20
+  71 0030 FFF7FEFF 		bl	CyIntSetVector
+  95:.\Generated_Source\PSoC5/I2C_3.c ****     #endif /* (I2C_3_INTERN_I2C_INTR_HANDLER) */
+  96:.\Generated_Source\PSoC5/I2C_3.c **** 
+  97:.\Generated_Source\PSoC5/I2C_3.c **** 
+  98:.\Generated_Source\PSoC5/I2C_3.c ****     /* Put state machine in idle state */
+  99:.\Generated_Source\PSoC5/I2C_3.c ****     I2C_3_state = I2C_3_SM_IDLE;
+  72              		.loc 1 99 0
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 4
+
+
+  73 0034 0F4B     		ldr	r3, .L2+24
+  74 0036 1022     		movs	r2, #16
+  75 0038 1A70     		strb	r2, [r3]
+ 100:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 101:.\Generated_Source\PSoC5/I2C_3.c ****     #if(I2C_3_MODE_SLAVE_ENABLED)
+ 102:.\Generated_Source\PSoC5/I2C_3.c ****         /* Reset status and buffers index */
+ 103:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_SlaveClearReadBuf();
+  76              		.loc 1 103 0
+  77 003a FFF7FEFF 		bl	I2C_3_SlaveClearReadBuf
+ 104:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_SlaveClearWriteBuf();
+  78              		.loc 1 104 0
+  79 003e FFF7FEFF 		bl	I2C_3_SlaveClearWriteBuf
+ 105:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_slStatus = 0u; /* Reset slave status */
+  80              		.loc 1 105 0
+  81 0042 0D4B     		ldr	r3, .L2+28
+  82 0044 0022     		movs	r2, #0
+  83 0046 1A70     		strb	r2, [r3]
+ 106:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 107:.\Generated_Source\PSoC5/I2C_3.c ****         /* Set default address */
+ 108:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_SlaveSetAddress(I2C_3_DEFAULT_ADDR);
+  84              		.loc 1 108 0
+  85 0048 0820     		movs	r0, #8
+  86 004a FFF7FEFF 		bl	I2C_3_SlaveSetAddress
+ 109:.\Generated_Source\PSoC5/I2C_3.c ****     #endif /* (I2C_3_MODE_SLAVE_ENABLED) */
+ 110:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 111:.\Generated_Source\PSoC5/I2C_3.c ****     #if(I2C_3_MODE_MASTER_ENABLED)
+ 112:.\Generated_Source\PSoC5/I2C_3.c ****         /* Reset status and buffers index */
+ 113:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_MasterClearReadBuf();
+  87              		.loc 1 113 0
+  88 004e FFF7FEFF 		bl	I2C_3_MasterClearReadBuf
+ 114:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_MasterClearWriteBuf();
+  89              		.loc 1 114 0
+  90 0052 FFF7FEFF 		bl	I2C_3_MasterClearWriteBuf
+ 115:.\Generated_Source\PSoC5/I2C_3.c ****         (void) I2C_3_MasterClearStatus();
+  91              		.loc 1 115 0
+  92 0056 FFF7FEFF 		bl	I2C_3_MasterClearStatus
+ 116:.\Generated_Source\PSoC5/I2C_3.c ****     #endif /* (I2C_3_MODE_MASTER_ENABLED) */
+ 117:.\Generated_Source\PSoC5/I2C_3.c **** }
+  93              		.loc 1 117 0
+  94 005a 80BD     		pop	{r7, pc}
+  95              	.L3:
+  96              		.align	2
+  97              	.L2:
+  98 005c D6490040 		.word	1073760726
+  99 0060 C8490040 		.word	1073760712
+ 100 0064 DB490040 		.word	1073760731
+ 101 0068 DC490040 		.word	1073760732
+ 102 006c 80E100E0 		.word	-536813184
+ 103 0070 00000000 		.word	I2C_3_ISR
+ 104 0074 00000000 		.word	I2C_3_state
+ 105 0078 00000000 		.word	I2C_3_slStatus
+ 106              		.cfi_endproc
+ 107              	.LFE0:
+ 108              		.size	I2C_3_Init, .-I2C_3_Init
+ 109              		.section	.text.I2C_3_Enable,"ax",%progbits
+ 110              		.align	2
+ 111              		.global	I2C_3_Enable
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 5
+
+
+ 112              		.thumb
+ 113              		.thumb_func
+ 114              		.type	I2C_3_Enable, %function
+ 115              	I2C_3_Enable:
+ 116              	.LFB1:
+ 118:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 119:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 120:.\Generated_Source\PSoC5/I2C_3.c **** /*******************************************************************************
+ 121:.\Generated_Source\PSoC5/I2C_3.c **** * Function Name: I2C_3_Enable
+ 122:.\Generated_Source\PSoC5/I2C_3.c **** ********************************************************************************
+ 123:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 124:.\Generated_Source\PSoC5/I2C_3.c **** * Summary:
+ 125:.\Generated_Source\PSoC5/I2C_3.c **** *  Enables I2C operations.
+ 126:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 127:.\Generated_Source\PSoC5/I2C_3.c **** * Parameters:
+ 128:.\Generated_Source\PSoC5/I2C_3.c **** *  None
+ 129:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 130:.\Generated_Source\PSoC5/I2C_3.c **** * Return:
+ 131:.\Generated_Source\PSoC5/I2C_3.c **** *  None
+ 132:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 133:.\Generated_Source\PSoC5/I2C_3.c **** * Global variables:
+ 134:.\Generated_Source\PSoC5/I2C_3.c **** *  None
+ 135:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 136:.\Generated_Source\PSoC5/I2C_3.c **** *******************************************************************************/
+ 137:.\Generated_Source\PSoC5/I2C_3.c **** void I2C_3_Enable(void) 
+ 138:.\Generated_Source\PSoC5/I2C_3.c **** {
+ 117              		.loc 1 138 0
+ 118              		.cfi_startproc
+ 119              		@ args = 0, pretend = 0, frame = 8
+ 120              		@ frame_needed = 1, uses_anonymous_args = 0
+ 121 0000 80B5     		push	{r7, lr}
+ 122              		.cfi_def_cfa_offset 8
+ 123              		.cfi_offset 7, -8
+ 124              		.cfi_offset 14, -4
+ 125 0002 82B0     		sub	sp, sp, #8
+ 126              		.cfi_def_cfa_offset 16
+ 127 0004 00AF     		add	r7, sp, #0
+ 128              		.cfi_def_cfa_register 7
+ 139:.\Generated_Source\PSoC5/I2C_3.c ****     #if(I2C_3_FF_IMPLEMENTED)
+ 140:.\Generated_Source\PSoC5/I2C_3.c ****         uint8 enableInterrupts;
+ 141:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 142:.\Generated_Source\PSoC5/I2C_3.c ****         /* Enable power to I2C FF block */
+ 143:.\Generated_Source\PSoC5/I2C_3.c ****         enableInterrupts = CyEnterCriticalSection();
+ 129              		.loc 1 143 0
+ 130 0006 FFF7FEFF 		bl	CyEnterCriticalSection
+ 131 000a 0346     		mov	r3, r0
+ 132 000c FB71     		strb	r3, [r7, #7]
+ 144:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_ACT_PWRMGR_REG  |= I2C_3_ACT_PWR_EN;
+ 133              		.loc 1 144 0
+ 134 000e 0B4B     		ldr	r3, .L5
+ 135 0010 0A4A     		ldr	r2, .L5
+ 136 0012 1278     		ldrb	r2, [r2]
+ 137 0014 D2B2     		uxtb	r2, r2
+ 138 0016 42F00402 		orr	r2, r2, #4
+ 139 001a D2B2     		uxtb	r2, r2
+ 140 001c 1A70     		strb	r2, [r3]
+ 145:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_STBY_PWRMGR_REG |= I2C_3_STBY_PWR_EN;
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 6
+
+
+ 141              		.loc 1 145 0
+ 142 001e 084B     		ldr	r3, .L5+4
+ 143 0020 074A     		ldr	r2, .L5+4
+ 144 0022 1278     		ldrb	r2, [r2]
+ 145 0024 D2B2     		uxtb	r2, r2
+ 146 0026 42F00402 		orr	r2, r2, #4
+ 147 002a D2B2     		uxtb	r2, r2
+ 148 002c 1A70     		strb	r2, [r3]
+ 146:.\Generated_Source\PSoC5/I2C_3.c ****         CyExitCriticalSection(enableInterrupts);
+ 149              		.loc 1 146 0
+ 150 002e FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 151 0030 1846     		mov	r0, r3
+ 152 0032 FFF7FEFF 		bl	CyExitCriticalSection
+ 147:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 148:.\Generated_Source\PSoC5/I2C_3.c ****     #else
+ 149:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 150:.\Generated_Source\PSoC5/I2C_3.c ****         #if(I2C_3_MODE_SLAVE_ENABLED)
+ 151:.\Generated_Source\PSoC5/I2C_3.c ****             uint8 enableInterrupts;
+ 152:.\Generated_Source\PSoC5/I2C_3.c ****         #endif /* (I2C_3_MODE_SLAVE_ENABLED) */
+ 153:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 154:.\Generated_Source\PSoC5/I2C_3.c ****         #if(I2C_3_MODE_SLAVE_ENABLED)
+ 155:.\Generated_Source\PSoC5/I2C_3.c ****             /* Enable slave bit counter */
+ 156:.\Generated_Source\PSoC5/I2C_3.c ****             enableInterrupts = CyEnterCriticalSection();
+ 157:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_COUNTER_AUX_CTL_REG |= I2C_3_CNT7_ENABLE;   /* aux_ctl */
+ 158:.\Generated_Source\PSoC5/I2C_3.c ****             CyExitCriticalSection(enableInterrupts);
+ 159:.\Generated_Source\PSoC5/I2C_3.c ****         #endif /* (I2C_3_MODE_SLAVE_ENABLED) */
+ 160:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 161:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_CFG_REG |= I2C_3_ENABLE_MS;
+ 162:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 163:.\Generated_Source\PSoC5/I2C_3.c ****     #endif /* (I2C_3_FF_IMPLEMENTED) */
+ 164:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 165:.\Generated_Source\PSoC5/I2C_3.c ****     #if(I2C_3_TIMEOUT_ENABLED)
+ 166:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_TimeoutEnable();
+ 167:.\Generated_Source\PSoC5/I2C_3.c ****     #endif /* (I2C_3_TIMEOUT_ENABLED) */
+ 168:.\Generated_Source\PSoC5/I2C_3.c **** }
+ 153              		.loc 1 168 0
+ 154 0036 0837     		adds	r7, r7, #8
+ 155 0038 BD46     		mov	sp, r7
+ 156              		@ sp needed
+ 157 003a 80BD     		pop	{r7, pc}
+ 158              	.L6:
+ 159              		.align	2
+ 160              	.L5:
+ 161 003c A5430040 		.word	1073759141
+ 162 0040 B5430040 		.word	1073759157
+ 163              		.cfi_endproc
+ 164              	.LFE1:
+ 165              		.size	I2C_3_Enable, .-I2C_3_Enable
+ 166              		.section	.text.I2C_3_Start,"ax",%progbits
+ 167              		.align	2
+ 168              		.global	I2C_3_Start
+ 169              		.thumb
+ 170              		.thumb_func
+ 171              		.type	I2C_3_Start, %function
+ 172              	I2C_3_Start:
+ 173              	.LFB2:
+ 169:.\Generated_Source\PSoC5/I2C_3.c **** 
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 7
+
+
+ 170:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 171:.\Generated_Source\PSoC5/I2C_3.c **** /*******************************************************************************
+ 172:.\Generated_Source\PSoC5/I2C_3.c **** * Function Name: I2C_3_Start
+ 173:.\Generated_Source\PSoC5/I2C_3.c **** ********************************************************************************
+ 174:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 175:.\Generated_Source\PSoC5/I2C_3.c **** * Summary:
+ 176:.\Generated_Source\PSoC5/I2C_3.c **** *  Starts the I2C hardware. Enables Active mode power template bits or clock
+ 177:.\Generated_Source\PSoC5/I2C_3.c **** *  gating as appropriate. It is required to be executed before I2C bus
+ 178:.\Generated_Source\PSoC5/I2C_3.c **** *  operation.
+ 179:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 180:.\Generated_Source\PSoC5/I2C_3.c **** * Parameters:
+ 181:.\Generated_Source\PSoC5/I2C_3.c **** *  None
+ 182:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 183:.\Generated_Source\PSoC5/I2C_3.c **** * Return:
+ 184:.\Generated_Source\PSoC5/I2C_3.c **** *  None
+ 185:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 186:.\Generated_Source\PSoC5/I2C_3.c **** * Side Effects:
+ 187:.\Generated_Source\PSoC5/I2C_3.c **** *  This component automatically enables it's interrupt.  If I2C is enabled
+ 188:.\Generated_Source\PSoC5/I2C_3.c **** *  without the interrupt enabled, it could lock up the I2C bus.
+ 189:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 190:.\Generated_Source\PSoC5/I2C_3.c **** * Global variables:
+ 191:.\Generated_Source\PSoC5/I2C_3.c **** *  I2C_3_initVar - used to check initial configuration, modified
+ 192:.\Generated_Source\PSoC5/I2C_3.c **** *  on first function call.
+ 193:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 194:.\Generated_Source\PSoC5/I2C_3.c **** * Reentrant:
+ 195:.\Generated_Source\PSoC5/I2C_3.c **** *  No
+ 196:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 197:.\Generated_Source\PSoC5/I2C_3.c **** *******************************************************************************/
+ 198:.\Generated_Source\PSoC5/I2C_3.c **** void I2C_3_Start(void) 
+ 199:.\Generated_Source\PSoC5/I2C_3.c **** {
+ 174              		.loc 1 199 0
+ 175              		.cfi_startproc
+ 176              		@ args = 0, pretend = 0, frame = 0
+ 177              		@ frame_needed = 1, uses_anonymous_args = 0
+ 178 0000 80B5     		push	{r7, lr}
+ 179              		.cfi_def_cfa_offset 8
+ 180              		.cfi_offset 7, -8
+ 181              		.cfi_offset 14, -4
+ 182 0002 00AF     		add	r7, sp, #0
+ 183              		.cfi_def_cfa_register 7
+ 200:.\Generated_Source\PSoC5/I2C_3.c ****     /* Initialize I2C registers, reset I2C buffer index and clears status */
+ 201:.\Generated_Source\PSoC5/I2C_3.c ****     if(0u == I2C_3_initVar)
+ 184              		.loc 1 201 0
+ 185 0004 074B     		ldr	r3, .L9
+ 186 0006 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 187 0008 002B     		cmp	r3, #0
+ 188 000a 04D1     		bne	.L8
+ 202:.\Generated_Source\PSoC5/I2C_3.c ****     {
+ 203:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_Init();
+ 189              		.loc 1 203 0
+ 190 000c FFF7FEFF 		bl	I2C_3_Init
+ 204:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_initVar = 1u; /* Component initialized */
+ 191              		.loc 1 204 0
+ 192 0010 044B     		ldr	r3, .L9
+ 193 0012 0122     		movs	r2, #1
+ 194 0014 1A70     		strb	r2, [r3]
+ 195              	.L8:
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 8
+
+
+ 205:.\Generated_Source\PSoC5/I2C_3.c ****     }
+ 206:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 207:.\Generated_Source\PSoC5/I2C_3.c ****     I2C_3_Enable();
+ 196              		.loc 1 207 0
+ 197 0016 FFF7FEFF 		bl	I2C_3_Enable
+ 208:.\Generated_Source\PSoC5/I2C_3.c ****     I2C_3_EnableInt();
+ 198              		.loc 1 208 0
+ 199 001a 034B     		ldr	r3, .L9+4
+ 200 001c 4FF40042 		mov	r2, #32768
+ 201 0020 1A60     		str	r2, [r3]
+ 209:.\Generated_Source\PSoC5/I2C_3.c **** }
+ 202              		.loc 1 209 0
+ 203 0022 80BD     		pop	{r7, pc}
+ 204              	.L10:
+ 205              		.align	2
+ 206              	.L9:
+ 207 0024 00000000 		.word	I2C_3_initVar
+ 208 0028 00E100E0 		.word	-536813312
+ 209              		.cfi_endproc
+ 210              	.LFE2:
+ 211              		.size	I2C_3_Start, .-I2C_3_Start
+ 212              		.section	.text.I2C_3_Stop,"ax",%progbits
+ 213              		.align	2
+ 214              		.global	I2C_3_Stop
+ 215              		.thumb
+ 216              		.thumb_func
+ 217              		.type	I2C_3_Stop, %function
+ 218              	I2C_3_Stop:
+ 219              	.LFB3:
+ 210:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 211:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 212:.\Generated_Source\PSoC5/I2C_3.c **** /*******************************************************************************
+ 213:.\Generated_Source\PSoC5/I2C_3.c **** * Function Name: I2C_3_Stop
+ 214:.\Generated_Source\PSoC5/I2C_3.c **** ********************************************************************************
+ 215:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 216:.\Generated_Source\PSoC5/I2C_3.c **** * Summary:
+ 217:.\Generated_Source\PSoC5/I2C_3.c **** *  Disables I2C hardware and disables I2C interrupt. Disables Active mode power
+ 218:.\Generated_Source\PSoC5/I2C_3.c **** *  template bits or clock gating as appropriate.
+ 219:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 220:.\Generated_Source\PSoC5/I2C_3.c **** * Parameters:
+ 221:.\Generated_Source\PSoC5/I2C_3.c **** *  None
+ 222:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 223:.\Generated_Source\PSoC5/I2C_3.c **** * Return:
+ 224:.\Generated_Source\PSoC5/I2C_3.c **** *  None
+ 225:.\Generated_Source\PSoC5/I2C_3.c **** *
+ 226:.\Generated_Source\PSoC5/I2C_3.c **** *******************************************************************************/
+ 227:.\Generated_Source\PSoC5/I2C_3.c **** void I2C_3_Stop(void) 
+ 228:.\Generated_Source\PSoC5/I2C_3.c **** {
+ 220              		.loc 1 228 0
+ 221              		.cfi_startproc
+ 222              		@ args = 0, pretend = 0, frame = 8
+ 223              		@ frame_needed = 1, uses_anonymous_args = 0
+ 224 0000 80B5     		push	{r7, lr}
+ 225              		.cfi_def_cfa_offset 8
+ 226              		.cfi_offset 7, -8
+ 227              		.cfi_offset 14, -4
+ 228 0002 82B0     		sub	sp, sp, #8
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 9
+
+
+ 229              		.cfi_def_cfa_offset 16
+ 230 0004 00AF     		add	r7, sp, #0
+ 231              		.cfi_def_cfa_register 7
+ 229:.\Generated_Source\PSoC5/I2C_3.c ****     #if((I2C_3_FF_IMPLEMENTED)  || \
+ 230:.\Generated_Source\PSoC5/I2C_3.c ****         (I2C_3_UDB_IMPLEMENTED && I2C_3_MODE_SLAVE_ENABLED))
+ 231:.\Generated_Source\PSoC5/I2C_3.c ****         uint8 enableInterrupts;
+ 232:.\Generated_Source\PSoC5/I2C_3.c ****     #endif /* ((I2C_3_FF_IMPLEMENTED)  || \
+ 233:.\Generated_Source\PSoC5/I2C_3.c ****                (I2C_3_UDB_IMPLEMENTED && I2C_3_MODE_SLAVE_ENABLED)) */
+ 234:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 235:.\Generated_Source\PSoC5/I2C_3.c ****     I2C_3_DisableInt();
+ 232              		.loc 1 235 0
+ 233 0006 2F4B     		ldr	r3, .L12
+ 234 0008 4FF40042 		mov	r2, #32768
+ 235 000c 1A60     		str	r2, [r3]
+ 236:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 237:.\Generated_Source\PSoC5/I2C_3.c ****     I2C_3_DISABLE_INT_ON_STOP;   /* Interrupt on Stop can be enabled by write */
+ 236              		.loc 1 237 0
+ 237 000e 2E4B     		ldr	r3, .L12+4
+ 238 0010 2D4A     		ldr	r2, .L12+4
+ 239 0012 1278     		ldrb	r2, [r2]
+ 240 0014 D2B2     		uxtb	r2, r2
+ 241 0016 22F01002 		bic	r2, r2, #16
+ 242 001a D2B2     		uxtb	r2, r2
+ 243 001c 1A70     		strb	r2, [r3]
+ 238:.\Generated_Source\PSoC5/I2C_3.c ****     (void) I2C_3_CSR_REG;        /* Clear CSR reg */
+ 244              		.loc 1 238 0
+ 245 001e 2B4B     		ldr	r3, .L12+8
+ 246 0020 1B78     		ldrb	r3, [r3]
+ 239:.\Generated_Source\PSoC5/I2C_3.c ****     
+ 240:.\Generated_Source\PSoC5/I2C_3.c ****     #if(I2C_3_TIMEOUT_ENABLED)
+ 241:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_TimeoutStop();
+ 242:.\Generated_Source\PSoC5/I2C_3.c ****     #endif  /* End (I2C_3_TIMEOUT_ENABLED) */
+ 243:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 244:.\Generated_Source\PSoC5/I2C_3.c ****     #if(I2C_3_FF_IMPLEMENTED)
+ 245:.\Generated_Source\PSoC5/I2C_3.c ****         #if(CY_PSOC3 || CY_PSOC5LP)
+ 246:.\Generated_Source\PSoC5/I2C_3.c ****             /* Store registers which are held in reset when Master and Slave bits are cleared */
+ 247:.\Generated_Source\PSoC5/I2C_3.c ****             #if(I2C_3_MODE_SLAVE_ENABLED)
+ 248:.\Generated_Source\PSoC5/I2C_3.c ****                 I2C_3_backup.addr = I2C_3_ADDR_REG;
+ 247              		.loc 1 248 0
+ 248 0022 2B4B     		ldr	r3, .L12+12
+ 249 0024 1B78     		ldrb	r3, [r3]
+ 250 0026 DAB2     		uxtb	r2, r3
+ 251 0028 2A4B     		ldr	r3, .L12+16
+ 252 002a DA70     		strb	r2, [r3, #3]
+ 249:.\Generated_Source\PSoC5/I2C_3.c ****             #endif /* (I2C_3_MODE_SLAVE_ENABLED) */
+ 250:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 251:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_backup.clkDiv1  = I2C_3_CLKDIV1_REG;
+ 253              		.loc 1 251 0
+ 254 002c 2A4B     		ldr	r3, .L12+20
+ 255 002e 1B78     		ldrb	r3, [r3]
+ 256 0030 DAB2     		uxtb	r2, r3
+ 257 0032 284B     		ldr	r3, .L12+16
+ 258 0034 1A71     		strb	r2, [r3, #4]
+ 252:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_backup.clkDiv2  = I2C_3_CLKDIV2_REG;
+ 259              		.loc 1 252 0
+ 260 0036 294B     		ldr	r3, .L12+24
+ 261 0038 1B78     		ldrb	r3, [r3]
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 10
+
+
+ 262 003a DAB2     		uxtb	r2, r3
+ 263 003c 254B     		ldr	r3, .L12+16
+ 264 003e 5A71     		strb	r2, [r3, #5]
+ 253:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 254:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 255:.\Generated_Source\PSoC5/I2C_3.c ****             /* Reset FF block */
+ 256:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_CFG_REG &= ((uint8) ~I2C_3_ENABLE_MS);
+ 265              		.loc 1 256 0
+ 266 0040 214B     		ldr	r3, .L12+4
+ 267 0042 214A     		ldr	r2, .L12+4
+ 268 0044 1278     		ldrb	r2, [r2]
+ 269 0046 D2B2     		uxtb	r2, r2
+ 270 0048 22F00302 		bic	r2, r2, #3
+ 271 004c D2B2     		uxtb	r2, r2
+ 272 004e 1A70     		strb	r2, [r3]
+ 257:.\Generated_Source\PSoC5/I2C_3.c ****             CyDelayUs(I2C_3_FF_RESET_DELAY);
+ 273              		.loc 1 257 0
+ 274 0050 0220     		movs	r0, #2
+ 275 0052 FFF7FEFF 		bl	CyDelayUs
+ 258:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_CFG_REG |= ((uint8)  I2C_3_ENABLE_MS);
+ 276              		.loc 1 258 0
+ 277 0056 1C4B     		ldr	r3, .L12+4
+ 278 0058 1B4A     		ldr	r2, .L12+4
+ 279 005a 1278     		ldrb	r2, [r2]
+ 280 005c D2B2     		uxtb	r2, r2
+ 281 005e 42F00302 		orr	r2, r2, #3
+ 282 0062 D2B2     		uxtb	r2, r2
+ 283 0064 1A70     		strb	r2, [r3]
+ 259:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 260:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 261:.\Generated_Source\PSoC5/I2C_3.c ****             /* Restore registers */
+ 262:.\Generated_Source\PSoC5/I2C_3.c ****             #if(I2C_3_MODE_SLAVE_ENABLED)
+ 263:.\Generated_Source\PSoC5/I2C_3.c ****                 I2C_3_ADDR_REG = I2C_3_backup.addr;
+ 284              		.loc 1 263 0
+ 285 0066 1A4B     		ldr	r3, .L12+12
+ 286 0068 1A4A     		ldr	r2, .L12+16
+ 287 006a D278     		ldrb	r2, [r2, #3]	@ zero_extendqisi2
+ 288 006c 1A70     		strb	r2, [r3]
+ 264:.\Generated_Source\PSoC5/I2C_3.c ****             #endif /* (I2C_3_MODE_SLAVE_ENABLED) */
+ 265:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 266:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_CLKDIV1_REG = I2C_3_backup.clkDiv1;
+ 289              		.loc 1 266 0
+ 290 006e 1A4B     		ldr	r3, .L12+20
+ 291 0070 184A     		ldr	r2, .L12+16
+ 292 0072 1279     		ldrb	r2, [r2, #4]	@ zero_extendqisi2
+ 293 0074 1A70     		strb	r2, [r3]
+ 267:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_CLKDIV2_REG = I2C_3_backup.clkDiv2;
+ 294              		.loc 1 267 0
+ 295 0076 194B     		ldr	r3, .L12+24
+ 296 0078 164A     		ldr	r2, .L12+16
+ 297 007a 5279     		ldrb	r2, [r2, #5]	@ zero_extendqisi2
+ 298 007c 1A70     		strb	r2, [r3]
+ 268:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 269:.\Generated_Source\PSoC5/I2C_3.c ****         #endif /* (CY_PSOC3 || CY_PSOC5LP) */
+ 270:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 271:.\Generated_Source\PSoC5/I2C_3.c ****         /* Disable power to I2C block */
+ 272:.\Generated_Source\PSoC5/I2C_3.c ****         enableInterrupts = CyEnterCriticalSection();
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 11
+
+
+ 299              		.loc 1 272 0
+ 300 007e FFF7FEFF 		bl	CyEnterCriticalSection
+ 301 0082 0346     		mov	r3, r0
+ 302 0084 FB71     		strb	r3, [r7, #7]
+ 273:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_ACT_PWRMGR_REG  &= ((uint8) ~I2C_3_ACT_PWR_EN);
+ 303              		.loc 1 273 0
+ 304 0086 164B     		ldr	r3, .L12+28
+ 305 0088 154A     		ldr	r2, .L12+28
+ 306 008a 1278     		ldrb	r2, [r2]
+ 307 008c D2B2     		uxtb	r2, r2
+ 308 008e 22F00402 		bic	r2, r2, #4
+ 309 0092 D2B2     		uxtb	r2, r2
+ 310 0094 1A70     		strb	r2, [r3]
+ 274:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_STBY_PWRMGR_REG &= ((uint8) ~I2C_3_STBY_PWR_EN);
+ 311              		.loc 1 274 0
+ 312 0096 134B     		ldr	r3, .L12+32
+ 313 0098 124A     		ldr	r2, .L12+32
+ 314 009a 1278     		ldrb	r2, [r2]
+ 315 009c D2B2     		uxtb	r2, r2
+ 316 009e 22F00402 		bic	r2, r2, #4
+ 317 00a2 D2B2     		uxtb	r2, r2
+ 318 00a4 1A70     		strb	r2, [r3]
+ 275:.\Generated_Source\PSoC5/I2C_3.c ****         CyExitCriticalSection(enableInterrupts);
+ 319              		.loc 1 275 0
+ 320 00a6 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 321 00a8 1846     		mov	r0, r3
+ 322 00aa FFF7FEFF 		bl	CyExitCriticalSection
+ 276:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 277:.\Generated_Source\PSoC5/I2C_3.c ****     #else
+ 278:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 279:.\Generated_Source\PSoC5/I2C_3.c ****         #if(I2C_3_MODE_SLAVE_ENABLED)
+ 280:.\Generated_Source\PSoC5/I2C_3.c ****             /* Disable slave bit counter */
+ 281:.\Generated_Source\PSoC5/I2C_3.c ****             enableInterrupts = CyEnterCriticalSection();
+ 282:.\Generated_Source\PSoC5/I2C_3.c ****             I2C_3_COUNTER_AUX_CTL_REG &= ((uint8) ~I2C_3_CNT7_ENABLE);
+ 283:.\Generated_Source\PSoC5/I2C_3.c ****             CyExitCriticalSection(enableInterrupts);
+ 284:.\Generated_Source\PSoC5/I2C_3.c ****         #endif /* (I2C_3_MODE_SLAVE_ENABLED) */
+ 285:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 286:.\Generated_Source\PSoC5/I2C_3.c ****         I2C_3_CFG_REG &= ((uint8) ~I2C_3_ENABLE_MS);
+ 287:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 288:.\Generated_Source\PSoC5/I2C_3.c ****     #endif /* (I2C_3_FF_IMPLEMENTED) */
+ 289:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 290:.\Generated_Source\PSoC5/I2C_3.c ****     I2C_3_ClearPendingInt();  /* Clear interrupt triggers on reset */
+ 323              		.loc 1 290 0
+ 324 00ae 0E4B     		ldr	r3, .L12+36
+ 325 00b0 4FF40042 		mov	r2, #32768
+ 326 00b4 1A60     		str	r2, [r3]
+ 291:.\Generated_Source\PSoC5/I2C_3.c **** 
+ 292:.\Generated_Source\PSoC5/I2C_3.c ****     I2C_3_state = I2C_3_SM_IDLE;  /* Reset software FSM */
+ 327              		.loc 1 292 0
+ 328 00b6 0D4B     		ldr	r3, .L12+40
+ 329 00b8 1022     		movs	r2, #16
+ 330 00ba 1A70     		strb	r2, [r3]
+ 293:.\Generated_Source\PSoC5/I2C_3.c **** }
+ 331              		.loc 1 293 0
+ 332 00bc 0837     		adds	r7, r7, #8
+ 333 00be BD46     		mov	sp, r7
+ 334              		@ sp needed
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 12
+
+
+ 335 00c0 80BD     		pop	{r7, pc}
+ 336              	.L13:
+ 337 00c2 00BF     		.align	2
+ 338              	.L12:
+ 339 00c4 80E100E0 		.word	-536813184
+ 340 00c8 D6490040 		.word	1073760726
+ 341 00cc D7490040 		.word	1073760727
+ 342 00d0 CA490040 		.word	1073760714
+ 343 00d4 00000000 		.word	I2C_3_backup
+ 344 00d8 DB490040 		.word	1073760731
+ 345 00dc DC490040 		.word	1073760732
+ 346 00e0 A5430040 		.word	1073759141
+ 347 00e4 B5430040 		.word	1073759157
+ 348 00e8 80E200E0 		.word	-536812928
+ 349 00ec 00000000 		.word	I2C_3_state
+ 350              		.cfi_endproc
+ 351              	.LFE3:
+ 352              		.size	I2C_3_Stop, .-I2C_3_Stop
+ 353              		.text
+ 354              	.Letext0:
+ 355              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 356              		.file 3 ".\\Generated_Source\\PSoC5\\I2C_3.h"
+ 357              		.file 4 ".\\Generated_Source\\PSoC5\\I2C_3_PVT.h"
+ 358              		.section	.debug_info,"",%progbits
+ 359              	.Ldebug_info0:
+ 360 0000 C3010000 		.4byte	0x1c3
+ 361 0004 0400     		.2byte	0x4
+ 362 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 363 000a 04       		.byte	0x4
+ 364 000b 01       		.uleb128 0x1
+ 365 000c 03010000 		.4byte	.LASF33
+ 366 0010 01       		.byte	0x1
+ 367 0011 1F000000 		.4byte	.LASF34
+ 368 0015 7F010000 		.4byte	.LASF35
+ 369 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 370 001d 00000000 		.4byte	0
+ 371 0021 00000000 		.4byte	.Ldebug_line0
+ 372 0025 02       		.uleb128 0x2
+ 373 0026 01       		.byte	0x1
+ 374 0027 06       		.byte	0x6
+ 375 0028 07020000 		.4byte	.LASF0
+ 376 002c 02       		.uleb128 0x2
+ 377 002d 01       		.byte	0x1
+ 378 002e 08       		.byte	0x8
+ 379 002f 73000000 		.4byte	.LASF1
+ 380 0033 02       		.uleb128 0x2
+ 381 0034 02       		.byte	0x2
+ 382 0035 05       		.byte	0x5
+ 383 0036 E8010000 		.4byte	.LASF2
+ 384 003a 02       		.uleb128 0x2
+ 385 003b 02       		.byte	0x2
+ 386 003c 07       		.byte	0x7
+ 387 003d 13020000 		.4byte	.LASF3
+ 388 0041 02       		.uleb128 0x2
+ 389 0042 04       		.byte	0x4
+ 390 0043 05       		.byte	0x5
+ 391 0044 F8010000 		.4byte	.LASF4
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 13
+
+
+ 392 0048 02       		.uleb128 0x2
+ 393 0049 04       		.byte	0x4
+ 394 004a 07       		.byte	0x7
+ 395 004b 86000000 		.4byte	.LASF5
+ 396 004f 02       		.uleb128 0x2
+ 397 0050 08       		.byte	0x8
+ 398 0051 05       		.byte	0x5
+ 399 0052 AF010000 		.4byte	.LASF6
+ 400 0056 02       		.uleb128 0x2
+ 401 0057 08       		.byte	0x8
+ 402 0058 07       		.byte	0x7
+ 403 0059 DC000000 		.4byte	.LASF7
+ 404 005d 03       		.uleb128 0x3
+ 405 005e 04       		.byte	0x4
+ 406 005f 05       		.byte	0x5
+ 407 0060 696E7400 		.ascii	"int\000"
+ 408 0064 02       		.uleb128 0x2
+ 409 0065 04       		.byte	0x4
+ 410 0066 07       		.byte	0x7
+ 411 0067 CF000000 		.4byte	.LASF8
+ 412 006b 04       		.uleb128 0x4
+ 413 006c F2010000 		.4byte	.LASF9
+ 414 0070 02       		.byte	0x2
+ 415 0071 5B       		.byte	0x5b
+ 416 0072 2C000000 		.4byte	0x2c
+ 417 0076 04       		.uleb128 0x4
+ 418 0077 B5000000 		.4byte	.LASF10
+ 419 007b 02       		.byte	0x2
+ 420 007c 5C       		.byte	0x5c
+ 421 007d 3A000000 		.4byte	0x3a
+ 422 0081 04       		.uleb128 0x4
+ 423 0082 BC000000 		.4byte	.LASF11
+ 424 0086 02       		.byte	0x2
+ 425 0087 5D       		.byte	0x5d
+ 426 0088 48000000 		.4byte	0x48
+ 427 008c 02       		.uleb128 0x2
+ 428 008d 04       		.byte	0x4
+ 429 008e 04       		.byte	0x4
+ 430 008f 52000000 		.4byte	.LASF12
+ 431 0093 02       		.uleb128 0x2
+ 432 0094 08       		.byte	0x8
+ 433 0095 04       		.byte	0x4
+ 434 0096 AE000000 		.4byte	.LASF13
+ 435 009a 02       		.uleb128 0x2
+ 436 009b 01       		.byte	0x1
+ 437 009c 08       		.byte	0x8
+ 438 009d 40000000 		.4byte	.LASF14
+ 439 00a1 04       		.uleb128 0x4
+ 440 00a2 81000000 		.4byte	.LASF15
+ 441 00a6 02       		.byte	0x2
+ 442 00a7 F0       		.byte	0xf0
+ 443 00a8 AC000000 		.4byte	0xac
+ 444 00ac 05       		.uleb128 0x5
+ 445 00ad 6B000000 		.4byte	0x6b
+ 446 00b1 04       		.uleb128 0x4
+ 447 00b2 01020000 		.4byte	.LASF16
+ 448 00b6 02       		.byte	0x2
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 14
+
+
+ 449 00b7 F2       		.byte	0xf2
+ 450 00b8 BC000000 		.4byte	0xbc
+ 451 00bc 05       		.uleb128 0x5
+ 452 00bd 81000000 		.4byte	0x81
+ 453 00c1 02       		.uleb128 0x2
+ 454 00c2 04       		.byte	0x4
+ 455 00c3 07       		.byte	0x7
+ 456 00c4 A6010000 		.4byte	.LASF17
+ 457 00c8 06       		.uleb128 0x6
+ 458 00c9 06       		.byte	0x6
+ 459 00ca 03       		.byte	0x3
+ 460 00cb 78       		.byte	0x78
+ 461 00cc 19010000 		.4byte	0x119
+ 462 00d0 07       		.uleb128 0x7
+ 463 00d1 C3000000 		.4byte	.LASF18
+ 464 00d5 03       		.byte	0x3
+ 465 00d6 7A       		.byte	0x7a
+ 466 00d7 6B000000 		.4byte	0x6b
+ 467 00db 00       		.byte	0
+ 468 00dc 07       		.uleb128 0x7
+ 469 00dd D4010000 		.4byte	.LASF19
+ 470 00e1 03       		.byte	0x3
+ 471 00e2 7D       		.byte	0x7d
+ 472 00e3 6B000000 		.4byte	0x6b
+ 473 00e7 01       		.byte	0x1
+ 474 00e8 08       		.uleb128 0x8
+ 475 00e9 63666700 		.ascii	"cfg\000"
+ 476 00ed 03       		.byte	0x3
+ 477 00ee 7E       		.byte	0x7e
+ 478 00ef 6B000000 		.4byte	0x6b
+ 479 00f3 02       		.byte	0x2
+ 480 00f4 07       		.uleb128 0x7
+ 481 00f5 98000000 		.4byte	.LASF20
+ 482 00f9 03       		.byte	0x3
+ 483 00fa 81       		.byte	0x81
+ 484 00fb 6B000000 		.4byte	0x6b
+ 485 00ff 03       		.byte	0x3
+ 486 0100 07       		.uleb128 0x7
+ 487 0101 F3000000 		.4byte	.LASF21
+ 488 0105 03       		.byte	0x3
+ 489 0106 87       		.byte	0x87
+ 490 0107 6B000000 		.4byte	0x6b
+ 491 010b 04       		.byte	0x4
+ 492 010c 07       		.uleb128 0x7
+ 493 010d FB000000 		.4byte	.LASF22
+ 494 0111 03       		.byte	0x3
+ 495 0112 88       		.byte	0x88
+ 496 0113 6B000000 		.4byte	0x6b
+ 497 0117 05       		.byte	0x5
+ 498 0118 00       		.byte	0
+ 499 0119 04       		.uleb128 0x4
+ 500 011a 00000000 		.4byte	.LASF23
+ 501 011e 03       		.byte	0x3
+ 502 011f A2       		.byte	0xa2
+ 503 0120 C8000000 		.4byte	0xc8
+ 504 0124 09       		.uleb128 0x9
+ 505 0125 C9010000 		.4byte	.LASF24
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 15
+
+
+ 506 0129 01       		.byte	0x1
+ 507 012a 33       		.byte	0x33
+ 508 012b 00000000 		.4byte	.LFB0
+ 509 012f 7C000000 		.4byte	.LFE0-.LFB0
+ 510 0133 01       		.uleb128 0x1
+ 511 0134 9C       		.byte	0x9c
+ 512 0135 0A       		.uleb128 0xa
+ 513 0136 58000000 		.4byte	.LASF26
+ 514 013a 01       		.byte	0x1
+ 515 013b 89       		.byte	0x89
+ 516 013c 00000000 		.4byte	.LFB1
+ 517 0140 44000000 		.4byte	.LFE1-.LFB1
+ 518 0144 01       		.uleb128 0x1
+ 519 0145 9C       		.byte	0x9c
+ 520 0146 59010000 		.4byte	0x159
+ 521 014a 0B       		.uleb128 0xb
+ 522 014b 9D000000 		.4byte	.LASF28
+ 523 014f 01       		.byte	0x1
+ 524 0150 8C       		.byte	0x8c
+ 525 0151 6B000000 		.4byte	0x6b
+ 526 0155 02       		.uleb128 0x2
+ 527 0156 91       		.byte	0x91
+ 528 0157 77       		.sleb128 -9
+ 529 0158 00       		.byte	0
+ 530 0159 09       		.uleb128 0x9
+ 531 015a 26020000 		.4byte	.LASF25
+ 532 015e 01       		.byte	0x1
+ 533 015f C6       		.byte	0xc6
+ 534 0160 00000000 		.4byte	.LFB2
+ 535 0164 2C000000 		.4byte	.LFE2-.LFB2
+ 536 0168 01       		.uleb128 0x1
+ 537 0169 9C       		.byte	0x9c
+ 538 016a 0A       		.uleb128 0xa
+ 539 016b 14000000 		.4byte	.LASF27
+ 540 016f 01       		.byte	0x1
+ 541 0170 E3       		.byte	0xe3
+ 542 0171 00000000 		.4byte	.LFB3
+ 543 0175 F0000000 		.4byte	.LFE3-.LFB3
+ 544 0179 01       		.uleb128 0x1
+ 545 017a 9C       		.byte	0x9c
+ 546 017b 8E010000 		.4byte	0x18e
+ 547 017f 0B       		.uleb128 0xb
+ 548 0180 9D000000 		.4byte	.LASF28
+ 549 0184 01       		.byte	0x1
+ 550 0185 E7       		.byte	0xe7
+ 551 0186 6B000000 		.4byte	0x6b
+ 552 018a 02       		.uleb128 0x2
+ 553 018b 91       		.byte	0x91
+ 554 018c 77       		.sleb128 -9
+ 555 018d 00       		.byte	0
+ 556 018e 0C       		.uleb128 0xc
+ 557 018f 65000000 		.4byte	.LASF29
+ 558 0193 01       		.byte	0x1
+ 559 0194 1A       		.byte	0x1a
+ 560 0195 6B000000 		.4byte	0x6b
+ 561 0199 05       		.uleb128 0x5
+ 562 019a 03       		.byte	0x3
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 16
+
+
+ 563 019b 00000000 		.4byte	I2C_3_initVar
+ 564 019f 0D       		.uleb128 0xd
+ 565 01a0 45000000 		.4byte	.LASF30
+ 566 01a4 04       		.byte	0x4
+ 567 01a5 21       		.byte	0x21
+ 568 01a6 19010000 		.4byte	0x119
+ 569 01aa 0C       		.uleb128 0xc
+ 570 01ab BD010000 		.4byte	.LASF31
+ 571 01af 01       		.byte	0x1
+ 572 01b0 1C       		.byte	0x1c
+ 573 01b1 AC000000 		.4byte	0xac
+ 574 01b5 05       		.uleb128 0x5
+ 575 01b6 03       		.byte	0x3
+ 576 01b7 00000000 		.4byte	I2C_3_state
+ 577 01bb 0D       		.uleb128 0xd
+ 578 01bc D9010000 		.4byte	.LASF32
+ 579 01c0 04       		.byte	0x4
+ 580 01c1 38       		.byte	0x38
+ 581 01c2 AC000000 		.4byte	0xac
+ 582 01c6 00       		.byte	0
+ 583              		.section	.debug_abbrev,"",%progbits
+ 584              	.Ldebug_abbrev0:
+ 585 0000 01       		.uleb128 0x1
+ 586 0001 11       		.uleb128 0x11
+ 587 0002 01       		.byte	0x1
+ 588 0003 25       		.uleb128 0x25
+ 589 0004 0E       		.uleb128 0xe
+ 590 0005 13       		.uleb128 0x13
+ 591 0006 0B       		.uleb128 0xb
+ 592 0007 03       		.uleb128 0x3
+ 593 0008 0E       		.uleb128 0xe
+ 594 0009 1B       		.uleb128 0x1b
+ 595 000a 0E       		.uleb128 0xe
+ 596 000b 55       		.uleb128 0x55
+ 597 000c 17       		.uleb128 0x17
+ 598 000d 11       		.uleb128 0x11
+ 599 000e 01       		.uleb128 0x1
+ 600 000f 10       		.uleb128 0x10
+ 601 0010 17       		.uleb128 0x17
+ 602 0011 00       		.byte	0
+ 603 0012 00       		.byte	0
+ 604 0013 02       		.uleb128 0x2
+ 605 0014 24       		.uleb128 0x24
+ 606 0015 00       		.byte	0
+ 607 0016 0B       		.uleb128 0xb
+ 608 0017 0B       		.uleb128 0xb
+ 609 0018 3E       		.uleb128 0x3e
+ 610 0019 0B       		.uleb128 0xb
+ 611 001a 03       		.uleb128 0x3
+ 612 001b 0E       		.uleb128 0xe
+ 613 001c 00       		.byte	0
+ 614 001d 00       		.byte	0
+ 615 001e 03       		.uleb128 0x3
+ 616 001f 24       		.uleb128 0x24
+ 617 0020 00       		.byte	0
+ 618 0021 0B       		.uleb128 0xb
+ 619 0022 0B       		.uleb128 0xb
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 17
+
+
+ 620 0023 3E       		.uleb128 0x3e
+ 621 0024 0B       		.uleb128 0xb
+ 622 0025 03       		.uleb128 0x3
+ 623 0026 08       		.uleb128 0x8
+ 624 0027 00       		.byte	0
+ 625 0028 00       		.byte	0
+ 626 0029 04       		.uleb128 0x4
+ 627 002a 16       		.uleb128 0x16
+ 628 002b 00       		.byte	0
+ 629 002c 03       		.uleb128 0x3
+ 630 002d 0E       		.uleb128 0xe
+ 631 002e 3A       		.uleb128 0x3a
+ 632 002f 0B       		.uleb128 0xb
+ 633 0030 3B       		.uleb128 0x3b
+ 634 0031 0B       		.uleb128 0xb
+ 635 0032 49       		.uleb128 0x49
+ 636 0033 13       		.uleb128 0x13
+ 637 0034 00       		.byte	0
+ 638 0035 00       		.byte	0
+ 639 0036 05       		.uleb128 0x5
+ 640 0037 35       		.uleb128 0x35
+ 641 0038 00       		.byte	0
+ 642 0039 49       		.uleb128 0x49
+ 643 003a 13       		.uleb128 0x13
+ 644 003b 00       		.byte	0
+ 645 003c 00       		.byte	0
+ 646 003d 06       		.uleb128 0x6
+ 647 003e 13       		.uleb128 0x13
+ 648 003f 01       		.byte	0x1
+ 649 0040 0B       		.uleb128 0xb
+ 650 0041 0B       		.uleb128 0xb
+ 651 0042 3A       		.uleb128 0x3a
+ 652 0043 0B       		.uleb128 0xb
+ 653 0044 3B       		.uleb128 0x3b
+ 654 0045 0B       		.uleb128 0xb
+ 655 0046 01       		.uleb128 0x1
+ 656 0047 13       		.uleb128 0x13
+ 657 0048 00       		.byte	0
+ 658 0049 00       		.byte	0
+ 659 004a 07       		.uleb128 0x7
+ 660 004b 0D       		.uleb128 0xd
+ 661 004c 00       		.byte	0
+ 662 004d 03       		.uleb128 0x3
+ 663 004e 0E       		.uleb128 0xe
+ 664 004f 3A       		.uleb128 0x3a
+ 665 0050 0B       		.uleb128 0xb
+ 666 0051 3B       		.uleb128 0x3b
+ 667 0052 0B       		.uleb128 0xb
+ 668 0053 49       		.uleb128 0x49
+ 669 0054 13       		.uleb128 0x13
+ 670 0055 38       		.uleb128 0x38
+ 671 0056 0B       		.uleb128 0xb
+ 672 0057 00       		.byte	0
+ 673 0058 00       		.byte	0
+ 674 0059 08       		.uleb128 0x8
+ 675 005a 0D       		.uleb128 0xd
+ 676 005b 00       		.byte	0
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 18
+
+
+ 677 005c 03       		.uleb128 0x3
+ 678 005d 08       		.uleb128 0x8
+ 679 005e 3A       		.uleb128 0x3a
+ 680 005f 0B       		.uleb128 0xb
+ 681 0060 3B       		.uleb128 0x3b
+ 682 0061 0B       		.uleb128 0xb
+ 683 0062 49       		.uleb128 0x49
+ 684 0063 13       		.uleb128 0x13
+ 685 0064 38       		.uleb128 0x38
+ 686 0065 0B       		.uleb128 0xb
+ 687 0066 00       		.byte	0
+ 688 0067 00       		.byte	0
+ 689 0068 09       		.uleb128 0x9
+ 690 0069 2E       		.uleb128 0x2e
+ 691 006a 00       		.byte	0
+ 692 006b 3F       		.uleb128 0x3f
+ 693 006c 19       		.uleb128 0x19
+ 694 006d 03       		.uleb128 0x3
+ 695 006e 0E       		.uleb128 0xe
+ 696 006f 3A       		.uleb128 0x3a
+ 697 0070 0B       		.uleb128 0xb
+ 698 0071 3B       		.uleb128 0x3b
+ 699 0072 0B       		.uleb128 0xb
+ 700 0073 27       		.uleb128 0x27
+ 701 0074 19       		.uleb128 0x19
+ 702 0075 11       		.uleb128 0x11
+ 703 0076 01       		.uleb128 0x1
+ 704 0077 12       		.uleb128 0x12
+ 705 0078 06       		.uleb128 0x6
+ 706 0079 40       		.uleb128 0x40
+ 707 007a 18       		.uleb128 0x18
+ 708 007b 9642     		.uleb128 0x2116
+ 709 007d 19       		.uleb128 0x19
+ 710 007e 00       		.byte	0
+ 711 007f 00       		.byte	0
+ 712 0080 0A       		.uleb128 0xa
+ 713 0081 2E       		.uleb128 0x2e
+ 714 0082 01       		.byte	0x1
+ 715 0083 3F       		.uleb128 0x3f
+ 716 0084 19       		.uleb128 0x19
+ 717 0085 03       		.uleb128 0x3
+ 718 0086 0E       		.uleb128 0xe
+ 719 0087 3A       		.uleb128 0x3a
+ 720 0088 0B       		.uleb128 0xb
+ 721 0089 3B       		.uleb128 0x3b
+ 722 008a 0B       		.uleb128 0xb
+ 723 008b 27       		.uleb128 0x27
+ 724 008c 19       		.uleb128 0x19
+ 725 008d 11       		.uleb128 0x11
+ 726 008e 01       		.uleb128 0x1
+ 727 008f 12       		.uleb128 0x12
+ 728 0090 06       		.uleb128 0x6
+ 729 0091 40       		.uleb128 0x40
+ 730 0092 18       		.uleb128 0x18
+ 731 0093 9642     		.uleb128 0x2116
+ 732 0095 19       		.uleb128 0x19
+ 733 0096 01       		.uleb128 0x1
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 19
+
+
+ 734 0097 13       		.uleb128 0x13
+ 735 0098 00       		.byte	0
+ 736 0099 00       		.byte	0
+ 737 009a 0B       		.uleb128 0xb
+ 738 009b 34       		.uleb128 0x34
+ 739 009c 00       		.byte	0
+ 740 009d 03       		.uleb128 0x3
+ 741 009e 0E       		.uleb128 0xe
+ 742 009f 3A       		.uleb128 0x3a
+ 743 00a0 0B       		.uleb128 0xb
+ 744 00a1 3B       		.uleb128 0x3b
+ 745 00a2 0B       		.uleb128 0xb
+ 746 00a3 49       		.uleb128 0x49
+ 747 00a4 13       		.uleb128 0x13
+ 748 00a5 02       		.uleb128 0x2
+ 749 00a6 18       		.uleb128 0x18
+ 750 00a7 00       		.byte	0
+ 751 00a8 00       		.byte	0
+ 752 00a9 0C       		.uleb128 0xc
+ 753 00aa 34       		.uleb128 0x34
+ 754 00ab 00       		.byte	0
+ 755 00ac 03       		.uleb128 0x3
+ 756 00ad 0E       		.uleb128 0xe
+ 757 00ae 3A       		.uleb128 0x3a
+ 758 00af 0B       		.uleb128 0xb
+ 759 00b0 3B       		.uleb128 0x3b
+ 760 00b1 0B       		.uleb128 0xb
+ 761 00b2 49       		.uleb128 0x49
+ 762 00b3 13       		.uleb128 0x13
+ 763 00b4 3F       		.uleb128 0x3f
+ 764 00b5 19       		.uleb128 0x19
+ 765 00b6 02       		.uleb128 0x2
+ 766 00b7 18       		.uleb128 0x18
+ 767 00b8 00       		.byte	0
+ 768 00b9 00       		.byte	0
+ 769 00ba 0D       		.uleb128 0xd
+ 770 00bb 34       		.uleb128 0x34
+ 771 00bc 00       		.byte	0
+ 772 00bd 03       		.uleb128 0x3
+ 773 00be 0E       		.uleb128 0xe
+ 774 00bf 3A       		.uleb128 0x3a
+ 775 00c0 0B       		.uleb128 0xb
+ 776 00c1 3B       		.uleb128 0x3b
+ 777 00c2 0B       		.uleb128 0xb
+ 778 00c3 49       		.uleb128 0x49
+ 779 00c4 13       		.uleb128 0x13
+ 780 00c5 3F       		.uleb128 0x3f
+ 781 00c6 19       		.uleb128 0x19
+ 782 00c7 3C       		.uleb128 0x3c
+ 783 00c8 19       		.uleb128 0x19
+ 784 00c9 00       		.byte	0
+ 785 00ca 00       		.byte	0
+ 786 00cb 00       		.byte	0
+ 787              		.section	.debug_aranges,"",%progbits
+ 788 0000 34000000 		.4byte	0x34
+ 789 0004 0200     		.2byte	0x2
+ 790 0006 00000000 		.4byte	.Ldebug_info0
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 20
+
+
+ 791 000a 04       		.byte	0x4
+ 792 000b 00       		.byte	0
+ 793 000c 0000     		.2byte	0
+ 794 000e 0000     		.2byte	0
+ 795 0010 00000000 		.4byte	.LFB0
+ 796 0014 7C000000 		.4byte	.LFE0-.LFB0
+ 797 0018 00000000 		.4byte	.LFB1
+ 798 001c 44000000 		.4byte	.LFE1-.LFB1
+ 799 0020 00000000 		.4byte	.LFB2
+ 800 0024 2C000000 		.4byte	.LFE2-.LFB2
+ 801 0028 00000000 		.4byte	.LFB3
+ 802 002c F0000000 		.4byte	.LFE3-.LFB3
+ 803 0030 00000000 		.4byte	0
+ 804 0034 00000000 		.4byte	0
+ 805              		.section	.debug_ranges,"",%progbits
+ 806              	.Ldebug_ranges0:
+ 807 0000 00000000 		.4byte	.LFB0
+ 808 0004 7C000000 		.4byte	.LFE0
+ 809 0008 00000000 		.4byte	.LFB1
+ 810 000c 44000000 		.4byte	.LFE1
+ 811 0010 00000000 		.4byte	.LFB2
+ 812 0014 2C000000 		.4byte	.LFE2
+ 813 0018 00000000 		.4byte	.LFB3
+ 814 001c F0000000 		.4byte	.LFE3
+ 815 0020 00000000 		.4byte	0
+ 816 0024 00000000 		.4byte	0
+ 817              		.section	.debug_line,"",%progbits
+ 818              	.Ldebug_line0:
+ 819 0000 D8000000 		.section	.debug_str,"MS",%progbits,1
+ 819      02005E00 
+ 819      00000201 
+ 819      FB0E0D00 
+ 819      01010101 
+ 820              	.LASF23:
+ 821 0000 4932435F 		.ascii	"I2C_3_BACKUP_STRUCT\000"
+ 821      335F4241 
+ 821      434B5550 
+ 821      5F535452 
+ 821      55435400 
+ 822              	.LASF27:
+ 823 0014 4932435F 		.ascii	"I2C_3_Stop\000"
+ 823      335F5374 
+ 823      6F7000
+ 824              	.LASF34:
+ 825 001f 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\I2C_3.c\000"
+ 825      6E657261 
+ 825      7465645F 
+ 825      536F7572 
+ 825      63655C50 
+ 826              	.LASF14:
+ 827 0040 63686172 		.ascii	"char\000"
+ 827      00
+ 828              	.LASF30:
+ 829 0045 4932435F 		.ascii	"I2C_3_backup\000"
+ 829      335F6261 
+ 829      636B7570 
+ 829      00
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 21
+
+
+ 830              	.LASF12:
+ 831 0052 666C6F61 		.ascii	"float\000"
+ 831      7400
+ 832              	.LASF26:
+ 833 0058 4932435F 		.ascii	"I2C_3_Enable\000"
+ 833      335F456E 
+ 833      61626C65 
+ 833      00
+ 834              	.LASF29:
+ 835 0065 4932435F 		.ascii	"I2C_3_initVar\000"
+ 835      335F696E 
+ 835      69745661 
+ 835      7200
+ 836              	.LASF1:
+ 837 0073 756E7369 		.ascii	"unsigned char\000"
+ 837      676E6564 
+ 837      20636861 
+ 837      7200
+ 838              	.LASF15:
+ 839 0081 72656738 		.ascii	"reg8\000"
+ 839      00
+ 840              	.LASF5:
+ 841 0086 6C6F6E67 		.ascii	"long unsigned int\000"
+ 841      20756E73 
+ 841      69676E65 
+ 841      6420696E 
+ 841      7400
+ 842              	.LASF20:
+ 843 0098 61646472 		.ascii	"addr\000"
+ 843      00
+ 844              	.LASF28:
+ 845 009d 656E6162 		.ascii	"enableInterrupts\000"
+ 845      6C65496E 
+ 845      74657272 
+ 845      75707473 
+ 845      00
+ 846              	.LASF13:
+ 847 00ae 646F7562 		.ascii	"double\000"
+ 847      6C6500
+ 848              	.LASF10:
+ 849 00b5 75696E74 		.ascii	"uint16\000"
+ 849      313600
+ 850              	.LASF11:
+ 851 00bc 75696E74 		.ascii	"uint32\000"
+ 851      333200
+ 852              	.LASF18:
+ 853 00c3 656E6162 		.ascii	"enableState\000"
+ 853      6C655374 
+ 853      61746500 
+ 854              	.LASF8:
+ 855 00cf 756E7369 		.ascii	"unsigned int\000"
+ 855      676E6564 
+ 855      20696E74 
+ 855      00
+ 856              	.LASF7:
+ 857 00dc 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 857      206C6F6E 
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 22
+
+
+ 857      6720756E 
+ 857      7369676E 
+ 857      65642069 
+ 858              	.LASF21:
+ 859 00f3 636C6B44 		.ascii	"clkDiv1\000"
+ 859      69763100 
+ 860              	.LASF22:
+ 861 00fb 636C6B44 		.ascii	"clkDiv2\000"
+ 861      69763200 
+ 862              	.LASF33:
+ 863 0103 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 863      4320342E 
+ 863      382E3420 
+ 863      32303134 
+ 863      30353236 
+ 864 0136 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m3 -mthumb -g -O"
+ 864      20726576 
+ 864      6973696F 
+ 864      6E203231 
+ 864      31333538 
+ 865 0169 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 865      66756E63 
+ 865      74696F6E 
+ 865      2D736563 
+ 865      74696F6E 
+ 866              	.LASF35:
+ 867 017f 433A5C67 		.ascii	"C:\\gitData\\PSoC\\SFT1.0v\\Design01.cydsn\000"
+ 867      69744461 
+ 867      74615C50 
+ 867      536F435C 
+ 867      53465431 
+ 868              	.LASF17:
+ 869 01a6 73697A65 		.ascii	"sizetype\000"
+ 869      74797065 
+ 869      00
+ 870              	.LASF6:
+ 871 01af 6C6F6E67 		.ascii	"long long int\000"
+ 871      206C6F6E 
+ 871      6720696E 
+ 871      7400
+ 872              	.LASF31:
+ 873 01bd 4932435F 		.ascii	"I2C_3_state\000"
+ 873      335F7374 
+ 873      61746500 
+ 874              	.LASF24:
+ 875 01c9 4932435F 		.ascii	"I2C_3_Init\000"
+ 875      335F496E 
+ 875      697400
+ 876              	.LASF19:
+ 877 01d4 78636667 		.ascii	"xcfg\000"
+ 877      00
+ 878              	.LASF32:
+ 879 01d9 4932435F 		.ascii	"I2C_3_slStatus\000"
+ 879      335F736C 
+ 879      53746174 
+ 879      757300
+ 880              	.LASF2:
+ARM GAS  C:\Users\dskyNote\AppData\Local\Temp\ccZHyI5i.s 			page 23
+
+
+ 881 01e8 73686F72 		.ascii	"short int\000"
+ 881      7420696E 
+ 881      7400
+ 882              	.LASF9:
+ 883 01f2 75696E74 		.ascii	"uint8\000"
+ 883      3800
+ 884              	.LASF4:
+ 885 01f8 6C6F6E67 		.ascii	"long int\000"
+ 885      20696E74 
+ 885      00
+ 886              	.LASF16:
+ 887 0201 72656733 		.ascii	"reg32\000"
+ 887      3200
+ 888              	.LASF0:
+ 889 0207 7369676E 		.ascii	"signed char\000"
+ 889      65642063 
+ 889      68617200 
+ 890              	.LASF3:
+ 891 0213 73686F72 		.ascii	"short unsigned int\000"
+ 891      7420756E 
+ 891      7369676E 
+ 891      65642069 
+ 891      6E7400
+ 892              	.LASF25:
+ 893 0226 4932435F 		.ascii	"I2C_3_Start\000"
+ 893      335F5374 
+ 893      61727400 
+ 894              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
